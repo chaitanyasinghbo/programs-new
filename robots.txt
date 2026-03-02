@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bluocean.education/sitemap.xml
+Disallow: /blank-
+
+Sitemap: https://www.blueocean.education/sitemap.xml

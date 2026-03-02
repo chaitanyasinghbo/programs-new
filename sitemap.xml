@@ -1,53 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://bluocean.education/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://www.blueocean.education/</loc>
+    <lastmod>2026-03-02</lastmod>
   </url>
   <url>
-    <loc>https://bluocean.education/us-admissions.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.blueocean.education/blog.html</loc>
+    <lastmod>2026-03-02</lastmod>
   </url>
   <url>
-    <loc>https://bluocean.education/uk-admissions.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.blueocean.education/blog/best-college-admissions-counselor.html</loc>
+    <lastmod>2026-03-02</lastmod>
   </url>
   <url>
-    <loc>https://bluocean.education/evaluation.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.blueocean.education/blog/best-college-counselor-for-indian-students.html</loc>
+    <lastmod>2026-03-02</lastmod>
   </url>
   <url>
-    <loc>https://bluocean.education/case-studies.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.blueocean.education/blog/best-study-abroad-consultants-chennai.html</loc>
+    <lastmod>2026-03-02</lastmod>
   </url>
   <url>
-    <loc>https://bluocean.education/blog.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.blueocean.education/blog/best-study-abroad-consultants-delhi.html</loc>
+    <lastmod>2026-03-02</lastmod>
   </url>
   <url>
-    <loc>https://bluocean.education/blog/how-to-get-into-harvard-from-india.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.blueocean.education/blog/best-study-abroad-consultants-hyderabad.html</loc>
+    <lastmod>2026-03-02</lastmod>
   </url>
   <url>
-    <loc>https://bluocean.education/testimonials.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://www.blueocean.education/blog/best-study-abroad-consultants-kochi.html</loc>
+    <lastmod>2026-03-02</lastmod>
   </url>
   <url>
-    <loc>https://bluocean.education/major-fit-assessment.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://www.blueocean.education/blog/best-study-abroad-consultants-pune.html</loc>
+    <lastmod>2026-03-02</lastmod>
   </url>
   <url>
-    <loc>https://bluocean.education/ivy-diagnostic.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://www.blueocean.education/blog/career-advice-students.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/blog/college-application-essentials.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/blog/common-app-guide-indian-students.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/blog/commonwealth-scholarship.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/blog/cornell-tata-scholarship.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/blog/how-to-get-into-cambridge.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/blog/how-to-get-into-harvard-business-school.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/blog/how-to-get-into-harvard-from-india.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/blog/how-to-get-into-mit-from-india.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/blog/how-to-get-into-oxford-from-india.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/blog/how-to-get-into-stanford-from-india.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/blog/inlaks-scholarship.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/blog/ivy-league-schools-guide.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/blog/knight-hennessy-scholarship.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/blog/mit-admission-requirements-indian-students.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/blog/narotam-sekhsaria-scholarship.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/blog/overseas-education-consultants-hyderabad.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/blog/oxford-admission-process.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/blog/personal-statement-guide.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/blog/ratan-tata-scholarship.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/blog/reach-oxford-scholarship.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/blog/scholarships-indian-students.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/blog/study-abroad-consultants.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/blog/uk-universities-from-india.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/blog/us-universities-from-india.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/blog/what-is-ivy-league.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/blog/yale-admissions-indian-students.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/case-studies.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/evaluation.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/ivy-diagnostic.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/major-fit-assessment.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/testimonials.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/uk-admissions.html</loc>
+    <lastmod>2026-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.blueocean.education/us-admissions.html</loc>
+    <lastmod>2026-03-02</lastmod>
   </url>
 </urlset>
