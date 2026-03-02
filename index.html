@@ -53,13 +53,32 @@ a{color:inherit;text-decoration:none}
 /* === HERO — CENTERED, BOLD === */
 .hero{background:var(--black);color:var(--white);padding:56px 20px 48px;text-align:center;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;inset:0;background:repeating-conic-gradient(rgba(250,204,21,0.03) 0% 25%,transparent 25% 50%) 0 0/60px 60px}
-.hero-content{position:relative;max-width:680px;margin:0 auto}
+.hero-content{position:relative;max-width:960px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+@media(max-width:768px){.hero-content{grid-template-columns:1fr}}
+.hero-left{text-align:left}
+@media(max-width:768px){.hero-left{text-align:center}}
+.hero-left .hero-sub{margin-left:0;margin-right:0}
+@media(max-width:768px){.hero-left .hero-sub{margin-left:auto;margin-right:auto}}
+.hero-left .hero-stats{justify-content:flex-start}
+@media(max-width:768px){.hero-left .hero-stats{justify-content:center}}
+.hero-video-wrap{position:relative;border-radius:14px;overflow:hidden;background:#1a1a1a;border:2px solid rgba(250,204,21,0.2);box-shadow:0 8px 40px rgba(250,204,21,0.08);aspect-ratio:16/9}
+.hero-video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url('https://img.youtube.com/vi/bK1QU2CK7es/maxresdefault.jpg') center/cover no-repeat;cursor:pointer;transition:filter .3s}
+.video-placeholder:hover{filter:brightness(1.12)}
+.video-placeholder:hover .play-btn{transform:scale(1.1)}
+.play-btn{width:64px;height:64px;background:var(--yellow);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:10px;transition:transform .2s;box-shadow:0 4px 24px rgba(250,204,21,0.3)}
+.play-btn svg{width:24px;height:24px;fill:var(--black);margin-left:3px}
+.vid-label{font-size:12px;color:rgba(255,255,255,0.5)}
+.vid-label strong{color:rgba(255,255,255,0.8)}
 .hero-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(250,204,21,0.12);border:1px solid rgba(250,204,21,0.25);color:var(--yellow);font-size:12px;font-weight:700;padding:6px 14px;border-radius:100px;margin-bottom:22px}
-.hero h1{font-size:clamp(30px,5vw,52px);font-weight:800;line-height:1.1;margin-bottom:18px}
+.hero h1{font-size:clamp(22px,3.2vw,38px);font-weight:800;line-height:1.1;margin-bottom:18px}
 .hero h1 .pop{color:var(--yellow)}
-.hero-uni{display:inline-block;white-space:nowrap;vertical-align:baseline;position:relative}
+.hero-first-line{display:block;white-space:nowrap}
+.hero-uni{display:inline;white-space:nowrap;vertical-align:baseline;position:relative}
 .hero-uni::after{content:'';display:inline-block;width:2px;height:.9em;margin-left:4px;background:var(--yellow);vertical-align:-0.05em;animation:caret-blink .9s step-end infinite}
-.hero-second-line{display:block;color:var(--white)}
+.hero-second-line{display:block;color:var(--white);white-space:nowrap}
+.hero-right{display:flex;flex-direction:column;gap:16px}
+.hero-right .hero-stats{justify-content:space-around;margin-top:0}
 @keyframes caret-blink{50%{opacity:0}}
 .hero-sub{font-family:'Lora',serif;font-style:italic;font-size:17px;color:rgba(255,255,255,0.45);line-height:1.6;margin-bottom:28px;max-width:520px;margin-left:auto;margin-right:auto}
 .hero-cta{display:inline-block;padding:18px 44px;background:var(--yellow);color:var(--black);font-family:'Bricolage Grotesque',sans-serif;font-size:18px;font-weight:800;border:none;border-radius:12px;cursor:pointer;transition:all .2s;box-shadow:0 4px 0 #D4A90F;text-decoration:none}
@@ -194,20 +213,30 @@ body.nav-open{overflow:hidden}
   </div>
 </div></nav>
 
-<!-- HERO — CENTERED -->
+<!-- HERO — SPLIT -->
 <section class="hero"><div class="hero-content">
-  <div class="hero-badge">🎓 Ex Ivy-League · 500+ Students · 95% Acceptance</div>
-  <!-- Rollback headline:
-  <h1>Your Dream University <span class="pop">Starts With One Call.</span></h1>
-  -->
-  <h1>Get into <span id="hero-uni" class="hero-uni pop">Harvard</span>,<span class="hero-second-line">Starting with one call.</span></h1>
-  <p class="hero-sub">Get your profile evaluated by Ex-Harvard Dr. Sanjay Kumar. Exact admit chances. Guaranteed ₹10L+ scholarship matches. 48 hours.</p>
-  <a href="evaluation.html" class="hero-cta">Get My Evaluation →</a>
-  <p class="hero-cta-sub"><s>₹45,000</s> → ₹4,500 · 1-on-1 LIVE with Dr. Sanjay</p>
-  <div class="hero-stats">
-    <div class="s"><div class="num">95%</div><div class="lab">Acceptance rate</div></div>
-    <div class="s"><div class="num">₹1Cr+</div><div class="lab">Avg scholarship</div></div>
-    <div class="s"><div class="num">500+</div><div class="lab">Students guided</div></div>
+  <div class="hero-left">
+    <div class="hero-badge">🎓 Ex Ivy-League · 500+ Students · 95% Acceptance</div>
+    <!-- Rollback headline:
+    <h1>Your Dream University <span class="pop">Starts With One Call.</span></h1>
+    -->
+    <h1><span class="hero-first-line">Get into <span id="hero-uni" class="hero-uni pop">Harvard</span>,</span><span class="hero-second-line">Starting with one call.</span></h1>
+    <p class="hero-sub">Get your profile evaluated by Ex-Harvard Dr. Sanjay Kumar. Exact admit chances. Guaranteed ₹10L+ scholarship matches. 48 hours.</p>
+    <a href="evaluation.html" class="hero-cta">Get My Evaluation →</a>
+    <p class="hero-cta-sub"><s>₹45,000</s> → ₹4,500 · 1-on-1 LIVE with Dr. Sanjay</p>
+  </div>
+  <div class="hero-right">
+    <div class="hero-video-wrap" id="hero-video">
+      <div class="video-placeholder" id="hero-video-placeholder">
+        <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+        <p class="vid-label"><strong>Watch Dr. Sanjay</strong> — 3 min</p>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="s"><div class="num">95%</div><div class="lab">Acceptance rate</div></div>
+      <div class="s"><div class="num">₹1Cr+</div><div class="lab">Avg scholarship</div></div>
+      <div class="s"><div class="num">500+</div><div class="lab">Students guided</div></div>
+    </div>
   </div>
 </div></section>
 
@@ -485,6 +514,11 @@ body.nav-open{overflow:hidden}
 
   tick();
 })();
+
+document.getElementById('hero-video-placeholder').addEventListener('click', function() {
+  document.getElementById('hero-video').innerHTML =
+    '<iframe src="https://www.youtube.com/embed/bK1QU2CK7es?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+});
 </script>
 
 </body>
