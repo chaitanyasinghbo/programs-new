@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Major Fit Assessment | Blue Ocean Education</title>
+<meta name="description" content="Find your best-fit majors using interests, strengths, and study style. 60-question assessment with instant fit insights.">
+<link rel="canonical" href="https://bluocean.education/major-fit-assessment.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Blue Ocean Education">
+<meta property="og:title" content="Major Fit Assessment | Blue Ocean Education">
+<meta property="og:description" content="Find your best-fit majors using interests, strengths, and study style. 60-question assessment with instant fit insights.">
+<meta property="og:url" content="https://bluocean.education/major-fit-assessment.html">
+<meta property="og:image" content="https://bluocean.education/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Major Fit Assessment | Blue Ocean Education">
+<meta name="twitter:description" content="Find your best-fit majors using interests, strengths, and study style. 60-question assessment with instant fit insights.">
+<meta name="twitter:image" content="https://bluocean.education/og-image.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--black:#111;--yellow:#FACC15;--yellow-deep:#D4A90F;--yellow-bg:#FEFCE8;--white:#fff;--gray:#6B7280;--border:#E5E7EB;--card:#FFFFFF;--ink:#0F172A;--muted:#475569}
+body{font-family:'Bricolage Grotesque',sans-serif;background:#0A0A0A;color:var(--white);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.nav{background:var(--black);padding:0 20px;position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(255,255,255,0.06)}
+.nav-inner{max-width:1060px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:56px}
+.nav-logo{font-size:18px;font-weight:800;color:var(--white)}
+.nav-logo span{color:var(--yellow)}
+.nav-links{display:flex;gap:22px;align-items:center}
+.nav-links a{font-size:13px;font-weight:600;color:rgba(255,255,255,0.82)}
+.nav-links a:hover{color:var(--white)}
+.nav-cta{background:var(--yellow);color:var(--black);padding:8px 18px;border-radius:8px;font-size:13px;font-weight:800}
+@media(max-width:760px){.nav-links{display:none}}
+
+.page-wrap{min-height:calc(100vh - 56px);padding:24px 16px 48px;background:radial-gradient(circle at 18% 12%,rgba(250,204,21,0.08),transparent 34%),radial-gradient(circle at 82% 88%,rgba(250,204,21,0.06),transparent 36%),linear-gradient(180deg,#0A0A0A 0%, #111111 100%)}
+.assess-shell{max-width:980px;margin:0 auto}
+.panel{background:var(--card);color:var(--ink);border:1px solid #CBD5E1;border-radius:16px;box-shadow:0 18px 44px rgba(0,0,0,0.25);overflow:hidden}
+
+.intro-head{text-align:center;padding:36px 20px 10px;border-bottom:1px solid #E2E8F0;background:linear-gradient(180deg,#111827,#0F172A);color:var(--white)}
+.intro-kicker{font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:rgba(250,204,21,0.8);margin-bottom:10px}
+.intro-head h1{font-size:clamp(28px,4vw,40px);font-weight:800;line-height:1.15;margin-bottom:10px}
+.intro-head h1 span{color:var(--yellow)}
+.intro-head p{font-size:15px;line-height:1.65;color:rgba(255,255,255,0.82);max-width:720px;margin:0 auto 22px}
+.intro-stats{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+.intro-chip{padding:7px 12px;border:1px solid rgba(250,204,21,0.3);border-radius:999px;background:rgba(250,204,21,0.1);font-size:12px;font-weight:700;color:#FDE68A}
+
+.intro-body{padding:30px 20px 34px;text-align:center;background:#F8FAFC}
+.input-wrap{margin:0 auto 18px;max-width:280px}
+.name-input{width:100%;padding:12px 14px;border:1px solid #CBD5E1;border-radius:10px;font-size:14px;color:#111827;background:#fff;text-align:center}
+.name-input:focus{outline:none;border-color:#FACC15;box-shadow:0 0 0 3px rgba(250,204,21,0.2)}
+.primary-btn{display:inline-block;border:none;background:var(--yellow);color:#111827;border-radius:11px;padding:14px 26px;font-size:15px;font-weight:800;cursor:pointer;box-shadow:0 4px 0 var(--yellow-deep)}
+.primary-btn:hover{transform:translateY(-1px)}
+.intro-foot{margin-top:16px;font-size:12px;color:#475569;line-height:1.6}
+
+.test-head{position:sticky;top:56px;z-index:20;background:rgba(255,255,255,0.98);backdrop-filter:blur(6px);border-bottom:1px solid #E2E8F0;padding:8px 18px 12px}
+.test-kicker{font-size:10px;letter-spacing:1.7px;text-transform:uppercase;color:#A16207;font-weight:700;margin-bottom:4px}
+.test-head h2{font-size:24px;font-weight:800;color:#111827;line-height:1.15;margin-bottom:8px}
+.test-desc{font-size:14px;line-height:1.65;color:#475569}
+
+.questions{padding:26px 20px 96px;background:#fff}
+.question{padding:16px 18px;border-bottom:1px solid #F1F5F9}
+.question:first-child{padding-top:32px}
+.question:first-child{padding-top:22px}
+.question-text{font-size:15px;line-height:1.6;color:#111827;margin-bottom:10px}
+.qn{font-size:12px;color:#92400E;font-weight:800;margin-right:8px}
+.scale{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
+@media(max-width:700px){.scale{grid-template-columns:repeat(2,minmax(0,1fr))}.scale button:last-child{grid-column:1/-1}}
+.scale-btn{padding:9px 6px;border-radius:8px;border:1px solid #CBD5E1;background:#F8FAFC;color:#475569;font-size:11px;font-weight:700;cursor:pointer;line-height:1.25}
+.scale-btn.active{background:#111827;border-color:#111827;color:#FACC15}
+
+.test-footer{position:fixed;left:50%;transform:translateX(-50%);bottom:0;width:100%;max-width:980px;padding:14px 16px;background:rgba(255,255,255,0.98);backdrop-filter:blur(6px);border-top:1px solid #E2E8F0;display:flex;justify-content:space-between;gap:12px;z-index:25}
+.secondary-btn{padding:12px 18px;background:#fff;border:1px solid #CBD5E1;border-radius:10px;font-size:13px;font-weight:700;color:#334155;cursor:pointer}
+.next-btn{padding:12px 20px;border:none;border-radius:10px;font-size:13px;font-weight:800;background:#FACC15;color:#111827;box-shadow:0 3px 0 #D4A90F;cursor:pointer}
+.next-btn.disabled{background:#E5E7EB;color:#94A3B8;box-shadow:none;cursor:not-allowed}
+
+.results-wrap{padding:26px 18px 32px;background:#F8FAFC}
+.results-head{text-align:center;margin-bottom:24px}
+.results-kicker{font-size:10px;letter-spacing:1.8px;text-transform:uppercase;color:#A16207;font-weight:700;margin-bottom:8px}
+.results-head h1{font-size:clamp(24px,3.6vw,34px);font-weight:800;color:#111827;line-height:1.15;margin-bottom:8px}
+.results-head p{font-size:13px;color:#64748B}
+
+.block{background:#fff;border:1px solid #CBD5E1;border-radius:14px;padding:18px 16px;margin-bottom:14px}
+.block h3{font-size:17px;font-weight:800;color:#111827;margin-bottom:10px}
+.type-row{display:flex;gap:12px;align-items:flex-start}
+.type-icon{font-size:34px;line-height:1}
+.type-title{font-size:22px;font-weight:800;color:#111827;margin-bottom:8px;line-height:1.2}
+.type-desc{font-size:15px;line-height:1.7;color:#1F2937}
+
+.bar-list{display:flex;flex-direction:column;gap:8px}
+.bar-row{display:grid;grid-template-columns:130px 1fr;gap:10px;align-items:center}
+@media(max-width:640px){.bar-row{grid-template-columns:1fr;gap:6px}}
+.bar-label{font-size:13px;font-weight:700;color:#334155}
+.bar-track{height:24px;border-radius:7px;background:#F1F5F9;position:relative;overflow:hidden}
+.bar-fill{height:100%;border-radius:7px;min-width:3px;transition:width .5s}
+.bar-value{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:11px;font-weight:800;color:#0F172A}
+
+.major-list{display:flex;flex-direction:column;gap:8px}
+.major-item{display:grid;grid-template-columns:34px 1fr 120px 48px;gap:10px;align-items:center;padding:10px;border:1px solid #E2E8F0;border-radius:10px;background:#fff}
+@media(max-width:760px){.major-item{grid-template-columns:30px 1fr 1fr 42px}}
+.rank{width:28px;height:28px;border-radius:999px;background:#111827;color:#FACC15;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.major-name{font-size:14px;font-weight:700;color:#111827;line-height:1.4}
+.fit-track{height:8px;background:#E2E8F0;border-radius:999px;overflow:hidden}
+.fit-fill{height:100%;border-radius:999px}
+.fit-score{font-size:13px;font-weight:800;text-align:right}
+
+.pref-chips{display:flex;flex-wrap:wrap;gap:8px}
+.pref-chip{padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;border:1px solid #E2E8F0;background:#F8FAFC;color:#334155}
+.pref-chip.high{background:#FEF3C7;border-color:#FACC15;color:#78350F}
+.pref-chip.medium{background:#FFFBEB;border-color:#FDE68A;color:#92400E}
+.pref-chip.low{background:#F8FAFC;border-color:#E2E8F0;color:#64748B}
+
+.results-note{font-size:12px;line-height:1.7;color:#64748B;font-style:italic;text-align:center;padding:8px 6px}
+.retake-wrap{text-align:center;padding-top:8px}
+
+.footer-note{text-align:center;font-size:12px;color:rgba(255,255,255,0.55);margin-top:16px}
+
+/* Mobile Fullscreen Nav */
+.nav-toggle{display:none;align-items:center;justify-content:center;width:42px;height:42px;border:1px solid rgba(255,255,255,0.14);border-radius:10px;background:rgba(255,255,255,0.06);color:#fff;cursor:pointer;gap:6px}
+.nav-toggle span{display:block;width:16px;height:2px;border-radius:999px;background:#fff;transition:transform .2s,opacity .2s}
+.nav-toggle.open span:nth-child(1){transform:translateY(4px) rotate(45deg)}
+.nav-toggle.open span:nth-child(2){opacity:0}
+.nav-toggle.open span:nth-child(3){transform:translateY(-4px) rotate(-45deg)}
+body.nav-open{overflow:hidden}
+@media(max-width:768px){
+  .nav-inner{height:56px;flex-wrap:nowrap}
+  .nav-toggle{display:inline-flex}
+  .nav-links{position:fixed;inset:56px 0 0 0;display:flex;flex-direction:column;align-items:flex-start;gap:16px;padding:20px;background:rgba(10,12,15,0.98);backdrop-filter:blur(8px);opacity:0;transform:translateY(-8px);pointer-events:none;transition:opacity .2s,transform .2s;z-index:120;border-top:1px solid rgba(255,255,255,0.08);overflow-y:auto}
+  .nav-links.open{opacity:1;transform:translateY(0);pointer-events:auto}
+  .nav-links a{font-size:22px;font-weight:800;color:#fff;line-height:1.2}
+  .nav-cta{margin-top:4px;width:100%;text-align:center;font-size:17px;padding:12px 16px}
+}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">BLUE <span>OCEAN</span></a><button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="us-admissions.html">US Admissions</a>
+      <a href="uk-admissions.html">UK Admissions</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="blog.html">Blog</a>
+      <a href="evaluation.html" class="nav-cta">Get Evaluation →</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-wrap">
+  <div class="assess-shell">
+    <div id="app" class="panel"></div>
+    <p class="footer-note">Blue Ocean Major Fit Assessment</p>
+  </div>
+</div>
+
+<script>
+const RIASEC_ITEMS = {
+  R: [
+    "I enjoy working with tools, machines, or physical equipment.",
+    "I like fixing or building things with my hands.",
+    "I prefer practical tasks over abstract discussions.",
+    "I enjoy activities that require coordination and precision.",
+    "I'm curious about how hardware and systems work.",
+  ],
+  I: [
+    "I enjoy solving complex puzzles or problems.",
+    "I like learning theories and explaining 'why' things happen.",
+    "I enjoy analyzing data or patterns.",
+    "I like research-style work (hypothesize, test, conclude).",
+    "I get energized by difficult academic questions.",
+  ],
+  A: [
+    "I enjoy creating original work (writing, design, music, art).",
+    "I like ambiguous problems with many 'right' answers.",
+    "I value self-expression in what I study.",
+    "I notice aesthetics (style, form, storytelling).",
+    "I'd rather create something new than follow a standard method.",
+  ],
+  S: [
+    "I enjoy teaching, mentoring, or guiding others.",
+    "I'm drawn to understanding people and relationships.",
+    "I like group discussion and collaborative learning.",
+    "I care about helping others improve their lives.",
+    "I'd rather work with people than objects.",
+  ],
+  E: [
+    "I enjoy persuading others or making a case for an idea.",
+    "I like leading projects and taking responsibility.",
+    "I enjoy competition and measurable wins.",
+    "I'm interested in business, markets, or influence.",
+    "I like taking initiative even with uncertainty.",
+  ],
+  C: [
+    "I like organizing information neatly and systematically.",
+    "I enjoy clear rules, structure, and defined expectations.",
+    "I'm good at planning and following step-by-step processes.",
+    "I like tasks involving accuracy and detail.",
+    "I prefer stable routines over constant change.",
+  ],
+};
+
+const STRENGTH_ITEMS = {
+  Quantitative: [
+    "I learn mathematical concepts quickly.",
+    "I enjoy formal logic or proof-like thinking.",
+    "I can stay focused on technical problem sets.",
+  ],
+  Verbal: [
+    "I express complex ideas clearly in writing.",
+    "I enjoy reading dense material and extracting meaning.",
+    "I'm good at debates, arguments, or essays.",
+  ],
+  Spatial: [
+    "I can imagine objects rotating or systems in 3D.",
+    "Diagrams and visuals help me think better than text alone.",
+    "I'm strong at design, layout, or mechanical visualization.",
+  ],
+  Creative: [
+    "I generate original ideas easily.",
+    "I connect unrelated concepts into new solutions.",
+    "I enjoy open-ended creative assignments.",
+  ],
+  Social: [
+    "People naturally share problems with me.",
+    "I read emotions and group dynamics well.",
+    "I communicate smoothly in teams.",
+  ],
+  Execution: [
+    "I'm consistent: I do the work even when I don't feel like it.",
+    "I manage deadlines well across multiple subjects.",
+    "I'm detail-oriented and catch errors.",
+  ],
+};
+
+const MOTIVATION_ITEMS = [
+  { id: "M1", text: "I'm willing to work hard at subjects I find meaningful.", key: "meaning" },
+  { id: "M2", text: "I lose motivation quickly if I don't see purpose in a subject.", key: "meaning_r", reverse: true },
+  { id: "M3", text: "I prefer depth over speed in learning.", key: "depth" },
+  { id: "M4", text: "I prefer practical application over theory.", key: "practical" },
+  { id: "M5", text: "I like long-term projects more than frequent small tests.", key: "longterm" },
+  { id: "M6", text: "I do best with strict structure and deadlines.", key: "structure" },
+  { id: "M7", text: "I do best with autonomy and self-direction.", key: "autonomy" },
+  { id: "M8", text: "I enjoy heavy reading and independent study.", key: "reading" },
+  { id: "M9", text: "I enjoy lab work, experiments, or hands-on learning.", key: "lab" },
+  { id: "M10", text: "I enjoy presentations and communication-based assessment.", key: "communication" },
+  { id: "M11", text: "I'm comfortable being wrong publicly while learning.", key: "risktolerance" },
+  { id: "M12", text: "I want my studies to connect to real-world impact.", key: "impact" },
+];
+
+const RIASEC_LABELS = {
+  R: "Realistic",
+  I: "Investigative",
+  A: "Artistic",
+  S: "Social",
+  E: "Enterprising",
+  C: "Conventional",
+};
+
+const RIASEC_COLORS = {
+  Realistic: "#D4513D",
+  Investigative: "#3D7DD4",
+  Artistic: "#9B59B6",
+  Social: "#27AE60",
+  Enterprising: "#E67E22",
+  Conventional: "#2C3E50",
+};
+
+const ACADEMIC_TYPES = {
+  "Theoretical Analyst": {
+    primary: ["I"],
+    strengths: ["Quantitative", "Verbal"],
+    description: "You thrive on deep intellectual inquiry. Abstract reasoning and theoretical frameworks energize you. You prefer depth, rigor, and conceptual clarity.",
+    majors: ["Mathematics", "Physics", "Philosophy", "Economics (Theory)", "Computer Science (Theory)", "Statistics", "Linguistics"],
+    icon: "🔬",
+  },
+  "Applied Builder": {
+    primary: ["R"],
+    strengths: ["Quantitative", "Spatial"],
+    description: "You want to make things that work in the real world. You connect theory and practice best when ideas become systems, prototypes, or tangible output.",
+    majors: ["Engineering (all branches)", "Architecture", "Robotics", "Applied CS", "Industrial Design", "Construction Management"],
+    icon: "⚙️",
+  },
+  "Creative Maker": {
+    primary: ["A"],
+    strengths: ["Creative", "Spatial"],
+    description: "Originality is your fuel. You generate and shape ideas through form, narrative, and expression. Flexible, open-ended briefs bring your best work out.",
+    majors: ["Design (UX/Graphic/Product)", "Film & Media", "Creative Writing", "Fine Arts", "Music", "Game Design", "Advertising"],
+    icon: "🎨",
+  },
+  "People Helper": {
+    primary: ["S"],
+    strengths: ["Social", "Verbal"],
+    description: "You naturally understand people and relationships. You are strongest in environments where growth, support, teaching, or care are central.",
+    majors: ["Psychology", "Education", "Social Work", "Public Health", "Counseling", "Nursing", "Human Resources"],
+    icon: "🤝",
+  },
+  "Leader-Persuader": {
+    primary: ["E"],
+    strengths: ["Social", "Verbal"],
+    description: "You are wired to influence, persuade, and lead. You think in strategy, stakeholders, and outcomes, and you perform well in high-initiative settings.",
+    majors: ["Business Administration", "Marketing", "Law", "Political Science", "Public Policy", "Entrepreneurship", "Communications"],
+    icon: "🚀",
+  },
+  "Organizer-Optimizer": {
+    primary: ["C"],
+    strengths: ["Quantitative", "Execution"],
+    description: "Precision and systems thinking define your style. You enjoy structure, consistency, and improving process reliability and efficiency.",
+    majors: ["Accounting", "Finance", "Operations Research", "Supply Chain", "Data Analytics", "Actuarial Science", "Information Systems"],
+    icon: "📊",
+  },
+};
+
+const MAJOR_PROFILES = [
+  { name: "Computer Science", riasec: { I: 5, R: 3, C: 2 }, strengths: { Quantitative: 5, Spatial: 2, Creative: 2 }, env: { autonomy: 4, depth: 4, lab: 3 } },
+  { name: "Mechanical Engineering", riasec: { R: 5, I: 4, C: 2 }, strengths: { Quantitative: 5, Spatial: 5 }, env: { lab: 5, practical: 4, structure: 3 } },
+  { name: "Electrical Engineering", riasec: { R: 4, I: 5, C: 2 }, strengths: { Quantitative: 5, Spatial: 4 }, env: { lab: 4, depth: 4, structure: 3 } },
+  { name: "Civil Engineering", riasec: { R: 5, I: 3, C: 3 }, strengths: { Quantitative: 4, Spatial: 5 }, env: { practical: 5, structure: 4, impact: 3 } },
+  { name: "Chemical Engineering", riasec: { I: 5, R: 4, C: 2 }, strengths: { Quantitative: 5, Spatial: 3 }, env: { lab: 5, depth: 4 } },
+  { name: "Mathematics", riasec: { I: 5, C: 3 }, strengths: { Quantitative: 5 }, env: { depth: 5, autonomy: 4, reading: 3 } },
+  { name: "Physics", riasec: { I: 5, R: 3 }, strengths: { Quantitative: 5, Spatial: 3 }, env: { depth: 5, lab: 4, autonomy: 3 } },
+  { name: "Statistics / Data Science", riasec: { I: 4, C: 4, E: 2 }, strengths: { Quantitative: 5, Execution: 3 }, env: { practical: 3, depth: 3, structure: 3 } },
+  { name: "Economics", riasec: { I: 4, E: 3, S: 2 }, strengths: { Quantitative: 4, Verbal: 3 }, env: { depth: 3, reading: 3, impact: 3 } },
+  { name: "Psychology", riasec: { S: 5, I: 4 }, strengths: { Social: 4, Verbal: 4 }, env: { reading: 4, impact: 4, communication: 3 } },
+  { name: "Biology / Biomedical", riasec: { I: 5, R: 3, S: 2 }, strengths: { Quantitative: 3, Spatial: 2 }, env: { lab: 5, depth: 4, reading: 3 } },
+  { name: "Chemistry", riasec: { I: 5, R: 3, C: 2 }, strengths: { Quantitative: 4, Spatial: 2 }, env: { lab: 5, depth: 4, structure: 3 } },
+  { name: "Design (UX / Graphic / Product)", riasec: { A: 5, S: 3, I: 2 }, strengths: { Creative: 5, Spatial: 4, Social: 3 }, env: { autonomy: 4, practical: 4 } },
+  { name: "Architecture", riasec: { A: 4, R: 4, I: 3 }, strengths: { Spatial: 5, Creative: 4 }, env: { longterm: 4, autonomy: 3, practical: 4 } },
+  { name: "Fine Arts / Studio Art", riasec: { A: 5, I: 2 }, strengths: { Creative: 5, Spatial: 4 }, env: { autonomy: 5, risktolerance: 4 } },
+  { name: "Film & Media Studies", riasec: { A: 5, E: 3, S: 2 }, strengths: { Creative: 5, Verbal: 3 }, env: { autonomy: 4, communication: 3 } },
+  { name: "English / Creative Writing", riasec: { A: 4, I: 3, S: 2 }, strengths: { Verbal: 5, Creative: 4 }, env: { reading: 5, autonomy: 4, depth: 3 } },
+  { name: "Business Administration", riasec: { E: 5, C: 3, S: 2 }, strengths: { Social: 3, Verbal: 3, Execution: 3 }, env: { practical: 4, communication: 4, structure: 3 } },
+  { name: "Marketing", riasec: { E: 5, A: 3, S: 3 }, strengths: { Creative: 3, Social: 3, Verbal: 3 }, env: { practical: 4, communication: 4 } },
+  { name: "Finance", riasec: { E: 4, C: 4, I: 2 }, strengths: { Quantitative: 4, Execution: 4 }, env: { structure: 4, practical: 3 } },
+  { name: "Accounting", riasec: { C: 5, E: 3 }, strengths: { Quantitative: 3, Execution: 5 }, env: { structure: 5, practical: 3 } },
+  { name: "Political Science", riasec: { E: 4, S: 3, I: 3 }, strengths: { Verbal: 5, Social: 3 }, env: { reading: 4, communication: 4, impact: 4 } },
+  { name: "Law (Pre-Law)", riasec: { E: 4, I: 3, C: 3 }, strengths: { Verbal: 5, Execution: 3 }, env: { reading: 5, structure: 3, communication: 3 } },
+  { name: "Education / Teaching", riasec: { S: 5, A: 2, E: 2 }, strengths: { Social: 5, Verbal: 3 }, env: { communication: 5, impact: 5, practical: 3 } },
+  { name: "Social Work", riasec: { S: 5, E: 2, I: 2 }, strengths: { Social: 5, Verbal: 3 }, env: { impact: 5, communication: 4, practical: 4 } },
+  { name: "Public Health", riasec: { S: 4, I: 3, E: 3 }, strengths: { Social: 3, Quantitative: 2, Verbal: 3 }, env: { impact: 5, practical: 4, reading: 3 } },
+  { name: "Nursing / Health Sciences", riasec: { S: 5, R: 3, I: 2 }, strengths: { Social: 4, Execution: 4 }, env: { practical: 5, impact: 5, lab: 3 } },
+  { name: "Environmental Science", riasec: { I: 4, R: 3, S: 2 }, strengths: { Quantitative: 3, Spatial: 2 }, env: { lab: 4, impact: 5, depth: 3 } },
+  { name: "Philosophy", riasec: { I: 5, A: 3 }, strengths: { Verbal: 5, Quantitative: 2 }, env: { depth: 5, reading: 5, autonomy: 4 } },
+  { name: "Journalism / Communications", riasec: { A: 3, E: 3, S: 3 }, strengths: { Verbal: 5, Social: 3 }, env: { communication: 5, practical: 3, risktolerance: 3 } },
+  { name: "International Relations", riasec: { E: 4, S: 3, I: 3 }, strengths: { Verbal: 4, Social: 3 }, env: { reading: 4, impact: 4, communication: 3 } },
+  { name: "Supply Chain / Operations", riasec: { C: 5, E: 3, R: 2 }, strengths: { Quantitative: 3, Execution: 5 }, env: { structure: 5, practical: 4 } },
+  { name: "Biotechnology", riasec: { I: 5, R: 3, E: 2 }, strengths: { Quantitative: 4, Spatial: 2 }, env: { lab: 5, depth: 4, practical: 3 } },
+  { name: "Neuroscience", riasec: { I: 5, S: 2, R: 2 }, strengths: { Quantitative: 3, Verbal: 3 }, env: { lab: 4, depth: 5, reading: 4 } },
+  { name: "Music", riasec: { A: 5, I: 2, S: 2 }, strengths: { Creative: 5, Spatial: 2 }, env: { autonomy: 4, depth: 4 } },
+  { name: "Anthropology / Sociology", riasec: { S: 4, I: 4, A: 2 }, strengths: { Verbal: 4, Social: 3 }, env: { reading: 4, depth: 4, impact: 3 } },
+  { name: "Linguistics", riasec: { I: 5, A: 3, S: 2 }, strengths: { Verbal: 5, Quantitative: 2 }, env: { depth: 5, reading: 4, autonomy: 3 } },
+  { name: "Actuarial Science", riasec: { C: 5, I: 4 }, strengths: { Quantitative: 5, Execution: 5 }, env: { structure: 5, depth: 3 } },
+  { name: "Aerospace Engineering", riasec: { R: 4, I: 5, C: 2 }, strengths: { Quantitative: 5, Spatial: 5 }, env: { lab: 4, depth: 5, longterm: 4 } },
+  { name: "Pharmacy", riasec: { I: 4, S: 3, C: 3 }, strengths: { Quantitative: 3, Execution: 4 }, env: { structure: 4, practical: 4, impact: 3 } },
+];
+
+const SCALE_LABELS = ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"];
+
+const state = {
+  page: "intro",
+  section: 0,
+  answers: {},
+  userName: "",
+  results: null,
+};
+
+const sections = [
+  { title: "Part 1 - Interests", description: "Rate how much each statement describes you, regardless of what others expect." },
+  { title: "Part 2 - Strengths", description: "Assess your natural learning advantages and cognitive strengths." },
+  { title: "Part 3 - Study Style", description: "These questions help us match you to the right academic environment." },
+];
+
+const app = document.getElementById("app");
+
+function getTopN(obj, n) {
+  return Object.entries(obj).sort((a, b) => b[1] - a[1]).slice(0, n);
+}
+
+function computeRIASEC(answers) {
+  const scores = {};
+  for (const key of Object.keys(RIASEC_ITEMS)) {
+    let sum = 0;
+    RIASEC_ITEMS[key].forEach((_, i) => {
+      sum += answers[`riasec_${key}_${i}`] || 0;
+    });
+    scores[key] = sum;
+  }
+  return scores;
+}
+
+function computeStrengths(answers) {
+  const scores = {};
+  for (const key of Object.keys(STRENGTH_ITEMS)) {
+    let sum = 0;
+    STRENGTH_ITEMS[key].forEach((_, i) => {
+      sum += answers[`str_${key}_${i}`] || 0;
+    });
+    scores[key] = sum;
+  }
+  return scores;
+}
+
+function computeMotivation(answers) {
+  const scores = {};
+  for (const item of MOTIVATION_ITEMS) {
+    let val = answers[`mot_${item.key}`] || 0;
+    if (item.reverse) val = 6 - val;
+    scores[item.key] = val;
+  }
+  return scores;
+}
+
+function determineAcademicType(riasec, strengths) {
+  const topR = getTopN(riasec, 2).map(([k]) => k);
+  const topS = getTopN(strengths, 2).map(([k]) => k);
+  let bestType = null;
+  let bestScore = -1;
+
+  for (const [typeName, typeDef] of Object.entries(ACADEMIC_TYPES)) {
+    let score = 0;
+    typeDef.primary.forEach((p) => {
+      if (topR[0] === p) score += 3;
+      else if (topR[1] === p) score += 1.5;
+    });
+    typeDef.strengths.forEach((s) => {
+      if (topS[0] === s) score += 2;
+      else if (topS[1] === s) score += 1;
+    });
+    if (score > bestScore) {
+      bestScore = score;
+      bestType = typeName;
+    }
+  }
+  return bestType;
+}
+
+function computeMajorFit(riasec, strengths, motivation) {
+  const maxRiasec = 25;
+  const maxStr = 15;
+
+  return MAJOR_PROFILES.map((major) => {
+    let interestMatch = 0;
+    let interestMax = 0;
+    for (const [k, w] of Object.entries(major.riasec)) {
+      interestMatch += (riasec[k] / maxRiasec) * w;
+      interestMax += w;
+    }
+    interestMatch = interestMax > 0 ? interestMatch / interestMax : 0;
+
+    let strengthMatch = 0;
+    let strengthMax = 0;
+    for (const [k, w] of Object.entries(major.strengths)) {
+      strengthMatch += (strengths[k] / maxStr) * w;
+      strengthMax += w;
+    }
+    strengthMatch = strengthMax > 0 ? strengthMatch / strengthMax : 0;
+
+    let envMatch = 0;
+    let envMax = 0;
+    if (major.env) {
+      for (const [k, w] of Object.entries(major.env)) {
+        envMatch += (((motivation[k] || 3) / 5) * w);
+        envMax += w;
+      }
+    }
+    envMatch = envMax > 0 ? envMatch / envMax : 0.5;
+
+    const fit = 0.45 * interestMatch + 0.35 * strengthMatch + 0.20 * envMatch;
+    return { name: major.name, fit: Math.round(fit * 100) };
+  }).sort((a, b) => b.fit - a.fit);
+}
+
+function getSectionItems(sec) {
+  if (sec === 0) {
+    const items = [];
+    for (const [key, qs] of Object.entries(RIASEC_ITEMS)) {
+      qs.forEach((q, i) => items.push({ id: `riasec_${key}_${i}`, text: q }));
+    }
+    return items;
+  }
+  if (sec === 1) {
+    const items = [];
+    for (const [key, qs] of Object.entries(STRENGTH_ITEMS)) {
+      qs.forEach((q, i) => items.push({ id: `str_${key}_${i}`, text: q }));
+    }
+    return items;
+  }
+  return MOTIVATION_ITEMS.map((m) => ({ id: `mot_${m.key}`, text: m.text }));
+}
+
+function isSectionComplete(sec) {
+  return getSectionItems(sec).every((item) => state.answers[item.id]);
+}
+
+function getTotalAnswered() {
+  return Object.keys(state.answers).length;
+}
+
+function computeResults() {
+  const riasec = computeRIASEC(state.answers);
+  const strengths = computeStrengths(state.answers);
+  const motivation = computeMotivation(state.answers);
+  const academicType = determineAcademicType(riasec, strengths);
+  const majorFits = computeMajorFit(riasec, strengths, motivation);
+  const topRiasec = getTopN(riasec, 3).map(([k]) => k).join("");
+  state.results = { riasec, strengths, motivation, academicType, majorFits, topRiasec };
+  state.page = "results";
+}
+
+function escapeHtml(str) {
+  return String(str)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
+}
+
+function renderIntro() {
+  app.innerHTML = `
+    <section class="intro-head">
+      <p class="intro-kicker">Blue Ocean Assessment</p>
+      <h1>Major Fit <span>Assessment</span></h1>
+      <p>This 60-question diagnostic evaluates your interests (RIASEC), strengths, and study preferences to recommend majors that actually fit your profile.</p>
+      <div class="intro-stats">
+        <span class="intro-chip">60 Questions</span>
+        <span class="intro-chip">10-12 min</span>
+        <span class="intro-chip">Instant Results</span>
+      </div>
+    </section>
+    <section class="intro-body">
+      <div class="input-wrap">
+        <input class="name-input" id="name-input" type="text" maxlength="60" placeholder="Your name (optional)" value="${escapeHtml(state.userName)}">
+      </div>
+      <button class="primary-btn" data-action="begin">Begin Assessment →</button>
+      <p class="intro-foot">Built on RIASEC interest mapping, cognitive strengths, and study-style alignment.</p>
+    </section>
+  `;
+}
+
+function renderTest() {
+  const items = getSectionItems(state.section);
+  const sectionInfo = sections[state.section];
+  const canProceed = isSectionComplete(state.section);
+  const offset = state.section === 1 ? 30 : state.section === 2 ? 48 : 0;
+
+  app.innerHTML = `
+    <section class="test-head">
+      <p class="test-kicker">Academic Compass</p>
+      <h2>${escapeHtml(sectionInfo.title)}</h2>
+      <p class="test-desc">${escapeHtml(sectionInfo.description)}</p>
+    </section>
+
+    <section class="questions">
+      ${items.map((item, idx) => {
+        const value = state.answers[item.id] || 0;
+        return `
+          <article class="question">
+            <p class="question-text"><span class="qn">${idx + 1 + offset}.</span>${escapeHtml(item.text)}</p>
+            <div class="scale">
+              ${[1,2,3,4,5].map((v) => `
+                <button class="scale-btn ${value === v ? "active" : ""}" data-action="answer" data-id="${item.id}" data-value="${v}">
+                  ${SCALE_LABELS[v - 1]}
+                </button>
+              `).join("")}
+            </div>
+          </article>
+        `;
+      }).join("")}
+    </section>
+
+    <div class="test-footer">
+      <button class="secondary-btn" data-action="back">← Back</button>
+      <button class="next-btn ${canProceed ? "" : "disabled"}" data-action="next">${state.section < 2 ? "Next Section →" : "See My Results →"}</button>
+    </div>
+  `;
+}
+
+function colorForFit(fit) {
+  if (fit >= 75) return "#16A34A";
+  if (fit >= 55) return "#CA8A04";
+  return "#64748B";
+}
+
+function renderBarRows(entries, maxVal, colorMap) {
+  return `
+    <div class="bar-list">
+      ${entries.map(([label, val]) => {
+        const width = Math.max(2, Math.round((val / maxVal) * 100));
+        const fill = colorMap && colorMap[label] ? colorMap[label] : "#111827";
+        const valueColor = width >= 58 ? "#FFFFFF" : "#0F172A";
+        return `
+          <div class="bar-row">
+            <div class="bar-label">${escapeHtml(label)}</div>
+            <div class="bar-track">
+              <div class="bar-fill" style="width:${width}%;background:${fill}"></div>
+              <span class="bar-value" style="color:${valueColor};text-shadow:${width >= 58 ? "0 1px 1px rgba(0,0,0,0.35)" : "none"}">${val}/${maxVal}</span>
+            </div>
+          </div>
+        `;
+      }).join("")}
+    </div>
+  `;
+}
+
+function renderResults() {
+  const { riasec, strengths, motivation, academicType, majorFits, topRiasec } = state.results;
+  const typeData = ACADEMIC_TYPES[academicType];
+  const topMajors = majorFits.slice(0, 12);
+  const riasecEntries = Object.entries(riasec)
+    .map(([k, v]) => [RIASEC_LABELS[k], v])
+    .sort((a, b) => b[1] - a[1]);
+  const strengthEntries = Object.entries(strengths).sort((a, b) => b[1] - a[1]);
+
+  const labels = {
+    meaning: "Purpose-Driven",
+    meaning_r: "Purpose-Driven",
+    depth: "Deep Learning",
+    practical: "Practical Application",
+    longterm: "Long-term Projects",
+    structure: "Structured Environment",
+    autonomy: "Self-Directed",
+    reading: "Reading-Heavy",
+    lab: "Lab / Hands-On",
+    communication: "Presentation-Based",
+    risktolerance: "Comfortable with Risk",
+    impact: "Real-World Impact",
+  };
+
+  app.innerHTML = `
+    <section class="results-wrap">
+      <div class="results-head">
+        <p class="results-kicker">Academic Compass - Results</p>
+        <h1>${escapeHtml(state.userName ? `${state.userName}'s` : "Your")} Academic Profile</h1>
+        <p>Holland Code: <strong style="color:#92400E;letter-spacing:.08em">${topRiasec}</strong></p>
+      </div>
+
+      <article class="block">
+        <div class="type-row">
+          <div class="type-icon">${typeData.icon}</div>
+          <div>
+            <p class="results-kicker" style="margin-bottom:4px">Your Academic Type</p>
+            <h2 class="type-title">${escapeHtml(academicType)}</h2>
+            <p class="type-desc">${escapeHtml(typeData.description)}</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="block">
+        <h3>Interest Profile (RIASEC)</h3>
+        ${renderBarRows(riasecEntries, 25, RIASEC_COLORS)}
+      </article>
+
+      <article class="block">
+        <h3>Cognitive Strengths</h3>
+        ${renderBarRows(strengthEntries, 15)}
+      </article>
+
+      <article class="block">
+        <h3>Top Major Recommendations</h3>
+        <p style="font-size:12px;color:#64748B;line-height:1.6;margin-bottom:12px">Fit score combines interests (45%), strengths (35%), and study preferences (20%).</p>
+        <div class="major-list">
+          ${topMajors.map((m, i) => {
+            const col = colorForFit(m.fit);
+            return `
+              <div class="major-item">
+                <div class="rank">${i + 1}</div>
+                <div class="major-name">${escapeHtml(m.name)}</div>
+                <div class="fit-track"><div class="fit-fill" style="width:${m.fit}%;background:${col}"></div></div>
+                <div class="fit-score" style="color:${col}">${m.fit}%</div>
+              </div>
+            `;
+          }).join("")}
+        </div>
+      </article>
+
+      <article class="block">
+        <h3>Study Environment Preferences</h3>
+        <div class="pref-chips">
+          ${Object.entries(motivation)
+            .sort((a, b) => b[1] - a[1])
+            .map(([key, val]) => {
+              const intensity = val >= 4 ? "high" : val >= 3 ? "medium" : "low";
+              const label = labels[key] || key;
+              return `<span class="pref-chip ${intensity}">${escapeHtml(label)}: ${val}/5</span>`;
+            })
+            .join("")}
+        </div>
+      </article>
+
+      <p class="results-note">This assessment is a guided exploration tool based on RIASEC, strengths self-rating, and motivation preferences. Use this alongside professional counseling for final major decisions.</p>
+
+      <div class="retake-wrap">
+        <button class="secondary-btn" data-action="retake">↺ Retake Assessment</button>
+      </div>
+    </section>
+  `;
+}
+
+function render() {
+  if (state.page === "intro") return renderIntro();
+  if (state.page === "test") return renderTest();
+  if (state.page === "results") return renderResults();
+}
+
+function withScrollPreserved(fn) {
+  const y = window.scrollY;
+  fn();
+  window.scrollTo(0, y);
+}
+
+function scrollToQuestions() {
+  const doScroll = () => {
+    const q = document.querySelector(".questions");
+    if (!q) return;
+    const firstQuestion = q.querySelector(".question");
+    const navOffset = document.querySelector(".nav")?.offsetHeight || 56;
+    const stickyHeader = document.querySelector(".test-head");
+    const stickyOffset = stickyHeader ? stickyHeader.offsetHeight : 0;
+    const anchor = firstQuestion || q;
+    const y = anchor.getBoundingClientRect().top + window.scrollY - navOffset - stickyOffset - 24;
+    window.scrollTo({ top: Math.max(0, y), behavior: "auto" });
+  };
+  requestAnimationFrame(doScroll);
+  setTimeout(doScroll, 80);
+  setTimeout(doScroll, 160);
+}
+
+document.addEventListener("input", (e) => {
+  if (e.target && e.target.id === "name-input") {
+    state.userName = e.target.value;
+  }
+});
+
+document.addEventListener("click", (e) => {
+  const target = e.target.closest("[data-action]");
+  if (!target) return;
+  const action = target.getAttribute("data-action");
+
+  if (action === "begin") {
+    state.page = "test";
+    state.section = 0;
+    render();
+    scrollToQuestions();
+    return;
+  }
+
+  if (action === "answer") {
+    const id = target.getAttribute("data-id");
+    const value = Number(target.getAttribute("data-value"));
+    if (!id || !value) return;
+    withScrollPreserved(() => {
+      state.answers[id] = value;
+      render();
+    });
+    return;
+  }
+
+  if (action === "back") {
+    if (state.section > 0) state.section -= 1;
+    else state.page = "intro";
+    render();
+    if (state.page === "test") scrollToQuestions();
+    else window.scrollTo({ top: 0, behavior: "smooth" });
+    return;
+  }
+
+  if (action === "next") {
+    if (!isSectionComplete(state.section)) {
+      alert("Please answer all questions in this section before proceeding.");
+      return;
+    }
+    if (state.section < 2) {
+      state.section += 1;
+      render();
+      scrollToQuestions();
+    } else {
+      computeResults();
+      render();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    return;
+  }
+
+  if (action === "retake") {
+    state.page = "intro";
+    state.section = 0;
+    state.answers = {};
+    state.results = null;
+    render();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+});
+
+render();
+</script>
+<script>
+(() => {
+  const toggle = document.querySelector(".nav-toggle");
+  const links = document.querySelector(".nav-links");
+  if (!toggle || !links) return;
+  if (toggle.dataset.navBound === "1") return;
+  toggle.dataset.navBound = "1";
+
+  const closeMenu = () => {
+    links.classList.remove("open");
+    toggle.classList.remove("open");
+    document.body.classList.remove("nav-open");
+  };
+
+  toggle.addEventListener("click", () => {
+    const willOpen = !links.classList.contains("open");
+    if (willOpen) {
+      links.classList.add("open");
+      toggle.classList.add("open");
+      document.body.classList.add("nav-open");
+    } else {
+      closeMenu();
+    }
+  });
+
+  links.querySelectorAll("a").forEach((a) => a.addEventListener("click", closeMenu));
+  window.addEventListener("resize", () => { if (window.innerWidth > 768) closeMenu(); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeMenu(); });
+})();
+</script>
+</body>
+</html>

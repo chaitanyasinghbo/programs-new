@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ivy Readiness Diagnostic | Blue Ocean Education</title>
+<meta name="description" content="Research-backed Ivy League readiness diagnostic across academics, intellectual vitality, extracurricular impact, narrative, execution, and context.">
+<link rel="canonical" href="https://bluocean.education/ivy-diagnostic.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Blue Ocean Education">
+<meta property="og:title" content="Ivy Readiness Diagnostic | Blue Ocean Education">
+<meta property="og:description" content="Research-backed Ivy League readiness diagnostic across academics, intellectual vitality, extracurricular impact, narrative, execution, and context.">
+<meta property="og:url" content="https://bluocean.education/ivy-diagnostic.html">
+<meta property="og:image" content="https://bluocean.education/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ivy Readiness Diagnostic | Blue Ocean Education">
+<meta name="twitter:description" content="Research-backed Ivy League readiness diagnostic across academics, intellectual vitality, extracurricular impact, narrative, execution, and context.">
+<meta name="twitter:image" content="https://bluocean.education/og-image.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--black:#0B0D10;--panel:#11161D;--panel2:#151B24;--yellow:#FACC15;--yellow-deep:#D4A90F;--ink:#0F172A;--white:#fff;--muted:#94A3B8;--line:rgba(255,255,255,.09);--line2:#CBD5E1;--green:#16A34A;--amber:#CA8A04;--orange:#EA580C;--red:#DC2626}
+body{font-family:'Bricolage Grotesque',sans-serif;background:radial-gradient(circle at 10% 8%,rgba(250,204,21,.08),transparent 34%),radial-gradient(circle at 90% 90%,rgba(250,204,21,.06),transparent 34%),var(--black);color:var(--white);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.nav{background:#0A0C0F;padding:0 20px;position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(255,255,255,.06)}
+.nav-inner{max-width:1120px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:56px}
+.nav-logo{font-size:18px;font-weight:800;color:var(--white)}
+.nav-logo span{color:var(--yellow)}
+.nav-links{display:flex;gap:24px;align-items:center}
+.nav-links a{font-size:13px;font-weight:600;color:rgba(255,255,255,.82)}
+.nav-links a:hover{color:#fff}
+.nav-cta{background:var(--yellow);color:#111;padding:8px 18px;border-radius:8px;font-size:13px;font-weight:800}
+@media(max-width:768px){.nav-links{gap:12px;flex-wrap:wrap;justify-content:flex-end;background:#0A0C0F;padding:10px 0}}
+
+.wrap{min-height:calc(100vh - 56px);padding:26px 16px 48px}
+.shell{max-width:980px;margin:0 auto}
+.card{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);border-radius:18px;box-shadow:0 20px 44px rgba(0,0,0,.35);overflow:hidden}
+
+.intro-top{padding:34px 24px 26px;border-bottom:1px solid var(--line);text-align:center}
+.kicker{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(250,204,21,.86);font-weight:700;margin-bottom:10px}
+.intro-top h1{font-size:clamp(30px,4.2vw,46px);line-height:1.1;font-weight:800;margin-bottom:10px}
+.intro-top h1 span{color:var(--yellow)}
+.intro-sub{font-size:15px;color:rgba(255,255,255,.82);line-height:1.72;max-width:760px;margin:0 auto 18px}
+.intro-note{font-size:13px;color:rgba(255,255,255,.58);line-height:1.65;max-width:680px;margin:0 auto 18px;font-style:italic}
+.badges{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+.badge{padding:7px 12px;border-radius:999px;background:rgba(250,204,21,.12);border:1px solid rgba(250,204,21,.35);font-size:12px;font-weight:700;color:#FDE68A}
+
+.intro-body{padding:22px 24px 30px}
+.section-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:22px}
+@media(max-width:760px){.section-grid{grid-template-columns:1fr}}
+.sec-chip{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:12px;padding:12px 12px}
+.sec-line{display:flex;gap:10px;align-items:flex-start}
+.sec-num{width:22px;height:22px;border-radius:999px;background:rgba(250,204,21,.18);border:1px solid rgba(250,204,21,.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:var(--yellow);flex-shrink:0}
+.sec-title{font-size:14px;font-weight:700;color:#E5E7EB;line-height:1.35}
+.sec-weight{font-size:11px;color:#94A3B8;margin-top:4px}
+.start-wrap{text-align:center}
+.primary{display:inline-block;padding:14px 30px;border:none;border-radius:12px;background:var(--yellow);color:#111;font-size:15px;font-weight:800;cursor:pointer;box-shadow:0 4px 0 var(--yellow-deep)}
+.primary:hover{transform:translateY(-1px)}
+
+.test-head{position:sticky;top:56px;z-index:30;background:rgba(12,15,20,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 18px}
+.test-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:6px}
+.test-top .kicker{margin-bottom:2px}
+.test-head h2{font-size:24px;line-height:1.15;font-weight:800;color:#F8FAFC;margin:0 0 3px}
+.test-sub{font-size:13px;color:#CBD5E1;line-height:1.5;margin-bottom:8px}
+.dots{display:flex;gap:4px;padding-top:4px}
+.dot{width:22px;height:4px;border-radius:999px;background:rgba(255,255,255,.12)}
+.dot.active{background:var(--yellow)}
+.dot.done{background:rgba(250,204,21,.55)}
+.prog-meta{display:flex;justify-content:space-between;font-size:12px;color:#94A3B8;margin-bottom:4px}
+.prog-track{height:6px;border-radius:999px;background:rgba(255,255,255,.08);overflow:hidden}
+.prog-fill{height:100%;border-radius:999px;background:linear-gradient(90deg,#F59E0B,var(--yellow));transition:width .35s}
+
+.questions{padding:26px 20px 96px}
+.q{padding:17px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+.q:first-child{padding-top:32px}
+.q-text{font-size:15px;line-height:1.62;color:#F1F5F9;margin-bottom:12px}
+.q-num{font-size:12px;font-weight:800;color:#FACC15;margin-right:8px}
+.q-help{font-size:11px;color:#94A3B8;font-style:italic;margin:0 0 8px 22px}
+.opts{display:flex;flex-direction:column;gap:7px}
+.opt{padding:12px 14px;border-radius:10px;border:1.5px solid rgba(255,255,255,.1);background:rgba(255,255,255,.02);color:#D1D5DB;font-size:13px;line-height:1.5;font-weight:500;text-align:left;cursor:pointer;transition:all .15s}
+.opt:hover{border-color:rgba(250,204,21,.45)}
+.opt.active{background:rgba(250,204,21,.16);border-color:rgba(250,204,21,.75);color:#FFF8DC;font-weight:700}
+.opt .check{display:inline-flex;align-items:center;justify-content:center;width:17px;height:17px;border-radius:4px;border:2px solid rgba(255,255,255,.26);margin-right:10px;font-size:11px;font-weight:900;vertical-align:-2px;color:#111}
+.opt.active .check{border-color:var(--yellow);background:var(--yellow)}
+
+.test-foot{position:fixed;left:50%;transform:translateX(-50%);bottom:0;width:100%;max-width:980px;background:rgba(12,15,20,.95);backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:12px 16px;display:flex;justify-content:space-between;gap:12px;z-index:40}
+.ghost{padding:11px 18px;border-radius:10px;border:1px solid rgba(255,255,255,.14);background:transparent;color:#CBD5E1;font-size:13px;font-weight:700;cursor:pointer}
+.next{padding:11px 22px;border:none;border-radius:10px;font-size:13px;font-weight:800;background:var(--yellow);color:#111;box-shadow:0 3px 0 var(--yellow-deep);cursor:pointer}
+.next.disabled{background:rgba(255,255,255,.12);color:#64748B;box-shadow:none;cursor:not-allowed}
+
+.results{padding:24px 20px 32px}
+.r-head{text-align:center;margin-bottom:22px}
+.r-head h1{font-size:clamp(28px,4vw,38px);line-height:1.15;font-weight:800;margin-bottom:10px}
+.panel{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:14px;padding:18px 16px;margin-bottom:14px}
+.score-wrap{text-align:center;position:relative;overflow:hidden}
+.score-wrap::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--tier,#FACC15),transparent)}
+.score-num{font-size:72px;line-height:1;font-weight:800;color:var(--tier,#FACC15)}
+.score-pill{display:inline-block;margin:10px 0 12px;padding:6px 14px;border-radius:999px;border:1px solid color-mix(in srgb,var(--tier,#FACC15) 45%, transparent);background:color-mix(in srgb,var(--tier,#FACC15) 16%, transparent);font-size:13px;font-weight:800;color:var(--tier,#FACC15)}
+.score-desc{font-size:14px;line-height:1.7;color:#CBD5E1;max-width:700px;margin:0 auto}
+
+.panel h3{font-size:19px;font-weight:800;color:#F8FAFC;margin-bottom:12px}
+.dbar{display:grid;grid-template-columns:170px 1fr 44px;gap:10px;align-items:center;padding:6px 0}
+@media(max-width:760px){.dbar{grid-template-columns:1fr 1fr 40px}}
+.dlabel{font-size:13px;font-weight:700;color:#CBD5E1}
+.dtrack{height:16px;border-radius:6px;background:rgba(255,255,255,.08);overflow:hidden}
+.dfill{height:100%;border-radius:6px;min-width:2px;transition:width .65s}
+.dval{font-size:13px;font-weight:800;text-align:right}
+.legend{display:flex;justify-content:center;gap:14px;margin-top:10px;font-size:11px;color:#94A3B8;flex-wrap:wrap}
+.legend .dotc{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.two{grid-template-columns:1fr}}
+.item-row{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.05);font-size:13px}
+.item-row:last-child{border-bottom:none}
+.good{color:#16A34A;font-weight:800}
+.bad{color:#EF4444;font-weight:800}
+
+.tier-row{padding:11px 0;border-bottom:1px solid rgba(255,255,255,.05)}
+.tier-row:last-child{border-bottom:none}
+.tier-title{font-size:12px;font-weight:800;color:#FACC15;letter-spacing:.03em;margin-bottom:4px;text-transform:uppercase}
+.tier-schools{font-size:13px;color:#CBD5E1;line-height:1.55}
+
+.todo{display:flex;flex-direction:column;gap:9px}
+.todo-item{display:flex;gap:10px;padding:10px 12px;border-radius:10px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.05)}
+.todo-ico{font-size:17px;line-height:1.2;flex-shrink:0}
+.todo-title{font-size:14px;font-weight:700;color:#F8FAFC;margin-bottom:2px}
+.todo-desc{font-size:12.5px;color:#CBD5E1;line-height:1.55}
+
+.small{font-size:12.5px;color:#94A3B8;line-height:1.75}
+.retake{text-align:center;margin-top:8px}
+
+.page-foot{margin-top:14px;text-align:center;font-size:12px;color:rgba(255,255,255,.5)}
+
+/* Mobile Fullscreen Nav */
+.nav-toggle{display:none;align-items:center;justify-content:center;width:42px;height:42px;border:1px solid rgba(255,255,255,0.14);border-radius:10px;background:rgba(255,255,255,0.06);color:#fff;cursor:pointer;gap:6px}
+.nav-toggle span{display:block;width:16px;height:2px;border-radius:999px;background:#fff;transition:transform .2s,opacity .2s}
+.nav-toggle.open span:nth-child(1){transform:translateY(4px) rotate(45deg)}
+.nav-toggle.open span:nth-child(2){opacity:0}
+.nav-toggle.open span:nth-child(3){transform:translateY(-4px) rotate(-45deg)}
+body.nav-open{overflow:hidden}
+@media(max-width:768px){
+  .nav-inner{height:56px;flex-wrap:nowrap}
+  .nav-toggle{display:inline-flex}
+  .nav-links{position:fixed;inset:56px 0 0 0;display:flex;flex-direction:column;align-items:flex-start;gap:16px;padding:20px;background:rgba(10,12,15,0.98);backdrop-filter:blur(8px);opacity:0;transform:translateY(-8px);pointer-events:none;transition:opacity .2s,transform .2s;z-index:120;border-top:1px solid rgba(255,255,255,0.08);overflow-y:auto}
+  .nav-links.open{opacity:1;transform:translateY(0);pointer-events:auto}
+  .nav-links a{font-size:22px;font-weight:800;color:#fff;line-height:1.2}
+  .nav-cta{margin-top:4px;width:100%;text-align:center;font-size:17px;padding:12px 16px}
+}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">BLUE <span>OCEAN</span></a><button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="us-admissions.html">US Admissions</a>
+      <a href="uk-admissions.html">UK Admissions</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="blog.html">Blog</a>
+      <a href="evaluation.html" class="nav-cta">Get Evaluation →</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="shell">
+    <div class="card" id="app"></div>
+    <p class="page-foot">Blue Ocean Ivy Readiness Diagnostic</p>
+  </div>
+</div>
+
+<script>
+const SECTIONS = [
+  {
+    id: "academic",
+    title: "Academic Foundation",
+    subtitle: "The baseline that gets your application read",
+    description: "These questions assess the quantitative core of your profile. At Ivies, near-perfect academics are necessary but not sufficient — they're the price of entry, not a differentiator.",
+    weight: 0.25,
+    questions: [
+      { id: "gpa_uw", text: "What is your unweighted GPA (or equivalent)?", type: "single",
+        options: [
+          { label: "3.95–4.0", value: 10 },
+          { label: "3.85–3.94", value: 8.5 },
+          { label: "3.75–3.84", value: 7 },
+          { label: "3.60–3.74", value: 5 },
+          { label: "3.40–3.59", value: 3 },
+          { label: "Below 3.40", value: 1.5 },
+        ]
+      },
+      { id: "rigor", text: "How does your course load compare to the most rigorous available at your school?", type: "single",
+        options: [
+          { label: "I'm taking the maximum rigor available (most demanding schedule possible)", value: 10 },
+          { label: "Near-maximum — I dropped 1–2 advanced courses for strategic reasons", value: 8 },
+          { label: "Above average rigor, but room for more AP/IB/Honors", value: 5.5 },
+          { label: "Average for my school's college-prep track", value: 3 },
+          { label: "Below what's available to me", value: 1 },
+        ]
+      },
+      { id: "ap_count", text: "How many AP, IB HL, or college-level courses have you taken / will take by graduation?", type: "single",
+        options: [
+          { label: "10 or more", value: 10 },
+          { label: "7–9", value: 8 },
+          { label: "5–6", value: 6 },
+          { label: "3–4", value: 4 },
+          { label: "1–2", value: 2 },
+          { label: "None available / taken", value: 1 },
+        ]
+      },
+      { id: "ap_scores", text: "What are your AP/IB exam scores typically?", type: "single",
+        options: [
+          { label: "Mostly 5s (AP) or 7s (IB)", value: 10 },
+          { label: "Mix of 4s and 5s (AP) or 6s–7s (IB)", value: 8 },
+          { label: "Mostly 4s (AP) or 5s–6s (IB)", value: 6 },
+          { label: "Mix of 3s and 4s (AP) or 4s–5s (IB)", value: 4 },
+          { label: "Haven't taken exams yet", value: 5 },
+          { label: "Not applicable", value: 5 },
+        ]
+      },
+      { id: "test_scores", text: "What is your highest SAT or ACT score (or projected)?", type: "single",
+        options: [
+          { label: "SAT 1550+ / ACT 35–36", value: 10 },
+          { label: "SAT 1500–1549 / ACT 34", value: 8.5 },
+          { label: "SAT 1450–1499 / ACT 33", value: 7 },
+          { label: "SAT 1400–1449 / ACT 32", value: 5 },
+          { label: "SAT 1350–1399 / ACT 30–31", value: 3.5 },
+          { label: "Below 1350 / Below 30", value: 2 },
+          { label: "Test-optional (not submitting)", value: 5 },
+        ]
+      },
+      { id: "grade_trend", text: "How would you describe your grade trajectory over high school?", type: "single",
+        options: [
+          { label: "Consistently excellent — top marks throughout", value: 10 },
+          { label: "Strong upward trend — clear improvement over time", value: 8 },
+          { label: "Steady and solid throughout", value: 7 },
+          { label: "Some inconsistency, but strong overall", value: 5 },
+          { label: "Downward trend or significant dips", value: 2 },
+        ]
+      },
+      { id: "class_rank", text: "Where do you fall in your graduating class (if your school ranks)?", type: "single",
+        options: [
+          { label: "Top 1–2% / Valedictorian / Salutatorian", value: 10 },
+          { label: "Top 5%", value: 8 },
+          { label: "Top 10%", value: 6 },
+          { label: "Top 20%", value: 4 },
+          { label: "Below top 20%", value: 2 },
+          { label: "School doesn't rank", value: 6 },
+        ]
+      },
+      { id: "academic_awards", text: "Which academic recognitions have you received? (Select all that apply)", type: "multi",
+        options: [
+          { label: "National-level award (USAMO, Intel/Regeneron semifinalist+, National Merit Finalist, etc.)", value: 4 },
+          { label: "State-level academic award or competition placement", value: 2.5 },
+          { label: "School-level honors (department awards, honor societies)", value: 1 },
+          { label: "Published research, journal article, or conference presentation", value: 3.5 },
+          { label: "College course credit earned during high school (dual enrollment A's)", value: 1.5 },
+          { label: "No formal academic awards yet", value: 0 },
+        ],
+        maxScore: 10,
+      },
+      { id: "academic_depth", text: "In your strongest subject, how far beyond the standard curriculum have you gone?", type: "single",
+        options: [
+          { label: "Significantly — I've exhausted my school's offerings and pursued college-level or independent study", value: 10 },
+          { label: "Noticeably — I seek out harder material and go beyond what's assigned", value: 7.5 },
+          { label: "Somewhat — I do well in advanced classes but don't go much beyond them", value: 5 },
+          { label: "Not much — I focus on doing well in the courses available", value: 3 },
+        ]
+      },
+    ],
+  },
+  {
+    id: "intellectual",
+    title: "Intellectual Vitality",
+    subtitle: "The dimension that separates admits from rejects at the margin",
+    description: "Ivies don't want students who are just good at school. They want students who are genuinely, almost obsessively curious. This section measures that signal — what Stanford calls 'intellectual vitality' and Harvard calls 'academic fit.'",
+    weight: 0.18,
+    questions: [
+      { id: "passion_depth", text: "Do you have a clear intellectual passion or area of deep curiosity?", type: "single",
+        options: [
+          { label: "Yes — I could talk about it for hours, I've pursued it independently, and it shapes how I see the world", value: 10 },
+          { label: "Yes — I have a strong interest area with some independent exploration", value: 7.5 },
+          { label: "Sort of — I enjoy certain subjects more than others, but nothing consuming", value: 4.5 },
+          { label: "Not really — I'm broadly interested but nothing stands out", value: 2 },
+        ]
+      },
+      { id: "independent_projects", text: "Have you initiated any intellectual projects outside of class requirements?", type: "multi",
+        options: [
+          { label: "Original research project (self-designed, with or without mentor)", value: 3.5 },
+          { label: "Built or created something substantial (app, invention, portfolio, book, etc.)", value: 3 },
+          { label: "Started a blog, podcast, publication, or content series on an intellectual topic", value: 2 },
+          { label: "Self-taught a skill or subject significantly beyond grade level", value: 2.5 },
+          { label: "Completed an advanced online course or certification (MIT OCW, Coursera, etc.)", value: 1.5 },
+          { label: "None — my intellectual work is primarily through school coursework", value: 0 },
+        ],
+        maxScore: 10,
+      },
+      { id: "reading_habits", text: "How would you describe your reading and intellectual consumption habits?", type: "single",
+        options: [
+          { label: "I regularly read books, papers, or longform content well beyond school requirements — it's a core part of who I am", value: 10 },
+          { label: "I read a fair amount beyond school — maybe a book or two a month plus articles", value: 7 },
+          { label: "I occasionally read beyond assignments when a topic interests me", value: 4 },
+          { label: "I mainly read what's assigned for school", value: 2 },
+        ]
+      },
+      { id: "mentorship", text: "Do you have a meaningful intellectual mentorship with a teacher, professor, or expert?", type: "single",
+        options: [
+          { label: "Yes — an ongoing relationship where they've guided independent work and know me deeply", value: 10 },
+          { label: "Yes — a teacher who has significantly influenced my thinking and knows me well", value: 7.5 },
+          { label: "Sort of — I have good relationships with teachers but nothing deeply mentorship-based", value: 4.5 },
+          { label: "Not really — my relationships with teachers are mostly classroom-based", value: 2 },
+        ]
+      },
+      { id: "intellectual_community", text: "Are you part of any intellectual communities (academic teams, research groups, study circles, competitions)?", type: "single",
+        options: [
+          { label: "Yes — deeply embedded in 1-2 intellectual communities that have shaped my growth", value: 10 },
+          { label: "Yes — I participate actively in academic competitions or groups", value: 7 },
+          { label: "Somewhat — I'm a member but not deeply engaged", value: 4 },
+          { label: "No — I don't have a peer intellectual community", value: 1.5 },
+        ]
+      },
+      { id: "curiosity_evidence", text: "When you encounter something confusing or interesting, what do you typically do?", type: "single",
+        options: [
+          { label: "I go deep — research it independently, discuss it with knowledgeable people, and often it leads to new projects", value: 10 },
+          { label: "I usually look it up and read about it until I understand", value: 7 },
+          { label: "I make a mental note and sometimes follow up", value: 4 },
+          { label: "I usually move on to what's immediately required", value: 1.5 },
+        ]
+      },
+      { id: "summer_usage", text: "How have you typically spent your summers academically?", type: "single",
+        options: [
+          { label: "Highly productive — competitive programs, research positions, or intensive independent projects", value: 10 },
+          { label: "Productive — meaningful academic programs, courses, or structured learning", value: 7 },
+          { label: "Mixed — some academic enrichment alongside leisure", value: 4.5 },
+          { label: "Mostly non-academic (which is fine — this just measures one signal)", value: 2 },
+        ]
+      },
+    ],
+  },
+  {
+    id: "extracurricular",
+    title: "Extracurricular Impact",
+    subtitle: "Depth over breadth — what you built, led, and changed",
+    description: "Ivy admissions offices consistently say they prefer depth over breadth. They're looking for sustained commitment, measurable impact, and evidence of leadership — not a laundry list. The Harvard litigation revealed that 'extracurricular' ratings strongly predict admission.",
+    weight: 0.20,
+    questions: [
+      { id: "primary_activity", text: "In your #1 extracurricular activity, what is your level of involvement?", type: "single",
+        options: [
+          { label: "National/international recognition or impact — I'm among the best in the country/world at this", value: 10 },
+          { label: "State-level leadership or recognition — significant achievement beyond my school", value: 8 },
+          { label: "School-level leadership with meaningful, measurable impact (I changed something real)", value: 6 },
+          { label: "Active, committed member with some leadership", value: 4 },
+          { label: "Participant without significant leadership or external recognition", value: 2 },
+        ]
+      },
+      { id: "sustained_commitment", text: "How many activities have you sustained for 3+ years with increasing responsibility?", type: "single",
+        options: [
+          { label: "3 or more — deep, sustained commitment in multiple areas", value: 10 },
+          { label: "2 — strong depth in a couple of areas", value: 8 },
+          { label: "1 — deep commitment in one area, others shorter", value: 6 },
+          { label: "None — I've explored broadly but haven't stuck with things for 3+ years", value: 3 },
+        ]
+      },
+      { id: "achievement_level", text: "What is the highest level of recognition or achievement you've received in any extracurricular?", type: "single",
+        options: [
+          { label: "International (IMO, ISEF, international competitions, global media coverage)", value: 10 },
+          { label: "National (national competition finalist, nationally published, national organization leadership)", value: 8.5 },
+          { label: "State/Regional (state champion, regional awards, featured in regional media)", value: 6.5 },
+          { label: "School/Local (school president, local awards, city-level recognition)", value: 4 },
+          { label: "Participation level (active member, no major awards)", value: 2 },
+        ]
+      },
+      { id: "impact_evidence", text: "Can you point to tangible impact from your extracurricular work?", type: "multi",
+        options: [
+          { label: "Created an organization, business, or initiative from scratch that still operates", value: 3.5 },
+          { label: "Measurably improved something (raised $X, grew membership by Y%, changed a policy)", value: 3 },
+          { label: "Directly helped a significant number of people (tutored 50+ students, organized events for 200+, etc.)", value: 2.5 },
+          { label: "Won competitive awards or selections based on merit", value: 2 },
+          { label: "Published, exhibited, or performed work publicly", value: 2 },
+          { label: "My impact is mostly personal growth rather than external results", value: 0.5 },
+        ],
+        maxScore: 10,
+      },
+      { id: "leadership_quality", text: "How would you honestly describe your leadership style and effect?", type: "single",
+        options: [
+          { label: "I see problems and build solutions — people follow because I create real value", value: 10 },
+          { label: "I motivate and organize effectively — I make groups more productive", value: 7.5 },
+          { label: "I lead when asked and do a good job, but I don't naturally gravitate to leadership", value: 5 },
+          { label: "I'm more of a strong team member than a leader", value: 3 },
+          { label: "Leadership isn't really my thing", value: 1.5 },
+        ]
+      },
+      { id: "work_experience", text: "Do you have meaningful work experience or entrepreneurial activity?", type: "single",
+        options: [
+          { label: "Yes — I've built a business, held a professional role, or done work that demonstrates real-world competence", value: 10 },
+          { label: "Yes — significant internship, research position, or sustained employment demonstrating responsibility", value: 7.5 },
+          { label: "Some — part-time job or short internship", value: 4.5 },
+          { label: "Minimal — I've focused on school and traditional extracurriculars", value: 2 },
+        ]
+      },
+      { id: "ec_coherence", text: "Do your extracurriculars tell a coherent story, or are they scattered across unrelated areas?", type: "single",
+        options: [
+          { label: "Very coherent — there's a clear theme or narrative connecting most of what I do", value: 10 },
+          { label: "Mostly coherent — a few core themes emerge with some variety", value: 7.5 },
+          { label: "Mixed — some connection but also a lot of unrelated activities", value: 4.5 },
+          { label: "Scattered — I've done many things without a clear thread", value: 2 },
+        ]
+      },
+      { id: "family_responsibilities", text: "Do you have significant family responsibilities (caregiving, supporting household income, translation for parents, etc.)?", type: "single",
+        options: [
+          { label: "Yes — substantial responsibilities that limit my time but demonstrate maturity and resilience", value: 8 },
+          { label: "Some — I help out meaningfully at home", value: 5 },
+          { label: "Minimal — my time is largely my own to allocate", value: 3 },
+        ]
+      },
+    ],
+  },
+  {
+    id: "narrative",
+    title: "Personal Narrative & Distinctiveness",
+    subtitle: "Your 'spike' — the thing that makes you irreplaceable in a class",
+    description: "The most critical and least understood dimension. Ivy classes are assembled, not just selected — each admit fills a role in the mosaic. Admissions officers spend 15–20 minutes per application. Your narrative must be instantly clear, memorable, and authentic.",
+    weight: 0.17,
+    questions: [
+      { id: "spike_clarity", text: "If an admissions officer read your entire application, would they be able to describe 'who you are' in one sentence?", type: "single",
+        options: [
+          { label: "Absolutely — everything I do points to a clear, distinctive identity and mission", value: 10 },
+          { label: "Mostly — there's a strong theme, though a couple of activities don't fit perfectly", value: 7 },
+          { label: "Kind of — I have interests, but my 'thing' isn't crystallized yet", value: 4 },
+          { label: "Not really — I'm a strong student with varied interests but no defining narrative", value: 2 },
+        ]
+      },
+      { id: "uniqueness", text: "How unusual or distinctive is your story or background compared to a typical applicant from your demographic?", type: "single",
+        options: [
+          { label: "Highly unusual — my experiences, perspective, or accomplishments are genuinely rare", value: 10 },
+          { label: "Somewhat unusual — there are distinctive elements that set me apart", value: 7 },
+          { label: "Fairly typical — my profile looks similar to many strong applicants from my background", value: 4 },
+          { label: "Very typical — nothing particularly distinguishes me from other high-achieving students", value: 2 },
+        ]
+      },
+      { id: "adversity", text: "Have you navigated significant adversity, and can you articulate what it taught you?", type: "single",
+        options: [
+          { label: "Yes — a formative challenge that fundamentally shaped my perspective, and I can communicate it compellingly", value: 9 },
+          { label: "Yes — real challenges, though they're not the centerpiece of my story", value: 6.5 },
+          { label: "Some difficulties, but nothing dramatically out of the ordinary", value: 4 },
+          { label: "My life has been relatively smooth and privileged (which is fine — just means narrative comes from elsewhere)", value: 3 },
+        ]
+      },
+      { id: "self_awareness", text: "How self-aware are you about your strengths, weaknesses, and growth areas?", type: "single",
+        options: [
+          { label: "Highly — I can articulate clearly what drives me, where I've failed, and what I've learned", value: 10 },
+          { label: "Fairly — I have good self-insight, though I'm still figuring some things out", value: 7 },
+          { label: "Somewhat — I know what I'm good at but haven't reflected deeply on growth and failure", value: 4 },
+          { label: "Still developing — I haven't done much structured reflection", value: 2 },
+        ]
+      },
+      { id: "contribution_clarity", text: "Can you articulate specifically what you'd contribute to a campus community (not just 'diversity' — what would you actually DO)?", type: "single",
+        options: [
+          { label: "Yes — I know exactly what I'd start, join, or bring, and it connects to my track record", value: 10 },
+          { label: "Mostly — I have ideas about campus contributions connected to my interests", value: 7 },
+          { label: "Vaguely — I'd contribute, but I haven't thought specifically about what", value: 3.5 },
+          { label: "Not yet — I haven't thought about this seriously", value: 1.5 },
+        ]
+      },
+      { id: "perspective_value", text: "Would you bring a perspective that is currently underrepresented at elite universities?", type: "single",
+        options: [
+          { label: "Yes — my background, experiences, or viewpoint is genuinely rare in these spaces", value: 9 },
+          { label: "Somewhat — there are elements of my perspective that add diversity of thought", value: 6 },
+          { label: "Not particularly — my background is well-represented at Ivies", value: 3 },
+        ]
+      },
+      { id: "maturity", text: "Compared to your peers, how mature and self-directed are you?", type: "single",
+        options: [
+          { label: "Significantly — adults often remark on my maturity; I've taken on adult-level responsibilities", value: 10 },
+          { label: "Above average — I'm more thoughtful and independent than most peers", value: 7 },
+          { label: "About average for a motivated student my age", value: 4 },
+          { label: "I'm still growing into independence and self-direction", value: 2 },
+        ]
+      },
+    ],
+  },
+  {
+    id: "execution",
+    title: "Application Execution",
+    subtitle: "Strategy, positioning, and the craft of presenting yourself",
+    description: "A strong profile poorly presented loses to a good profile brilliantly presented. This section assesses your readiness to actually execute the application — essays, recommendations, school selection, and strategy.",
+    weight: 0.10,
+    questions: [
+      { id: "essay_readiness", text: "How prepared are you to write compelling personal essays?", type: "single",
+        options: [
+          { label: "Very — I'm a strong writer with clear stories and themes; I've drafted or planned essays already", value: 10 },
+          { label: "Good foundation — I write well and have ideas, but haven't started application essays", value: 7 },
+          { label: "Moderate — writing is okay, but I struggle with personal/reflective writing specifically", value: 4 },
+          { label: "Underprepared — writing is not my strength and I haven't started thinking about essay content", value: 2 },
+        ]
+      },
+      { id: "rec_letters", text: "How strong will your recommendation letters likely be?", type: "single",
+        options: [
+          { label: "Exceptional — 1–2 teachers know me deeply, have seen my best work, and will write extraordinary letters", value: 10 },
+          { label: "Strong — my recommenders know me well and will speak positively with specific examples", value: 7.5 },
+          { label: "Decent — my teachers like me but don't know me exceptionally well beyond class performance", value: 4.5 },
+          { label: "Uncertain — I'm not sure who would write a strong letter for me", value: 2 },
+        ]
+      },
+      { id: "school_research", text: "How well do you know the specific Ivy League schools you're targeting?", type: "single",
+        options: [
+          { label: "Deeply — I've researched specific programs, professors, traditions, and can articulate genuine 'Why X?' for each school", value: 10 },
+          { label: "Well — I know the general strengths of my target schools and some specific details", value: 7 },
+          { label: "Surface-level — I know the rankings and reputations but not much about what makes each unique", value: 3.5 },
+          { label: "Minimal — I'm applying to Ivies for prestige but haven't researched them deeply", value: 1.5 },
+        ]
+      },
+      { id: "school_list", text: "How balanced is your school list?", type: "single",
+        options: [
+          { label: "Strategic — well-researched reach/target/safety schools across selectivity tiers, with genuine fit at each", value: 10 },
+          { label: "Mostly balanced — some reaches, some targets, maybe light on safeties", value: 7 },
+          { label: "Top-heavy — mostly reaches with a token safety or two", value: 4 },
+          { label: "Haven't built a school list yet", value: 2 },
+        ]
+      },
+      { id: "interview_ready", text: "How prepared are you for admissions interviews?", type: "single",
+        options: [
+          { label: "Very — I'm articulate, personable, and can discuss my passions and goals fluidly", value: 10 },
+          { label: "Fairly — I present well but could use practice with Ivy-specific interview questions", value: 7 },
+          { label: "Somewhat nervous — I can talk about myself but get anxious in formal settings", value: 4 },
+          { label: "Unprepared — I haven't thought about interviews yet", value: 2 },
+        ]
+      },
+      { id: "timeline", text: "How is your application timeline looking?", type: "single",
+        options: [
+          { label: "Ahead of schedule — working on essays, activities list refined, strategy clear", value: 10 },
+          { label: "On track — I know what I need to do and have started the process", value: 7 },
+          { label: "Slightly behind — feeling the pressure but not yet started major components", value: 4 },
+          { label: "Significantly behind or just starting to think about it", value: 2 },
+        ]
+      },
+      { id: "ed_strategy", text: "Do you have a clear Early Decision / Early Action strategy?", type: "single",
+        options: [
+          { label: "Yes — I've identified my top-choice school and plan to apply ED/REA strategically", value: 10 },
+          { label: "Considering it — leaning toward ED somewhere but not fully decided", value: 7 },
+          { label: "Unsure — haven't thought about ED/EA strategy yet", value: 3 },
+          { label: "Not applicable / planning Regular Decision only", value: 5 },
+        ]
+      },
+    ],
+  },
+  {
+    id: "context",
+    title: "Contextual Profile",
+    subtitle: "The institutional factors that shape how your application is read",
+    description: "Admissions is not purely meritocratic — institutional priorities, demographic factors, and school context all matter. This isn't about 'gaming' the system; it's about honestly assessing where you stand in the landscape. These factors are documented in Common Data Sets and the Harvard admissions trial.",
+    weight: 0.10,
+    questions: [
+      { id: "school_type", text: "What type of high school do you attend?", type: "single",
+        options: [
+          { label: "Elite feeder school (well-known private/prep school with strong Ivy placement history)", value: 7 },
+          { label: "Competitive magnet / exam school (Stuyvesant, TJ, etc.)", value: 6.5 },
+          { label: "Strong public school in a well-resourced district", value: 5 },
+          { label: "Average public school without strong Ivy pipeline", value: 5.5 },
+          { label: "Under-resourced school — limited AP/IB, few students go to elite universities", value: 7 },
+          { label: "International school", value: 5 },
+        ]
+      },
+      { id: "first_gen", text: "Would you be a first-generation college student?", type: "single",
+        options: [
+          { label: "Yes — neither parent attended a 4-year college", value: 8 },
+          { label: "Partially — one parent attended, or parents attended college abroad but not in the US", value: 5 },
+          { label: "No — at least one parent has a US bachelor's degree or higher", value: 3 },
+        ]
+      },
+      { id: "legacy", text: "Do you have legacy status at any Ivy League school?", type: "single",
+        options: [
+          { label: "Yes — parent(s) attended an Ivy I'm applying to", value: 8.5 },
+          { label: "Yes — sibling currently attends or recently graduated", value: 6 },
+          { label: "Extended family connection only", value: 3.5 },
+          { label: "No legacy connection", value: 3 },
+        ]
+      },
+      { id: "geographic", text: "Where are you applying from?", type: "single",
+        options: [
+          { label: "Underrepresented US state/region (rural areas, Mountain West, Deep South, etc.)", value: 7 },
+          { label: "Mid-represented US area", value: 5 },
+          { label: "Overrepresented US area (Northeast corridor, Bay Area, suburban NJ/CT)", value: 3 },
+          { label: "International — underrepresented country", value: 6.5 },
+          { label: "International — overrepresented country (China, India, South Korea in large numbers)", value: 3 },
+        ]
+      },
+      { id: "financial", text: "What is your financial aid situation?", type: "single",
+        options: [
+          { label: "Full pay — no financial aid needed", value: 6 },
+          { label: "Will need significant financial aid (Ivies are need-blind for US students)", value: 5 },
+          { label: "International student needing financial aid (this significantly impacts admission at most Ivies)", value: 3 },
+          { label: "QuestBridge or similar program finalist", value: 8 },
+        ]
+      },
+      { id: "recruited", text: "Are you a recruited athlete for any Ivy League sport?", type: "single",
+        options: [
+          { label: "Yes — I'm on a coach's recruiting list and have been in contact", value: 10 },
+          { label: "Possibly — I'm competitive at the D1 level and coaches have shown interest", value: 7 },
+          { label: "No — I'm not being recruited", value: 3 },
+        ]
+      },
+      { id: "special_talent", text: "Do you have any extraordinary talent that could qualify you for special consideration?", type: "single",
+        options: [
+          { label: "Yes — I'm nationally/internationally recognized in music, art, debate, olympiads, or similar", value: 10 },
+          { label: "Somewhat — I have strong talent with regional-level recognition", value: 6 },
+          { label: "Not at an extraordinary level", value: 3 },
+        ]
+      },
+      { id: "counselor_support", text: "What level of college counseling support do you have?", type: "single",
+        options: [
+          { label: "Private counselor + school counselor with strong Ivy experience", value: 8 },
+          { label: "Good school counselor who knows the Ivy process", value: 6 },
+          { label: "School counselor, but they handle hundreds of students and have limited Ivy expertise", value: 4 },
+          { label: "Minimal guidance — I'm largely figuring this out on my own", value: 3 },
+          { label: "I'm working with Blue Ocean Education 😉", value: 7 },
+        ]
+      },
+    ],
+  },
+];
+function computeSectionScore(section, answers) {
+  let totalPossible = 0;
+  let totalEarned = 0;
+
+  for (const q of section.questions) {
+    if (q.type === "single") {
+      const maxVal = Math.max(...q.options.map((o) => o.value));
+      totalPossible += maxVal;
+      totalEarned += answers[q.id] || 0;
+    } else if (q.type === "multi") {
+      totalPossible += q.maxScore;
+      const selected = answers[q.id] || [];
+      const sum = Math.min(selected.reduce((a, b) => a + b, 0), q.maxScore);
+      totalEarned += sum;
+    }
+  }
+
+  return totalPossible > 0 ? totalEarned / totalPossible : 0;
+}
+
+function computeOverallScore(answers) {
+  const sectionScores = {};
+  let weighted = 0;
+
+  for (const sec of SECTIONS) {
+    const score = computeSectionScore(sec, answers);
+    sectionScores[sec.id] = Math.round(score * 100);
+    weighted += score * sec.weight;
+  }
+
+  const overall = Math.round(weighted * 100);
+  return { overall, sectionScores };
+}
+
+function getTier(score) {
+  if (score >= 82) return { tier: "Strong Ivy Contender", color: "#16A34A", emoji: "🟢", desc: "Your profile has the raw ingredients for a compelling Ivy application. At this level, execution (essays, recommendations, school fit) becomes the deciding factor. No one is 'guaranteed' at these schools — even perfect profiles face 4-6% acceptance rates — but you're competing with real strength." };
+  if (score >= 70) return { tier: "Competitive — Within Range", color: "#CA8A04", emoji: "🟡", desc: "You have a solid foundation and are within the competitive range for Ivy-caliber schools. The gap between you and stronger applicants is closeable — focus on the specific weaknesses identified below. Your outcome will depend heavily on narrative clarity, essay execution, and strategic school selection." };
+  if (score >= 58) return { tier: "Developing — Targeted Work Needed", color: "#EA580C", emoji: "🟠", desc: "You have real strengths but meaningful gaps. An Ivy admit is possible if you address the areas below aggressively. Consider a balanced list that includes strong T20-T30 schools where your profile may be more competitive. The 'contextual factors' section matters more at this range — hooks and institutional priorities can tip the scale." };
+  if (score >= 42) return { tier: "Building Foundation — Significant Gaps", color: "#DC2626", emoji: "🔴", desc: "Your profile has potential but needs substantial development before it's competitive at the most selective schools. Focus on building depth in 1-2 areas rather than spreading thin. A realistic and ambitious school list should include T30-T50 schools as primary targets, with Ivies as aspirational reaches." };
+  return { tier: "Early Stage — Major Development Needed", color: "#991B1B", emoji: "⚫", desc: "You're in the early stages of building a competitive profile. This isn't a judgment on your potential — it's a snapshot of where things stand today. The good news: many of these areas are improvable with focused effort and strategic guidance. Start with academics and one deep extracurricular commitment." };
+}
+
+function getStrengthsAndGaps(sectionScores) {
+  const labels = {
+    academic: "Academic Foundation",
+    intellectual: "Intellectual Vitality",
+    extracurricular: "Extracurricular Impact",
+    narrative: "Personal Narrative & Spike",
+    execution: "Application Execution",
+    context: "Contextual Positioning",
+  };
+  const sorted = Object.entries(sectionScores).sort((a, b) => b[1] - a[1]);
+  const strengths = sorted.filter(([, v]) => v >= 65).slice(0, 3).map(([k, v]) => ({ label: labels[k], score: v }));
+  const gaps = sorted.filter(([, v]) => v < 65).reverse().slice(0, 3).map(([k, v]) => ({ label: labels[k], score: v }));
+  return { strengths, gaps };
+}
+
+function getSchoolTiers(overall) {
+  if (overall >= 82) return [
+    { tier: "Strong Reach (still low odds)", schools: "Harvard, Princeton, Yale, Stanford, MIT" },
+    { tier: "Competitive Reach", schools: "Columbia, Penn, Brown, Dartmouth, Duke, Chicago" },
+    { tier: "Solid Target", schools: "Cornell, Georgetown, Northwestern, Rice, Vanderbilt, WashU" },
+    { tier: "Likely", schools: "Top 20-30 schools aligned with your profile" },
+  ];
+  if (overall >= 70) return [
+    { tier: "Aspirational Reach", schools: "Harvard, Princeton, Yale, Stanford, MIT (lower probability)" },
+    { tier: "Strategic Reach", schools: "Columbia, Penn, Brown, Duke, Dartmouth, Chicago" },
+    { tier: "Target", schools: "Cornell, Northwestern, Rice, Vanderbilt, Georgetown, WashU, Emory" },
+    { tier: "Likely", schools: "Top 25-40 schools with strong fit" },
+  ];
+  if (overall >= 58) return [
+    { tier: "Aspirational Reach", schools: "Any Ivy (low probability — apply strategically)" },
+    { tier: "Reach", schools: "Cornell, Georgetown, NYU, USC, Michigan, Virginia" },
+    { tier: "Target", schools: "Top 25-50 schools aligned with strengths" },
+    { tier: "Likely", schools: "Top 40-60 schools with demonstrated fit" },
+  ];
+  return [
+    { tier: "Aspirational", schools: "T20 schools (focus effort elsewhere first)" },
+    { tier: "Reach", schools: "T30-50 schools where your profile shows strength" },
+    { tier: "Target", schools: "T50-80 schools with strong program fit" },
+    { tier: "Likely", schools: "Schools with 40%+ acceptance rates aligned with interests" },
+  ];
+}
+
+const state = {
+  page: "intro",
+  sectionIdx: 0,
+  answers: {},
+  results: null,
+};
+
+const app = document.getElementById("app");
+
+function isAnswered(q) {
+  if (q.type === "multi") return Array.isArray(state.answers[q.id]) && state.answers[q.id].length > 0;
+  return state.answers[q.id] !== undefined;
+}
+
+function getAnsweredCount() {
+  let count = 0;
+  for (const sec of SECTIONS) {
+    for (const q of sec.questions) {
+      if (isAnswered(q)) count += 1;
+    }
+  }
+  return count;
+}
+
+function isSectionComplete(idx) {
+  return SECTIONS[idx].questions.every((q) => isAnswered(q));
+}
+
+function getGlobalIndex(secIdx, qIdx) {
+  let count = 0;
+  for (let i = 0; i < secIdx; i++) count += SECTIONS[i].questions.length;
+  return count + qIdx + 1;
+}
+
+function scrollTopSmooth() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function scrollToQuestions() {
+  const qWrap = document.querySelector(".questions");
+  if (!qWrap) return;
+  const first = qWrap.querySelector(".q");
+  const navH = document.querySelector(".nav")?.offsetHeight || 56;
+  const headH = document.querySelector(".test-head")?.offsetHeight || 0;
+  const anchor = first || qWrap;
+  const target = anchor.getBoundingClientRect().top + window.scrollY - navH - headH - 24;
+  const doScroll = () => window.scrollTo({ top: Math.max(0, target), behavior: "auto" });
+  requestAnimationFrame(doScroll);
+  setTimeout(doScroll, 80);
+  setTimeout(doScroll, 180);
+}
+
+function renderIntro() {
+  const totalQuestions = SECTIONS.reduce((s, sec) => s + sec.questions.length, 0);
+  app.innerHTML = `
+    <section class="intro-top">
+      <p class="kicker">Research-Backed Diagnostic</p>
+      <h1>Ivy League <span>Readiness Diagnostic</span></h1>
+      <p class="intro-sub">A clear-eyed profile audit across the 6 dimensions that drive outcomes at highly selective schools.</p>
+      <p class="intro-note">This is designed to be honest, not flattering. The goal is to show you exactly where you are strong and where you need strategic work.</p>
+      <div class="badges">
+        <span class="badge">${totalQuestions} Questions</span>
+        <span class="badge">15-20 min</span>
+        <span class="badge">Instant Breakdown</span>
+      </div>
+    </section>
+    <section class="intro-body">
+      <div class="section-grid">
+        ${SECTIONS.map((s, i) => `
+          <article class="sec-chip">
+            <div class="sec-line">
+              <span class="sec-num">${i + 1}</span>
+              <div>
+                <p class="sec-title">${s.title}</p>
+                <p class="sec-weight">Weight: ${Math.round(s.weight * 100)}%</p>
+              </div>
+            </div>
+          </article>
+        `).join("")}
+      </div>
+      <div class="start-wrap">
+        <button class="primary" data-action="start">Begin Diagnostic →</button>
+      </div>
+    </section>
+  `;
+}
+
+function optionButtonHTML(q, opt, isActive) {
+  const activeClass = isActive ? "active" : "";
+  if (q.type === "multi") {
+    return `<button class="opt ${activeClass}" data-action="toggle-multi" data-qid="${q.id}" data-value="${opt.value}"><span class="check">${isActive ? "✓" : ""}</span>${opt.label}</button>`;
+  }
+  return `<button class="opt ${activeClass}" data-action="pick-single" data-qid="${q.id}" data-value="${opt.value}">${opt.label}</button>`;
+}
+
+function renderTest() {
+  const sec = SECTIONS[state.sectionIdx];
+  const totalQuestions = SECTIONS.reduce((s, s2) => s + s2.questions.length, 0);
+  const answered = getAnsweredCount();
+  const pct = Math.round((answered / totalQuestions) * 100);
+  const complete = isSectionComplete(state.sectionIdx);
+
+  app.innerHTML = `
+    <section class="test-head">
+      <div class="test-top">
+        <div>
+          <p class="kicker">Section ${state.sectionIdx + 1} of ${SECTIONS.length}</p>
+          <h2>${sec.title}</h2>
+        </div>
+        <div class="dots">
+          ${SECTIONS.map((_, i) => `<span class="dot ${i < state.sectionIdx ? "done" : i === state.sectionIdx ? "active" : ""}"></span>`).join("")}
+        </div>
+      </div>
+      <p class="test-sub">${sec.description}</p>
+      <div class="prog-meta"><span>${answered} / ${totalQuestions} answered</span><span>${pct}%</span></div>
+      <div class="prog-track"><div class="prog-fill" style="width:${pct}%"></div></div>
+    </section>
+
+    <section class="questions">
+      ${sec.questions.map((q, qi) => {
+        const value = state.answers[q.id];
+        const multiValues = Array.isArray(value) ? value : [];
+        return `
+          <article class="q">
+            <p class="q-text"><span class="q-num">${getGlobalIndex(state.sectionIdx, qi)}.</span>${q.text}</p>
+            ${q.type === "multi" ? `<p class="q-help">Select all that apply</p>` : ""}
+            <div class="opts">
+              ${q.options.map((opt) => {
+                const isActive = q.type === "multi" ? multiValues.includes(opt.value) : value === opt.value;
+                return optionButtonHTML(q, opt, isActive);
+              }).join("")}
+            </div>
+          </article>
+        `;
+      }).join("")}
+    </section>
+
+    <div class="test-foot">
+      <button class="ghost" data-action="back">← Back</button>
+      <button class="next ${complete ? "" : "disabled"}" data-action="next">${state.sectionIdx < SECTIONS.length - 1 ? "Next Section →" : "See Results →"}</button>
+    </div>
+  `;
+}
+
+function dimColor(score) {
+  if (score >= 75) return "var(--green)";
+  if (score >= 60) return "var(--amber)";
+  if (score >= 45) return "var(--orange)";
+  return "var(--red)";
+}
+
+function renderResults() {
+  const { overall, sectionScores, tier, strengths, gaps, schoolTiers } = state.results;
+  const dimLabels = {
+    academic: "Academic Foundation",
+    intellectual: "Intellectual Vitality",
+    extracurricular: "Extracurricular Impact",
+    narrative: "Personal Narrative",
+    execution: "Application Execution",
+    context: "Contextual Profile",
+  };
+
+  const todoItems = [
+    gaps.length > 0 ? { icon: "🎯", title: `Shore up: ${gaps[0].label}`, desc: `Your lowest dimension is ${gaps[0].score}/100. This is the highest-leverage improvement area.` } : null,
+    sectionScores.narrative < 70 ? { icon: "📝", title: "Crystallize your narrative", desc: "Define your one-sentence identity. Your activities, essays, and goals should point in the same direction." } : null,
+    sectionScores.execution < 70 ? { icon: "⏰", title: "Upgrade execution", desc: "Start essays, refine activity descriptions, and lock recommendation strategy early." } : null,
+    sectionScores.intellectual < 70 ? { icon: "🔬", title: "Show intellectual vitality", desc: "Build clear evidence of curiosity through independent projects, reading depth, or mentored work." } : null,
+    sectionScores.extracurricular < 70 ? { icon: "📈", title: "Increase impact depth", desc: "Concentrate on 1-2 core activities and drive measurable outcomes." } : null,
+    { icon: "📋", title: "Build a balanced list", desc: "Use reach/target/likely buckets and include genuine-fit programs at each tier." },
+    { icon: "🗓️", title: "Set a timeline", desc: "Map essays, testing, letters, and submissions across months so quality doesn't collapse at the end." },
+  ].filter(Boolean);
+
+  app.innerHTML = `
+    <section class="results">
+      <div class="r-head">
+        <p class="kicker">Diagnostic Complete</p>
+        <h1>Your Ivy Readiness Profile</h1>
+      </div>
+
+      <article class="panel score-wrap" style="--tier:${tier.color}">
+        <div class="score-num">${overall}</div>
+        <p style="font-size:12px;color:#94A3B8;margin-top:2px">out of 100</p>
+        <p class="score-pill">${tier.emoji} ${tier.tier}</p>
+        <p class="score-desc">${tier.desc}</p>
+      </article>
+
+      <article class="panel">
+        <h3>Dimension Breakdown</h3>
+        ${SECTIONS.map((s) => {
+          const sc = sectionScores[s.id];
+          const color = dimColor(sc);
+          return `
+            <div class="dbar">
+              <div class="dlabel">${dimLabels[s.id]}</div>
+              <div class="dtrack"><div class="dfill" style="width:${Math.max(sc, 2)}%;background:${color}"></div></div>
+              <div class="dval" style="color:${color}">${sc}</div>
+            </div>
+          `;
+        }).join("")}
+        <div class="legend">
+          <span><span class="dotc" style="background:#16A34A"></span>75+</span>
+          <span><span class="dotc" style="background:#CA8A04"></span>60-74</span>
+          <span><span class="dotc" style="background:#EA580C"></span>45-59</span>
+          <span><span class="dotc" style="background:#DC2626"></span>&lt;45</span>
+        </div>
+      </article>
+
+      <div class="two">
+        <article class="panel">
+          <h3 style="color:#22C55E">Top Strengths</h3>
+          ${strengths.length ? strengths.map((s) => `<div class="item-row"><span>${s.label}</span><strong class="good">${s.score}</strong></div>`).join("") : `<p class="small">No major strengths surfaced yet. Keep building depth and consistency.</p>`}
+        </article>
+        <article class="panel">
+          <h3 style="color:#EF4444">Critical Gaps</h3>
+          ${gaps.length ? gaps.map((g) => `<div class="item-row"><span>${g.label}</span><strong class="bad">${g.score}</strong></div>`).join("") : `<p class="small">No critical gaps detected. Focus now on execution quality and school fit.</p>`}
+        </article>
+      </div>
+
+      <article class="panel">
+        <h3>School List Strategy</h3>
+        <p class="small" style="margin-bottom:10px">These are directional buckets based on readiness score. Final school fit still depends on major, context, and application quality.</p>
+        ${schoolTiers.map((st) => `<div class="tier-row"><p class="tier-title">${st.tier}</p><p class="tier-schools">${st.schools}</p></div>`).join("")}
+      </article>
+
+      <article class="panel">
+        <h3>What To Do Next</h3>
+        <div class="todo">
+          ${todoItems.map((item) => `
+            <div class="todo-item">
+              <span class="todo-ico">${item.icon}</span>
+              <div>
+                <p class="todo-title">${item.title}</p>
+                <p class="todo-desc">${item.desc}</p>
+              </div>
+            </div>
+          `).join("")}
+        </div>
+      </article>
+
+      <article class="panel">
+        <h3>Important Context</h3>
+        <div class="small">
+          <p><strong style="color:#E5E7EB">This is a diagnostic, not a guarantee.</strong> Ivy outcomes include randomness, institutional priorities, and reader subjectivity.</p>
+          <p><strong style="color:#E5E7EB">Self-reported answers can be biased.</strong> Use this as an honest baseline and review it with an advisor who knows your full profile.</p>
+          <p><strong style="color:#E5E7EB">Method basis:</strong> weights and dimensions align with published holistic review patterns, Common Data Sets, and admissions research cited in the original diagnostic.</p>
+        </div>
+      </article>
+
+      <div class="retake">
+        <button class="ghost" data-action="retake">↺ Retake Diagnostic</button>
+      </div>
+    </section>
+  `;
+}
+
+function render() {
+  if (state.page === "intro") return renderIntro();
+  if (state.page === "test") return renderTest();
+  if (state.page === "results") return renderResults();
+}
+
+function preserveScroll(updateFn) {
+  const y = window.scrollY;
+  updateFn();
+  window.scrollTo(0, y);
+}
+
+document.addEventListener("click", (e) => {
+  const target = e.target.closest("[data-action]");
+  if (!target) return;
+  const action = target.getAttribute("data-action");
+
+  if (action === "start") {
+    state.page = "test";
+    state.sectionIdx = 0;
+    render();
+    scrollToQuestions();
+    return;
+  }
+
+  if (action === "pick-single") {
+    const qid = target.getAttribute("data-qid");
+    const value = Number(target.getAttribute("data-value"));
+    preserveScroll(() => {
+      state.answers[qid] = value;
+      render();
+    });
+    return;
+  }
+
+  if (action === "toggle-multi") {
+    const qid = target.getAttribute("data-qid");
+    const value = Number(target.getAttribute("data-value"));
+    preserveScroll(() => {
+      const prev = Array.isArray(state.answers[qid]) ? [...state.answers[qid]] : [];
+      const idx = prev.indexOf(value);
+      if (idx >= 0) prev.splice(idx, 1);
+      else prev.push(value);
+      if (prev.length === 0) delete state.answers[qid];
+      else state.answers[qid] = prev;
+      render();
+    });
+    return;
+  }
+
+  if (action === "back") {
+    if (state.sectionIdx > 0) {
+      state.sectionIdx -= 1;
+      render();
+      scrollToQuestions();
+    } else {
+      state.page = "intro";
+      render();
+      scrollTopSmooth();
+    }
+    return;
+  }
+
+  if (action === "next") {
+    if (!isSectionComplete(state.sectionIdx)) {
+      alert("Please answer all questions in this section.");
+      return;
+    }
+    if (state.sectionIdx < SECTIONS.length - 1) {
+      state.sectionIdx += 1;
+      render();
+      scrollToQuestions();
+    } else {
+      const { overall, sectionScores } = computeOverallScore(state.answers);
+      const tier = getTier(overall);
+      const { strengths, gaps } = getStrengthsAndGaps(sectionScores);
+      const schoolTiers = getSchoolTiers(overall);
+      state.results = { overall, sectionScores, tier, strengths, gaps, schoolTiers };
+      state.page = "results";
+      render();
+      scrollTopSmooth();
+    }
+    return;
+  }
+
+  if (action === "retake") {
+    state.page = "intro";
+    state.sectionIdx = 0;
+    state.answers = {};
+    state.results = null;
+    render();
+    scrollTopSmooth();
+  }
+});
+
+render();
+</script>
+<script>
+(() => {
+  const toggle = document.querySelector(".nav-toggle");
+  const links = document.querySelector(".nav-links");
+  if (!toggle || !links) return;
+  if (toggle.dataset.navBound === "1") return;
+  toggle.dataset.navBound = "1";
+
+  const closeMenu = () => {
+    links.classList.remove("open");
+    toggle.classList.remove("open");
+    document.body.classList.remove("nav-open");
+  };
+
+  toggle.addEventListener("click", () => {
+    const willOpen = !links.classList.contains("open");
+    if (willOpen) {
+      links.classList.add("open");
+      toggle.classList.add("open");
+      document.body.classList.add("nav-open");
+    } else {
+      closeMenu();
+    }
+  });
+
+  links.querySelectorAll("a").forEach((a) => a.addEventListener("click", closeMenu));
+  window.addEventListener("resize", () => { if (window.innerWidth > 768) closeMenu(); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeMenu(); });
+})();
+</script>
+</body>
+</html>
