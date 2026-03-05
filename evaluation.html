@@ -307,12 +307,39 @@ fbq('track', 'PageView');
   .guarantee-box h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
   .guarantee-box p { font-size: 14px; opacity: 0.9; line-height: 1.5; }
 
+  /* ===== FAQ ===== */
+  .faq-section {
+    width: min(760px, calc(100% - 32px));
+    margin: 24px auto 72px;
+    padding: 44px 30px 34px;
+    background:
+      radial-gradient(circle at top right, rgba(250,204,21,0.18), transparent 42%),
+      linear-gradient(155deg, #111827 0%, #0F172A 50%, #111111 100%);
+    border: 1px solid rgba(250,204,21,0.34);
+    border-radius: 22px;
+    box-shadow: 0 24px 45px rgba(15,23,42,0.24);
+  }
+  .faq-label { font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(255,255,255,0.62); text-align: center; margin-bottom: 10px; }
+  .faq-title { font-size: clamp(22px, 3vw, 30px); font-weight: 800; text-align: center; margin-bottom: 36px; color: var(--white); }
+  .faq-title span { color: #FACC15; }
+  .faq-item { border-bottom: 1px solid rgba(255,255,255,0.14); }
+  .faq-q { width: 100%; background: none; border: none; text-align: left; padding: 20px 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 16px; font-weight: 700; color: #F9FAFB; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; line-height: 1.35; }
+  .faq-q:hover { color: #FDE68A; }
+  .faq-icon { flex-shrink: 0; width: 24px; height: 24px; border-radius: 50%; background: rgba(255,255,255,0.1); border: 1px solid rgba(250,204,21,0.35); display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 800; transition: background .2s, transform .25s, color .2s; color: #FACC15; }
+  .faq-item.open .faq-icon { background: #FACC15; color: #111; border-color: #FACC15; transform: rotate(45deg); }
+  .faq-a { max-height: 0; overflow: hidden; transition: max-height .35s ease, padding .25s ease; }
+  .faq-a-inner { padding: 0 0 20px; font-size: 15px; color: rgba(255,255,255,0.82); line-height: 1.72; }
+  .faq-a-inner strong { color: #FDE047; }
+
   /* ===== FOOTER ===== */
   .footer { background: var(--black); border-top: 1px solid rgba(255,255,255,0.06); padding: 32px 20px 24px; color: rgba(255,255,255,0.4); text-align: center; font-size: 12px; }
 
   @media (max-width: 500px) {
     .stack-item { flex-direction: column; align-items: flex-start; }
     .stack-value { text-align: left; }
+    .faq-section { width: calc(100% - 24px); margin: 18px auto 56px; padding: 32px 16px 22px; border-radius: 18px; }
+    .faq-title { margin-bottom: 30px; }
+    .faq-q { font-size: 15px; padding: 18px 0; }
   }
 
 /* Mobile Fullscreen Nav */
@@ -446,6 +473,51 @@ body.nav-open{overflow:hidden}
   </div>
 </section>
 
+<section class="faq-section">
+  <p class="faq-label">FAQ</p>
+  <h2 class="faq-title">Everything you <span>need to know</span></h2>
+
+  <div class="faq-item">
+    <button class="faq-q">What happens right after I pay?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner">Right after payment, you need to complete the 2 required steps: <strong>(1) complete your Psychometric Evaluation and upload it</strong> (about 20-25 minutes), and <strong>(2) fill your Scholarship Evaluation Form</strong> (about 8-10 minutes). Once your form is properly submitted, we send meeting instructions. If anything is incomplete, our team tells you exactly what to fix and then sends your registration link.</div></div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-q">Is it actually Dr. Sanjay on the call — or a junior counselor?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner"><strong>It's Dr. Sanjay Kumar himself</strong> — no associates, no assistants. Dr. Sanjay personally conducts every strategy call. This is why slots are limited and fill up fast.</div></div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-q">Who is this evaluation for?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner">Students in <strong>Grade 9, Grade 10, Grade 11, Grade 12, or gap year</strong> targeting universities in the US, UK, Europe, or Canada. Whether you have a clear school list or no idea where to start, this call gives you a concrete, personalised roadmap.</div></div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-q">What exactly is the ₹10L+ Scholarship Guarantee?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner">We guarantee that at least <strong>2 universities we match to your profile will offer scholarship opportunities of ₹10 Lakhs or more</strong>. If we cannot identify 2 such schools, you receive a <strong>100% refund — no questions asked</strong>. This guarantee has been honoured across 500+ students.</div></div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-q">I've already started my applications — is this still useful?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner">Absolutely. Many students come to us mid-cycle. Dr. Sanjay will assess where you stand, flag critical gaps, and identify schools you may be overlooking. <strong>It's never too late to get a professional second opinion.</strong></div></div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-q">How is this different from consultants who charge ₹2–5 Lakhs upfront?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner">Most consulting packages are sold before you've seen the quality. This evaluation lets you <strong>experience Dr. Sanjay's expertise at near-zero risk</strong> first. Students who proceed to full consulting after the evaluation get this fee credited toward their package.</div></div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-q">What do I need to prepare for the call?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner">Before the call, complete the two post-payment steps: <strong>Psychometric Evaluation + upload</strong> and the <strong>Scholarship Evaluation Form</strong>. Together they take about 30 minutes and help us make the session specific to your profile. It also helps to keep your academics, activities, and tentative university preferences ready.</div></div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-q">Is my payment secure? What's the refund process?<span class="faq-icon">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner">Payment is processed via <strong>Razorpay</strong> — India's leading payment gateway with bank-grade security. If we cannot match you with 2 schools offering ₹10L+ scholarships, you get a <strong>full refund within 5–7 business days</strong>.</div></div>
+  </div>
+</section>
+
 <footer class="footer">© 2025 Blue Ocean Education Consultants · +91 9811306780 · info@bluocean.education</footer>
 
 <script>
@@ -484,6 +556,24 @@ window.dataLayer.push({ event: 'evaluation_pageview' });
 document.querySelector('.video-placeholder').addEventListener('click', function() {
   this.closest('.video-container').innerHTML =
     '<iframe src="https://www.youtube.com/embed/bK1QU2CK7es?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>';
+});
+
+// FAQ accordion
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const answer = item.querySelector('.faq-a');
+    const isOpen = item.classList.contains('open');
+    // close all
+    document.querySelectorAll('.faq-item.open').forEach(el => {
+      el.classList.remove('open');
+      el.querySelector('.faq-a').style.maxHeight = '0';
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+    }
+  });
 });
 </script>
 </body>
