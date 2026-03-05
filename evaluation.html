@@ -225,24 +225,46 @@ fbq('track', 'PageView');
   }
   .stats-row .stat strong { color: var(--yellow); }
 
+  /* === SANJAY BIO SECTION === */
+  .sanjay-bio-section { background: #F3F4F6; border-top: 1px solid var(--border); padding: 44px 20px; }
+  .sanjay-bio-inner { max-width: 1060px; margin: 0 auto; display: grid; grid-template-columns: 220px 1fr; gap: 36px; align-items: stretch; }
+  .sanjay-bio-card { background: #fff; border: 1px solid var(--border); border-radius: 20px; overflow: hidden; box-shadow: 0 14px 32px rgba(15,23,42,0.10); display: flex; flex-direction: column; height: 100%; }
+  .sanjay-bio-card-photo { flex: 1; overflow: hidden; min-height: 0; position: relative; }
+  .sanjay-bio-card-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 8%; transform: scale(1.45); transform-origin: center top; }
+  .sanjay-bio-card-cap { padding: 12px 14px; border-top: 1px solid var(--border); flex-shrink: 0; }
+  .sanjay-bio-card-name { font-size: 14px; font-weight: 800; color: var(--black); }
+  .sanjay-bio-card-title { font-size: 11px; color: #6B7280; margin-top: 2px; }
+  .sanjay-bio-right { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+  .sanjay-career-block { }
+  .sanjay-career-kicker { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #9CA3AF; margin-bottom: 10px; }
+  .sanjay-career-tl { border-left: 2px solid #E5E7EB; }
+  .sanjay-career-item { position: relative; padding: 0 0 14px 18px; display: flex; align-items: flex-start; gap: 8px; }
+  .sanjay-career-item:last-child { padding-bottom: 0; }
+  .sanjay-career-item::before { content: ''; position: absolute; left: -6px; top: 7px; width: 10px; height: 10px; border-radius: 50%; background: var(--yellow); border: 2px solid #111827; }
+  .sanjay-career-logo { width: 26px; height: 26px; object-fit: contain; border-radius: 5px; border: 1px solid var(--border); background: #fff; padding: 3px; flex-shrink: 0; margin-top: 1px; }
+  .sanjay-career-logo-fb { width: 26px; height: 26px; border-radius: 5px; background: #111827; color: var(--yellow); font-size: 7px; font-weight: 800; display: flex; align-items: center; justify-content: center; text-align: center; flex-shrink: 0; line-height: 1.1; margin-top: 1px; }
+  .sanjay-career-text strong { font-size: 13px; font-weight: 700; color: var(--black); display: block; line-height: 1.3; }
+  .sanjay-career-text span { font-size: 11px; color: #6B7280; }
+  @media(max-width:768px) { .sanjay-bio-inner { grid-template-columns: 1fr; gap: 24px; } .sanjay-bio-right { grid-template-columns: 1fr; } .sanjay-bio-card-photo { aspect-ratio: 3/2; } }
+
   /* === STUDENT PROFILES SECTION === */
-  .sp-section{background:#F3F4F6;color:var(--black);padding:44px 20px;border-top:1px solid var(--border)}
+  .sp-section{background:#F3F4F6;color:var(--black);padding:28px 20px;border-top:1px solid var(--border)}
   .sp-inner{max-width:1060px;margin:0 auto;text-align:center}
   .sp-split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:0;text-align:left}
   @media(max-width:768px){.sp-split{grid-template-columns:1fr;gap:28px}}
   .sp-card-wrap{display:flex;justify-content:center}
-  .sp-card-mock{width:100%;max-width:380px;background:#fff;border:1px solid var(--border);border-radius:20px;padding:26px 24px;box-shadow:0 14px 32px rgba(15,23,42,0.12);transition:opacity .22s ease}
+  .sp-card-mock{width:100%;max-width:380px;background:#fff;border:1px solid var(--border);border-radius:20px;padding:18px 20px;box-shadow:0 14px 32px rgba(15,23,42,0.12);transition:opacity .22s ease}
   .sp-card-mock.fading{opacity:0.08}
-  .sp-mock-stars{color:var(--yellow);font-size:13px;letter-spacing:2px;margin-bottom:14px}
-  .sp-mock-quote{font-family:'Lora',serif;font-style:italic;font-size:16px;line-height:1.72;color:#374151;margin-bottom:20px;min-height:5.8em}
+  .sp-mock-stars{color:var(--yellow);font-size:13px;letter-spacing:2px;margin-bottom:8px}
+  .sp-mock-quote{font-family:'Lora',serif;font-style:italic;font-size:14px;line-height:1.65;color:#374151;margin-bottom:12px;min-height:4.6em}
   .sp-mock-person{display:flex;align-items:center;gap:14px}
-  .sp-mock-avatar{width:68px;height:68px;border-radius:50%;object-fit:cover;object-position:top center;border:2.5px solid var(--yellow);flex-shrink:0}
-  .sp-mock-name{font-size:16px;font-weight:800;color:var(--black)}
+  .sp-mock-avatar{width:52px;height:52px;border-radius:50%;object-fit:cover;object-position:top center;border:2.5px solid var(--yellow);flex-shrink:0}
+  .sp-mock-name{font-size:14px;font-weight:800;color:var(--black)}
   .sp-mock-uni{font-size:13px;color:#7C5E00;font-weight:700;margin-top:2px}
-  .sp-mock-schol-wrap{margin-top:8px}
+  .sp-mock-schol-wrap{margin-top:4px}
   .sp-mock-schol{display:inline-block;background:var(--yellow);color:var(--black);font-size:12px;font-weight:900;letter-spacing:.8px;text-transform:uppercase;padding:5px 12px;border-radius:6px}
-  .sp-mock-year{display:block;font-size:11px;font-weight:600;color:#6B7280;margin-top:6px}
-  .sp-marquee-wrap{display:flex;flex-direction:column;gap:12px;overflow:hidden;position:relative}
+  .sp-mock-year{display:block;font-size:11px;font-weight:600;color:#6B7280;margin-top:3px}
+  .sp-marquee-wrap{display:flex;flex-direction:column;gap:8px;overflow:hidden;position:relative}
   .sp-marquee-wrap::before,.sp-marquee-wrap::after{content:'';position:absolute;top:0;bottom:0;width:40px;z-index:2;pointer-events:none}
   .sp-marquee-wrap::before{left:0;background:linear-gradient(90deg,#F3F4F6,transparent)}
   .sp-marquee-wrap::after{right:0;background:linear-gradient(-90deg,#F3F4F6,transparent)}
@@ -251,9 +273,9 @@ fbq('track', 'PageView');
   .sp-mtrack.rev{animation-direction:reverse;animation-duration:52s}
   .sp-marquee-wrap:hover .sp-mtrack{animation-play-state:paused}
   @keyframes sp-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-  .sp-mcard{flex:0 0 210px;background:#fff;border:1.5px solid var(--border);border-radius:16px;padding:18px 16px;display:flex;flex-direction:column;align-items:center;text-align:center;transition:border-color .2s,transform .2s,box-shadow .2s}
+  .sp-mcard{flex:0 0 200px;background:#fff;border:1.5px solid var(--border);border-radius:16px;padding:14px 14px;display:flex;flex-direction:column;align-items:center;text-align:center;transition:border-color .2s,transform .2s,box-shadow .2s}
   .sp-mcard:hover{border-color:rgba(250,204,21,0.75);transform:translateY(-3px);box-shadow:0 10px 22px rgba(15,23,42,0.12)}
-  .sp-mcard-avatar{width:84px;height:84px;border-radius:50%;object-fit:cover;object-position:top center;border:2.5px solid rgba(250,204,21,0.5);margin-bottom:12px;flex-shrink:0}
+  .sp-mcard-avatar{width:62px;height:62px;border-radius:50%;object-fit:cover;object-position:top center;border:2.5px solid rgba(250,204,21,0.5);margin-bottom:8px;flex-shrink:0}
   .sp-mcard-name{font-size:14px;font-weight:800;color:var(--black)}
   .sp-mcard-uni{font-size:13px;color:#7C5E00;font-weight:700;margin-top:3px}
   .sp-mcard-quote{font-family:'Lora',serif;font-style:italic;font-size:11.5px;color:#4B5563;line-height:1.55;margin:8px 0 8px}
@@ -426,11 +448,14 @@ body.nav-open{overflow:hidden}
       <p class="hero-cta-price"><s>₹45,000</s> → ₹4,500 · Delivered in 48 hrs</p>
     </div>
     <div class="hero-right">
-      <div class="video-container">
-        <div class="video-placeholder">
-          <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
-          <p class="vid-label"><strong>Watch Dr. Sanjay</strong> — 3 min</p>
+      <div style="background:#fff;border-radius:18px;padding:14px;box-shadow:0 12px 36px rgba(0,0,0,0.35);border:1px solid rgba(255,255,255,0.08);">
+        <div class="video-container" style="border-radius:10px;border:none;box-shadow:none;">
+          <div class="video-placeholder">
+            <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+            <p class="vid-label"><strong>Watch Dr. Sanjay</strong> — 3 min</p>
+          </div>
         </div>
+        <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-top:12px;padding-bottom:2px;"><img src="logos/harvard-kennedy-school.png" alt="Harvard" style="height:20px;width:auto;object-fit:contain;" onerror="this.style.display='none'"><span style="font-size:13px;font-weight:700;color:#111;">Dr. Sanjay Kumar, PhD</span><span style="font-size:12px;color:#6B7280;">· Harvard Graduate</span></div>
       </div>
     </div>
   </div>
@@ -443,6 +468,8 @@ body.nav-open{overflow:hidden}
     <span class="stat"><strong>₹1Cr+</strong> avg scholarship</span>
   </div>
 </div>
+
+
 
 <section class="sp-section">
   <div class="sp-inner">
