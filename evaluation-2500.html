@@ -225,6 +225,43 @@ fbq('track', 'PageView');
   }
   .stats-row .stat strong { color: var(--yellow); }
 
+  /* === STUDENT PROFILES SECTION === */
+  .sp-section{background:#F3F4F6;color:var(--black);padding:44px 20px;border-top:1px solid var(--border)}
+  .sp-inner{max-width:1060px;margin:0 auto;text-align:center}
+  .sp-split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:0;text-align:left}
+  @media(max-width:768px){.sp-split{grid-template-columns:1fr;gap:28px}}
+  .sp-card-wrap{display:flex;justify-content:center}
+  .sp-card-mock{width:100%;max-width:380px;background:#fff;border:1px solid var(--border);border-radius:20px;padding:26px 24px;box-shadow:0 14px 32px rgba(15,23,42,0.12);transition:opacity .22s ease}
+  .sp-card-mock.fading{opacity:0.08}
+  .sp-mock-stars{color:var(--yellow);font-size:13px;letter-spacing:2px;margin-bottom:14px}
+  .sp-mock-quote{font-family:'Lora',serif;font-style:italic;font-size:16px;line-height:1.72;color:#374151;margin-bottom:20px;min-height:5.8em}
+  .sp-mock-person{display:flex;align-items:center;gap:14px}
+  .sp-mock-avatar{width:68px;height:68px;border-radius:50%;object-fit:cover;object-position:top center;border:2.5px solid var(--yellow);flex-shrink:0}
+  .sp-mock-name{font-size:16px;font-weight:800;color:var(--black)}
+  .sp-mock-uni{font-size:13px;color:#7C5E00;font-weight:700;margin-top:2px}
+  .sp-mock-schol-wrap{margin-top:8px}
+  .sp-mock-schol{display:inline-block;background:var(--yellow);color:var(--black);font-size:12px;font-weight:900;letter-spacing:.8px;text-transform:uppercase;padding:5px 12px;border-radius:6px}
+  .sp-mock-year{display:block;font-size:11px;font-weight:600;color:#6B7280;margin-top:6px}
+  .sp-marquee-wrap{display:flex;flex-direction:column;gap:12px;overflow:hidden;position:relative}
+  .sp-marquee-wrap::before,.sp-marquee-wrap::after{content:'';position:absolute;top:0;bottom:0;width:40px;z-index:2;pointer-events:none}
+  .sp-marquee-wrap::before{left:0;background:linear-gradient(90deg,#F3F4F6,transparent)}
+  .sp-marquee-wrap::after{right:0;background:linear-gradient(-90deg,#F3F4F6,transparent)}
+  .sp-mrow{overflow:hidden}
+  .sp-mtrack{display:flex;gap:12px;width:max-content;animation:sp-scroll 44s linear infinite}
+  .sp-mtrack.rev{animation-direction:reverse;animation-duration:52s}
+  .sp-marquee-wrap:hover .sp-mtrack{animation-play-state:paused}
+  @keyframes sp-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+  .sp-mcard{flex:0 0 210px;background:#fff;border:1.5px solid var(--border);border-radius:16px;padding:18px 16px;display:flex;flex-direction:column;align-items:center;text-align:center;transition:border-color .2s,transform .2s,box-shadow .2s}
+  .sp-mcard:hover{border-color:rgba(250,204,21,0.75);transform:translateY(-3px);box-shadow:0 10px 22px rgba(15,23,42,0.12)}
+  .sp-mcard-avatar{width:84px;height:84px;border-radius:50%;object-fit:cover;object-position:top center;border:2.5px solid rgba(250,204,21,0.5);margin-bottom:12px;flex-shrink:0}
+  .sp-mcard-name{font-size:14px;font-weight:800;color:var(--black)}
+  .sp-mcard-uni{font-size:13px;color:#7C5E00;font-weight:700;margin-top:3px}
+  .sp-mcard-quote{font-family:'Lora',serif;font-style:italic;font-size:11.5px;color:#4B5563;line-height:1.55;margin:8px 0 8px}
+  .sp-mcard-schol{background:var(--yellow);color:var(--black);font-size:11px;font-weight:900;letter-spacing:.8px;text-transform:uppercase;padding:5px 11px;border-radius:6px;margin:6px 0 2px}
+  .sp-mcard-year{font-size:10px;font-weight:600;color:#6B7280;margin-top:6px}
+  @media(max-width:768px){.sp-mcard{flex-basis:72vw}}
+  @media(prefers-reduced-motion:reduce){.sp-mtrack{animation:none}.sp-mrow{overflow-x:auto}.sp-marquee-wrap::before,.sp-marquee-wrap::after{display:none}}
+
   /* ===== VALUE STACK ===== */
   .stack-section {
     max-width: 580px;
@@ -407,6 +444,31 @@ body.nav-open{overflow:hidden}
   </div>
 </div>
 
+<section class="sp-section">
+  <div class="sp-inner">
+    <div class="sp-split">
+      <div class="sp-card-wrap">
+        <div class="sp-card-mock" id="sp-mock">
+          <div class="sp-mock-stars">★★★★★</div>
+          <p class="sp-mock-quote" id="sp-mock-quote">"I walked into Harvard's interview knowing I belonged there. Blue Ocean made sure of that."</p>
+          <div class="sp-mock-person">
+            <img class="sp-mock-avatar" id="sp-mock-avatar" src="testimonial_pics_ai/prateek.png" alt="Prateek">
+            <div>
+              <div class="sp-mock-name" id="sp-mock-name">Prateek</div>
+              <div class="sp-mock-uni" id="sp-mock-uni">Harvard University</div>
+              <div class="sp-mock-schol-wrap">
+                <span class="sp-mock-schol" id="sp-mock-schol">₹95L Scholarship</span>
+                <span class="sp-mock-year" id="sp-mock-year">Class of '28</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sp-marquee-wrap" id="sp-marquee"></div>
+    </div>
+  </div>
+</section>
+
 <section class="stack-section" id="full-breakdown">
   <div class="stack-header">
     <h2>Here's the Full Breakdown</h2>
@@ -557,6 +619,80 @@ document.querySelector('.video-placeholder').addEventListener('click', function(
   this.closest('.video-container').innerHTML =
     '<iframe src="https://www.youtube.com/embed/bK1QU2CK7es?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>';
 });
+
+// Student profiles — animated card + scrolling marquee
+(() => {
+  const mockEl = document.getElementById('sp-mock');
+  const quoteEl = document.getElementById('sp-mock-quote');
+  const avatarEl = document.getElementById('sp-mock-avatar');
+  const nameEl = document.getElementById('sp-mock-name');
+  const uniEl = document.getElementById('sp-mock-uni');
+  const yearEl = document.getElementById('sp-mock-year');
+  const scholEl = document.getElementById('sp-mock-schol');
+  const marqueeEl = document.getElementById('sp-marquee');
+  if (!mockEl || !marqueeEl) return;
+
+  const students = [
+    {name:'Prateek',short:'Harvard',uni:'Harvard University',year:"Class of '28",schol:'₹95L Scholarship',img:'testimonial_pics_ai/prateek.png',quote:'I walked into Harvard’s interview knowing I belonged there. Blue Ocean made sure of that.',qshort:'Blue Ocean made sure I belonged there.'},
+    {name:'Manya',short:'Brown',uni:'Brown University',year:"Class of '28",schol:'₹1.5 Cr Scholarship',img:'testimonial_pics_ai/manya.png',quote:'From a small town in India to Brown University. My story had the ending I’d always dreamed of.',qshort:'My story had the ending I’d always dreamed of.'},
+    {name:'Adya',short:'Harvard',uni:'Harvard University',year:"Class of '28",schol:'₹1.05 Cr Scholarship',img:'testimonial_pics_ai/adya.png',quote:'They helped me find my voice when I thought I had nothing worth saying.',qshort:'They helped me find my voice.'},
+    {name:'Anushka',short:'Columbia',uni:'Columbia University',year:"Class of '28",schol:'₹88L Scholarship',img:'testimonial_pics_ai/anushka.png',quote:'Every essay rewrite made me stronger. By the end, I truly owned my story.',qshort:'By the end, I truly owned my story.'},
+    {name:'Palakshi',short:'Harvard',uni:'Harvard University',year:"Class of '28",schol:'₹70L Scholarship',img:'testimonial_pics_ai/palakshi.png',quote:'They saw my potential before I did. Every session built my confidence.',qshort:'They saw my potential before I did.'},
+    {name:'Shreejeet',short:'Northeastern',uni:'Northeastern University',year:"Class of '28",schol:'₹1.3 Cr Scholarship',img:'testimonial_pics_ai/shreejeet.png',quote:'I doubted myself at every turn. Blue Ocean never did. That made all the difference.',qshort:'Blue Ocean never doubted me.'},
+    {name:'Purusharth',short:'UPenn',uni:'University of Pennsylvania',year:"Class of '28",schol:'',img:'testimonial_pics_ai/puru.png',quote:'World-class strategy, personal attention. The best investment I ever made.',qshort:'The best investment I ever made.'},
+    {name:'Randitya',short:'ESSEC',uni:'ESSEC Business School',year:"Class of '28",schol:'₹1.2 Cr Scholarship',img:'testimonial_pics_ai/randitya.png',quote:'In under six months, I went from confused to confirmed. ESSEC is my reality now.',qshort:'From confused to confirmed in 6 months.'},
+    {name:'Ananya',short:'Warwick',uni:'University of Warwick',year:"Class of '28",schol:'',img:'testimonial_pics_ai/ananya.png',quote:'Every session was purposeful. I always knew exactly what to work on next.',qshort:'I always knew what to work on next.'},
+    {name:'Tathagata',short:'Cornell',uni:'Cornell University',year:"Class of '28",schol:'₹1.2 Cr Scholarship',img:'testimonial_pics_ai/tathagata.png',quote:'They turned what I thought were weaknesses into the most compelling parts of my story.',qshort:'My weaknesses became my strengths.'},
+    {name:'Bhakti',short:'CMU',uni:'Carnegie Mellon University',year:"Class of '28",schol:'₹70L Scholarship',img:'testimonial_pics_ai/bhakti.png',quote:'CMU felt impossible until Blue Ocean showed me it wasn’t. Now I’m here.',qshort:'Blue Ocean showed me CMU was possible.'},
+    {name:'Sana',short:'NYU',uni:'New York University',year:"Class of '28",schol:'₹75L Scholarship',img:'testimonial_pics_ai/sana.png',quote:'My essays finally sounded like me. That authenticity is what got me to New York.',qshort:'That authenticity got me to New York.'},
+    {name:'Shaurya',short:'Tufts',uni:'Tufts University',year:"Class of '28",schol:'',img:'testimonial_pics_ai/shaurya.png',quote:'Thorough, personal, and transformative. There is no better way to describe this team.',qshort:'Thorough, personal, and transformative.'},
+  ];
+
+  function makeCard(s) {
+    const d = document.createElement('div');
+    d.className = 'sp-mcard';
+    d.innerHTML = '<img class="sp-mcard-avatar" src="' + s.img + '" alt="' + s.name + '" loading="lazy">'
+      + '<div class="sp-mcard-name">' + s.name + '</div>'
+      + '<div class="sp-mcard-uni">' + s.short + '</div>'
+      + (s.schol ? '<div class="sp-mcard-schol">' + s.schol + '</div>' : '')
+      + '<p class="sp-mcard-quote">“' + s.qshort + '”</p>'
+      + '<div class="sp-mcard-year">' + s.year + '</div>';
+    return d;
+  }
+  function makeRow(list) {
+    const row = document.createElement('div'); row.className = 'sp-mrow';
+    const track = document.createElement('div'); track.className = 'sp-mtrack';
+    [...list, ...list].forEach(s => track.appendChild(makeCard(s)));
+    row.appendChild(track); return row;
+  }
+  marqueeEl.appendChild(makeRow(students));
+
+  let cur = 0, timer = null;
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function paint(i) {
+    const s = students[i];
+    quoteEl.textContent = '“' + s.quote + '”';
+    avatarEl.src = s.img; avatarEl.alt = s.name;
+    nameEl.textContent = s.name; uniEl.textContent = s.uni;
+    yearEl.textContent = s.year;
+    scholEl.textContent = s.schol;
+    scholEl.style.display = s.schol ? '' : 'none';
+  }
+  function show(next) {
+    cur = next;
+    if (!reduceMotion) {
+      mockEl.classList.add('fading');
+      setTimeout(() => { paint(cur); mockEl.classList.remove('fading'); }, 180);
+    } else { paint(cur); }
+  }
+  function start() { if (reduceMotion || timer) return; timer = setInterval(() => show((cur + 1) % students.length), 4800); }
+  function stop() { clearInterval(timer); timer = null; }
+  mockEl.addEventListener('mouseenter', stop);
+  mockEl.addEventListener('mouseleave', start);
+  document.addEventListener('visibilitychange', () => (document.hidden ? stop() : start()));
+  paint(0); start();
+})();
 
 // FAQ accordion
 document.querySelectorAll('.faq-q').forEach(btn => {
