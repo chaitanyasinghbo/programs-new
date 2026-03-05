@@ -183,6 +183,84 @@ a{color:inherit;text-decoration:none}
 .final-cta .price s{color:rgba(255,255,255,0.2)}
 .final-cta .guarantee{margin-top:20px;background:rgba(22,163,74,0.15);border:1px solid rgba(22,163,74,0.3);border-radius:10px;padding:14px 18px;font-size:13px;color:rgba(255,255,255,0.7);line-height:1.5}
 
+/* === SHARED SECTION UTILITIES === */
+.voice-kicker{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,0.58);text-align:center;margin-bottom:10px}
+.voice-sub{font-size:15px;color:#4B5563;line-height:1.65;max-width:620px;margin:0 auto 36px;text-align:center}
+
+/* === OFFER LETTER SECTION === */
+.ol-section{background:var(--light);padding:72px 20px;border-top:2px solid var(--yellow);border-bottom:1px solid var(--border)}
+.ol-section-inner{max-width:1000px;margin:0 auto;text-align:center}
+.ol-split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:48px;text-align:left}
+@media(max-width:768px){.ol-split{grid-template-columns:1fr;gap:28px}}
+.ol-letter-wrap{display:flex;justify-content:center}
+.ol-letter{width:100%;max-width:440px;background:#fff;border-radius:6px;box-shadow:0 4px 6px rgba(0,0,0,0.05),0 10px 32px rgba(0,0,0,0.1);overflow:hidden}
+.ol-letter-hdr{background:var(--black);padding:15px 20px;display:flex;align-items:center;justify-content:space-between}
+.ol-letter-logo{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.55)}
+.ol-admit-badge{background:var(--yellow);color:var(--black);font-size:10px;font-weight:900;letter-spacing:1px;text-transform:uppercase;padding:5px 10px;border-radius:4px}
+.ol-letter-body{padding:28px 26px 32px}
+.ol-office{font-size:10px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#9CA3AF;margin-bottom:20px}
+.ol-salutation{font-size:28px;font-weight:800;color:var(--black);min-height:1.3em;margin-bottom:20px;line-height:1.25}
+.ol-dear-word{font-weight:400;color:#6B7280}
+.ol-name-caret{display:inline-block;width:3px;height:.75em;background:var(--black);margin-left:2px;vertical-align:text-bottom;animation:ol-blink .85s step-end infinite}
+@keyframes ol-blink{50%{opacity:0}}
+.ol-body-text{font-size:13px;color:#374151;line-height:1.75}
+.ol-uni{font-weight:800;color:var(--black);transition:opacity .25s ease}
+.ol-divider{border:none;border-top:1px solid #F3F4F6;margin:20px 0 16px}
+.ol-seal{display:flex;align-items:center;gap:10px}
+.ol-seal-icon{width:30px;height:30px;border-radius:50%;background:var(--yellow);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
+.ol-seal-text{font-size:11px;font-weight:700;color:#6B7280;text-transform:uppercase;letter-spacing:.8px;line-height:1.4}
+.ol-marquee-wrap{display:flex;flex-direction:column;gap:12px;overflow:hidden;position:relative}
+.ol-marquee-wrap::before,.ol-marquee-wrap::after{content:'';position:absolute;top:0;bottom:0;width:40px;z-index:2;pointer-events:none}
+.ol-marquee-wrap::before{left:0;background:linear-gradient(90deg,var(--light),transparent)}
+.ol-marquee-wrap::after{right:0;background:linear-gradient(-90deg,var(--light),transparent)}
+.ol-mrow{overflow:hidden}
+.ol-mtrack{display:flex;gap:12px;width:max-content;animation:ol-scroll 35s linear infinite}
+.ol-mtrack.rev{animation-direction:reverse;animation-duration:42s}
+.ol-marquee-wrap:hover .ol-mtrack{animation-play-state:paused}
+@keyframes ol-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.ol-mcard{flex:0 0 200px;border-radius:10px;overflow:hidden;border:1px solid #E5E7EB;background:#fff;box-shadow:0 4px 16px rgba(0,0,0,0.08);transition:transform .2s,box-shadow .2s,border-color .2s}
+.ol-mcard:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 10px 28px rgba(0,0,0,0.14);border-color:var(--yellow)}
+.ol-mcard img{width:100%;display:block}
+@media(max-width:768px){.ol-mcard{flex-basis:64vw}}
+@media(prefers-reduced-motion:reduce){.ol-mtrack{animation:none}.ol-mrow{overflow-x:auto}.ol-marquee-wrap::before,.ol-marquee-wrap::after{display:none}}
+
+/* === STUDENT PROFILES SECTION === */
+.sp-section{background:var(--black);color:var(--white);padding:72px 20px;border-top:2px solid var(--yellow)}
+.sp-inner{max-width:1060px;margin:0 auto;text-align:center}
+.sp-split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:48px;text-align:left}
+@media(max-width:768px){.sp-split{grid-template-columns:1fr;gap:28px}}
+.sp-card-wrap{display:flex;justify-content:center}
+.sp-card-mock{width:100%;max-width:380px;background:rgba(255,255,255,0.05);border:1px solid rgba(250,204,21,0.25);border-radius:20px;padding:26px 24px;box-shadow:0 20px 56px rgba(0,0,0,0.5);transition:opacity .22s ease}
+.sp-card-mock.fading{opacity:0.08}
+.sp-mock-stars{color:var(--yellow);font-size:13px;letter-spacing:2px;margin-bottom:14px}
+.sp-mock-quote{font-family:'Lora',serif;font-style:italic;font-size:16px;line-height:1.72;color:rgba(255,255,255,0.92);margin-bottom:20px;min-height:5.8em}
+.sp-mock-person{display:flex;align-items:center;gap:14px}
+.sp-mock-avatar{width:68px;height:68px;border-radius:50%;object-fit:cover;object-position:top center;border:2.5px solid var(--yellow);flex-shrink:0}
+.sp-mock-name{font-size:16px;font-weight:800;color:var(--white)}
+.sp-mock-uni{font-size:13px;color:var(--yellow);font-weight:600;margin-top:2px}
+.sp-mock-schol-wrap{margin-top:8px}
+.sp-mock-schol{display:inline-block;background:var(--yellow);color:var(--black);font-size:12px;font-weight:900;letter-spacing:.8px;text-transform:uppercase;padding:5px 12px;border-radius:6px}
+.sp-mock-year{display:block;font-size:11px;font-weight:600;color:rgba(255,255,255,0.45);margin-top:6px}
+.sp-marquee-wrap{display:flex;flex-direction:column;gap:12px;overflow:hidden;position:relative}
+.sp-marquee-wrap::before,.sp-marquee-wrap::after{content:'';position:absolute;top:0;bottom:0;width:40px;z-index:2;pointer-events:none}
+.sp-marquee-wrap::before{left:0;background:linear-gradient(90deg,var(--black),transparent)}
+.sp-marquee-wrap::after{right:0;background:linear-gradient(-90deg,var(--black),transparent)}
+.sp-mrow{overflow:hidden}
+.sp-mtrack{display:flex;gap:12px;width:max-content;animation:sp-scroll 44s linear infinite}
+.sp-mtrack.rev{animation-direction:reverse;animation-duration:52s}
+.sp-marquee-wrap:hover .sp-mtrack{animation-play-state:paused}
+@keyframes sp-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.sp-mcard{flex:0 0 210px;background:rgba(255,255,255,0.04);border:1.5px solid rgba(255,255,255,0.09);border-radius:16px;padding:18px 16px;display:flex;flex-direction:column;align-items:center;text-align:center;transition:border-color .2s,transform .2s,box-shadow .2s}
+.sp-mcard:hover{border-color:rgba(250,204,21,0.55);transform:translateY(-3px);box-shadow:0 8px 24px rgba(250,204,21,0.1)}
+.sp-mcard-avatar{width:84px;height:84px;border-radius:50%;object-fit:cover;object-position:top center;border:2.5px solid rgba(250,204,21,0.5);margin-bottom:12px;flex-shrink:0}
+.sp-mcard-name{font-size:14px;font-weight:800;color:var(--white)}
+.sp-mcard-uni{font-size:13px;color:var(--yellow);font-weight:700;margin-top:3px}
+.sp-mcard-quote{font-family:'Lora',serif;font-style:italic;font-size:11.5px;color:rgba(255,255,255,0.6);line-height:1.55;margin:8px 0 8px}
+.sp-mcard-schol{background:var(--yellow);color:var(--black);font-size:11px;font-weight:900;letter-spacing:.8px;text-transform:uppercase;padding:5px 11px;border-radius:6px;margin:6px 0 2px}
+.sp-mcard-year{font-size:10px;font-weight:600;color:rgba(255,255,255,0.4);margin-top:6px}
+@media(max-width:768px){.sp-mcard{flex-basis:72vw}}
+@media(prefers-reduced-motion:reduce){.sp-mtrack{animation:none}.sp-mrow{overflow-x:auto}.sp-marquee-wrap::before,.sp-marquee-wrap::after{display:none}}
+
 /* === FOOTER === */
 .footer{background:var(--black);border-top:1px solid rgba(255,255,255,0.06);padding:40px 20px;color:rgba(255,255,255,0.4)}
 .footer-inner{max-width:960px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}
@@ -296,6 +374,106 @@ body.nav-open{overflow:hidden}
   <div class="ticker-item"><span class="dot"></span>Sanvi → Columbia</div>
 </div></div>
 
+<!-- OFFER LETTER SECTION -->
+<section class="ol-section">
+  <div class="ol-section-inner">
+    <p class="process-label">OFFER LETTERS</p>
+    <h2 style="font-size:clamp(30px,3.8vw,48px);font-weight:800;text-align:center;margin-bottom:12px;color:var(--black)">Accepted. <span style="color:var(--yellow)">Officially.</span></h2>
+    <p class="process-sub">Real admission letters from top universities across the US, UK, and Europe — our students got in.</p>
+    <div class="ol-split">
+      <!-- LEFT: animated letter mockup -->
+      <div class="ol-letter-wrap">
+        <div class="ol-letter">
+          <div class="ol-letter-hdr">
+            <div class="ol-letter-logo">Office of Admissions</div>
+            <div class="ol-admit-badge">ADMITTED ✓</div>
+          </div>
+          <div class="ol-letter-body">
+            <div class="ol-office">Undergraduate Admissions · Class of 2029</div>
+            <div class="ol-salutation"><span class="ol-dear-word">Dear </span><span id="ol-name">Manya</span><span class="ol-name-caret"></span>,</div>
+            <p class="ol-body-text">Congratulations! We are delighted to offer you admission to <span id="ol-uni" class="ol-uni">Brown University</span>. Your application stood out among thousands of talented students worldwide.</p>
+            <hr class="ol-divider">
+            <div class="ol-seal">
+              <div class="ol-seal-icon">🎓</div>
+              <div class="ol-seal-text">Official Offer of Admission<br>Blue Ocean Education</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- RIGHT: scrolling offer letter marquee -->
+      <div class="ol-marquee-wrap">
+        <div class="ol-mrow">
+          <div class="ol-mtrack">
+            <div class="ol-mcard"><img src="offer_letter_ss/ol01.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol02.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol03.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol04.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol05.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol06.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol07.png" alt="University offer letter" loading="lazy"></div>
+            <!-- duplicate for seamless loop -->
+            <div class="ol-mcard"><img src="offer_letter_ss/ol01.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol02.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol03.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol04.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol05.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol06.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol07.png" alt="University offer letter" loading="lazy"></div>
+          </div>
+        </div>
+        <div class="ol-mrow">
+          <div class="ol-mtrack rev">
+            <div class="ol-mcard"><img src="offer_letter_ss/ol08.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol09.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol10.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol11.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol12.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol13.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol14.png" alt="University offer letter" loading="lazy"></div>
+            <!-- duplicate for seamless loop -->
+            <div class="ol-mcard"><img src="offer_letter_ss/ol08.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol09.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol10.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol11.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol12.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol13.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol14.png" alt="University offer letter" loading="lazy"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STUDENT PROFILES / FACES BEHIND THE RESULTS -->
+<section class="sp-section">
+  <div class="sp-inner">
+    <p class="voice-kicker">OUR STUDENTS</p>
+    <h2 style="font-size:clamp(28px,3.8vw,46px);font-weight:800;line-height:1.15;margin-bottom:12px"><span style="color:var(--yellow)">Faces</span> Behind The Results.</h2>
+    <p class="voice-sub" style="color:rgba(255,255,255,0.6)">Real students. Real schools. Their stories, in their own words.</p>
+    <div class="sp-split">
+      <div class="sp-card-wrap">
+        <div class="sp-card-mock" id="sp-mock">
+          <div class="sp-mock-stars">★★★★★</div>
+          <p class="sp-mock-quote" id="sp-mock-quote">"I walked into Harvard's interview knowing I belonged there. Blue Ocean made sure of that."</p>
+          <div class="sp-mock-person">
+            <img class="sp-mock-avatar" id="sp-mock-avatar" src="testimonial_pics_ai/prateek.png" alt="Prateek">
+            <div>
+              <div class="sp-mock-name" id="sp-mock-name">Prateek</div>
+              <div class="sp-mock-uni" id="sp-mock-uni">Harvard University</div>
+              <div class="sp-mock-schol-wrap">
+                <span class="sp-mock-schol" id="sp-mock-schol">₹95L Scholarship</span>
+                <span class="sp-mock-year" id="sp-mock-year">Class of '28</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sp-marquee-wrap" id="sp-marquee"></div>
+    </div>
+  </div>
+</section>
+
 <!-- PROCESS -->
 <section class="process">
   <p class="process-label">How It Works</p>
@@ -332,73 +510,185 @@ body.nav-open{overflow:hidden}
         <article class="test-card">
           <div>
             <div class="stars">★★★★★</div>
-            <p class="q">"I still can't believe our Prateek is headed to Harvard — Dr. Sanjay sir and the Blue Ocean team held his hand through every essay rewrite and mock interview; we're forever grateful."</p>
+            <p class="q">"I still cannot believe our Prateek is headed to Harvard. Dr. Sanjay and the Blue Ocean team held his hand through every essay rewrite and every mock interview. We are deeply grateful."</p>
           </div>
           <p class="a">Prateek's Father <span>· Harvard '28</span></p>
         </article>
         <article class="test-card">
           <div>
             <div class="stars">★★★★★</div>
-            <p class="q">"Their team works 24/7 and the counselors are very responsive. We never had to worry."</p>
-          </div>
-          <p class="a">Vikas's Mother <span>· UPenn</span></p>
-        </article>
-        <article class="test-card">
-          <div>
-            <div class="stars">★★★★★</div>
-            <p class="q">"That 3 AM email announcing her Cambridge acceptance had us dancing in our living room."</p>
-          </div>
-          <p class="a">Riya's Mother <span>· Cambridge</span></p>
-        </article>
-        <article class="test-card">
-          <div>
-            <div class="stars">★★★★★</div>
-            <p class="q">"Blue Ocean's help with our essays was truly the best decision — turning Manya's application into a triumph."</p>
+            <p class="q">"They took Manya's raw ideas and turned them into essays that felt true to her voice. Brown University was a very emotional moment for our entire family."</p>
           </div>
           <p class="a">Manya's Father <span>· Brown</span></p>
         </article>
         <article class="test-card">
           <div>
             <div class="stars">★★★★★</div>
-            <p class="q">"We got into our first choice — under 6% acceptance rate — didn't think it was possible!"</p>
+            <p class="q">"Harvard felt out of reach in the beginning. Blue Ocean gave us a clear roadmap and practical steps. Adya walked into submission season with real confidence."</p>
+          </div>
+          <p class="a">Adya's Parents <span>· Harvard</span></p>
+        </article>
+        <article class="test-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="q">"Columbia and Cambridge both said yes in the same week. Anushka's law firm experience was unique and Dr. Sanjay knew exactly how to position it. We are so proud."</p>
+          </div>
+          <p class="a">Anushka's Parents <span>· Columbia</span></p>
+        </article>
+        <article class="test-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="q">"We are from Pune and Harvard felt like a dream that belonged to someone else. Blue Ocean made it feel achievable step by step. Palakshi's policymaking work truly came alive in her essays."</p>
+          </div>
+          <p class="a">Palakshi's Parents <span>· Harvard</span></p>
+        </article>
+        <article class="test-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="q">"Many people told us our chances were tiny. Dr. Sanjay and team still believed in our son, and that belief carried us all the way to Northeastern."</p>
+          </div>
+          <p class="a">Shreejeet's Parents <span>· Northeastern</span></p>
+        </article>
+        <article class="test-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="q">"Purusharth's aerospace wins were impressive but we were not sure how to present them. Blue Ocean matched his profile to Penn's values and the result was beyond our expectations."</p>
+          </div>
+          <p class="a">Purusharth's Father <span>· UPenn</span></p>
+        </article>
+        <article class="test-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="q">"Randitya started with under three months to go. Blue Ocean built a plan from scratch and helped him tell his story with real emotion. ESSEC's admission still feels surreal."</p>
           </div>
           <p class="a">Randitya's Mother <span>· ESSEC</span></p>
+        </article>
+        <article class="test-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="q">"Their team opened doors to workshops and focused opportunities that matched Ananya's goals exactly. Warwick became possible because of that careful planning."</p>
+          </div>
+          <p class="a">Ananya's Mother <span>· Warwick</span></p>
+        </article>
+        <article class="test-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="q">"Tathagata had the fintech background Cornell was looking for but turning it into a compelling application was hard. Dr. Sanjay helped him find the right narrative, and Cornell said yes."</p>
+          </div>
+          <p class="a">Tathagata's Parents <span>· Cornell</span></p>
+        </article>
+        <article class="test-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="q">"Bhakti's mountaineering was not what we expected would help an MBA application. Blue Ocean showed us that is exactly what sets a candidate apart. CMU saw it too."</p>
+          </div>
+          <p class="a">Bhakti's Parents <span>· CMU MBA</span></p>
+        </article>
+        <article class="test-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="q">"Their NYU strategy was thoughtful and realistic. Sana's story finally sounded authentic, and that made all the difference on result day."</p>
+          </div>
+          <p class="a">Sana's Mother <span>· NYU</span></p>
+        </article>
+        <article class="test-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="q">"Shaurya had orchestrated a major merger but kept downplaying it. Blue Ocean helped him own that achievement with confidence. Tufts recognised it immediately."</p>
+          </div>
+          <p class="a">Shaurya's Parents <span>· Tufts MBA</span></p>
         </article>
         <!-- duplicate cards for seamless loop -->
         <article class="test-card">
           <div>
             <div class="stars">★★★★★</div>
-            <p class="q">"I still can't believe our Prateek is headed to Harvard — Dr. Sanjay sir and the Blue Ocean team held his hand through every essay rewrite and mock interview; we're forever grateful."</p>
+            <p class="q">"I still cannot believe our Prateek is headed to Harvard. Dr. Sanjay and the Blue Ocean team held his hand through every essay rewrite and every mock interview. We are deeply grateful."</p>
           </div>
           <p class="a">Prateek's Father <span>· Harvard '28</span></p>
         </article>
         <article class="test-card">
           <div>
             <div class="stars">★★★★★</div>
-            <p class="q">"Their team works 24/7 and the counselors are very responsive. We never had to worry."</p>
-          </div>
-          <p class="a">Vikas's Mother <span>· UPenn</span></p>
-        </article>
-        <article class="test-card">
-          <div>
-            <div class="stars">★★★★★</div>
-            <p class="q">"That 3 AM email announcing her Cambridge acceptance had us dancing in our living room."</p>
-          </div>
-          <p class="a">Riya's Mother <span>· Cambridge</span></p>
-        </article>
-        <article class="test-card">
-          <div>
-            <div class="stars">★★★★★</div>
-            <p class="q">"Blue Ocean's help with our essays was truly the best decision — turning Manya's application into a triumph."</p>
+            <p class="q">"They took Manya's raw ideas and turned them into essays that felt true to her voice. Brown University was a very emotional moment for our entire family."</p>
           </div>
           <p class="a">Manya's Father <span>· Brown</span></p>
         </article>
         <article class="test-card">
           <div>
             <div class="stars">★★★★★</div>
-            <p class="q">"We got into our first choice — under 6% acceptance rate — didn't think it was possible!"</p>
+            <p class="q">"Harvard felt out of reach in the beginning. Blue Ocean gave us a clear roadmap and practical steps. Adya walked into submission season with real confidence."</p>
+          </div>
+          <p class="a">Adya's Parents <span>· Harvard</span></p>
+        </article>
+        <article class="test-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="q">"Columbia and Cambridge both said yes in the same week. Anushka's law firm experience was unique and Dr. Sanjay knew exactly how to position it. We are so proud."</p>
+          </div>
+          <p class="a">Anushka's Parents <span>· Columbia</span></p>
+        </article>
+        <article class="test-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="q">"We are from Pune and Harvard felt like a dream that belonged to someone else. Blue Ocean made it feel achievable step by step. Palakshi's policymaking work truly came alive in her essays."</p>
+          </div>
+          <p class="a">Palakshi's Parents <span>· Harvard</span></p>
+        </article>
+        <article class="test-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="q">"Many people told us our chances were tiny. Dr. Sanjay and team still believed in our son, and that belief carried us all the way to Northeastern."</p>
+          </div>
+          <p class="a">Shreejeet's Parents <span>· Northeastern</span></p>
+        </article>
+        <article class="test-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="q">"Purusharth's aerospace wins were impressive but we were not sure how to present them. Blue Ocean matched his profile to Penn's values and the result was beyond our expectations."</p>
+          </div>
+          <p class="a">Purusharth's Father <span>· UPenn</span></p>
+        </article>
+        <article class="test-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="q">"Randitya started with under three months to go. Blue Ocean built a plan from scratch and helped him tell his story with real emotion. ESSEC's admission still feels surreal."</p>
           </div>
           <p class="a">Randitya's Mother <span>· ESSEC</span></p>
+        </article>
+        <article class="test-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="q">"Their team opened doors to workshops and focused opportunities that matched Ananya's goals exactly. Warwick became possible because of that careful planning."</p>
+          </div>
+          <p class="a">Ananya's Mother <span>· Warwick</span></p>
+        </article>
+        <article class="test-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="q">"Tathagata had the fintech background Cornell was looking for but turning it into a compelling application was hard. Dr. Sanjay helped him find the right narrative, and Cornell said yes."</p>
+          </div>
+          <p class="a">Tathagata's Parents <span>· Cornell</span></p>
+        </article>
+        <article class="test-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="q">"Bhakti's mountaineering was not what we expected would help an MBA application. Blue Ocean showed us that is exactly what sets a candidate apart. CMU saw it too."</p>
+          </div>
+          <p class="a">Bhakti's Parents <span>· CMU MBA</span></p>
+        </article>
+        <article class="test-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="q">"Their NYU strategy was thoughtful and realistic. Sana's story finally sounded authentic, and that made all the difference on result day."</p>
+          </div>
+          <p class="a">Sana's Mother <span>· NYU</span></p>
+        </article>
+        <article class="test-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="q">"Shaurya had orchestrated a major merger but kept downplaying it. Blue Ocean helped him own that achievement with confidence. Tufts recognised it immediately."</p>
+          </div>
+          <p class="a">Shaurya's Parents <span>· Tufts MBA</span></p>
         </article>
       </div>
     </div>
@@ -550,6 +840,127 @@ document.getElementById('hero-video-placeholder').addEventListener('click', func
   document.getElementById('hero-video').innerHTML =
     '<iframe src="https://www.youtube.com/embed/bK1QU2CK7es?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
 });
+
+// Offer letter — typewriter name + fading university
+(() => {
+  const nameEl = document.getElementById('ol-name');
+  const uniEl = document.getElementById('ol-uni');
+  if (!nameEl || !uniEl) return;
+  const admits = [
+    { name: 'Manya',      uni: 'Brown University' },
+    { name: 'Prateek',    uni: 'Harvard University' },
+    { name: 'Adya',       uni: 'Harvard University' },
+    { name: 'Anushka',    uni: 'Columbia University' },
+    { name: 'Palakshi',   uni: 'Harvard University' },
+    { name: 'Shreejeet',  uni: 'Northeastern University' },
+    { name: 'Purusharth', uni: 'University of Pennsylvania' },
+    { name: 'Randitya',   uni: 'ESSEC Business School' },
+    { name: 'Ananya',     uni: 'University of Warwick' },
+    { name: 'Tathagata',  uni: 'Cornell University' },
+    { name: 'Bhakti',     uni: 'Carnegie Mellon University' },
+    { name: 'Sana',       uni: 'New York University' },
+    { name: 'Shaurya',    uni: 'Tufts University' },
+  ];
+  let ai = 0, ci = admits[0].name.length, deleting = true;
+  uniEl.textContent = admits[0].uni;
+  const tick = () => {
+    const cur = admits[ai].name;
+    if (!deleting) {
+      ci++;
+      nameEl.textContent = cur.slice(0, ci);
+      if (ci === cur.length) { deleting = true; setTimeout(tick, 2000); return; }
+      setTimeout(tick, 90);
+    } else {
+      ci--;
+      nameEl.textContent = cur.slice(0, ci);
+      if (ci === 0) {
+        deleting = false;
+        ai = (ai + 1) % admits.length;
+        uniEl.style.opacity = '0';
+        setTimeout(() => { uniEl.textContent = admits[ai].uni; uniEl.style.opacity = '1'; }, 220);
+        setTimeout(tick, 380);
+        return;
+      }
+      setTimeout(tick, 55);
+    }
+  };
+  setTimeout(tick, 2000);
+})();
+
+// Student profiles — animated card + scrolling marquee
+(() => {
+  const mockEl = document.getElementById('sp-mock');
+  const quoteEl = document.getElementById('sp-mock-quote');
+  const avatarEl = document.getElementById('sp-mock-avatar');
+  const nameEl = document.getElementById('sp-mock-name');
+  const uniEl = document.getElementById('sp-mock-uni');
+  const yearEl = document.getElementById('sp-mock-year');
+  const scholEl = document.getElementById('sp-mock-schol');
+  const marqueeEl = document.getElementById('sp-marquee');
+  if (!mockEl || !marqueeEl) return;
+
+  const students = [
+    {name:'Prateek',short:'Harvard',uni:'Harvard University',year:"Class of '28",schol:'₹95L Scholarship',img:'testimonial_pics_ai/prateek.png',quote:'I walked into Harvard\u2019s interview knowing I belonged there. Blue Ocean made sure of that.',qshort:'Blue Ocean made sure I belonged there.'},
+    {name:'Manya',short:'Brown',uni:'Brown University',year:"Class of '28",schol:'₹1.5 Cr Scholarship',img:'testimonial_pics_ai/manya.png',quote:'From a small town in India to Brown University. My story had the ending I\u2019d always dreamed of.',qshort:'My story had the ending I\u2019d always dreamed of.'},
+    {name:'Adya',short:'Harvard',uni:'Harvard University',year:"Class of '28",schol:'₹1.05 Cr Scholarship',img:'testimonial_pics_ai/adya.png',quote:'They helped me find my voice when I thought I had nothing worth saying.',qshort:'They helped me find my voice.'},
+    {name:'Anushka',short:'Columbia',uni:'Columbia University',year:"Class of '28",schol:'₹88L Scholarship',img:'testimonial_pics_ai/anushka.png',quote:'Every essay rewrite made me stronger. By the end, I truly owned my story.',qshort:'By the end, I truly owned my story.'},
+    {name:'Palakshi',short:'Harvard',uni:'Harvard University',year:"Class of '28",schol:'₹70L Scholarship',img:'testimonial_pics_ai/palakshi.png',quote:'They saw my potential before I did. Every session built my confidence.',qshort:'They saw my potential before I did.'},
+    {name:'Shreejeet',short:'Northeastern',uni:'Northeastern University',year:"Class of '28",schol:'₹1.3 Cr Scholarship',img:'testimonial_pics_ai/shreejeet.png',quote:'I doubted myself at every turn. Blue Ocean never did. That made all the difference.',qshort:'Blue Ocean never doubted me.'},
+    {name:'Purusharth',short:'UPenn',uni:'University of Pennsylvania',year:"Class of '28",schol:'',img:'testimonial_pics_ai/puru.png',quote:'World-class strategy, personal attention. The best investment I ever made.',qshort:'The best investment I ever made.'},
+    {name:'Randitya',short:'ESSEC',uni:'ESSEC Business School',year:"Class of '28",schol:'₹1.2 Cr Scholarship',img:'testimonial_pics_ai/randitya.png',quote:'In under six months, I went from confused to confirmed. ESSEC is my reality now.',qshort:'From confused to confirmed in 6 months.'},
+    {name:'Ananya',short:'Warwick',uni:'University of Warwick',year:"Class of '28",schol:'',img:'testimonial_pics_ai/ananya.png',quote:'Every session was purposeful. I always knew exactly what to work on next.',qshort:'I always knew what to work on next.'},
+    {name:'Tathagata',short:'Cornell',uni:'Cornell University',year:"Class of '28",schol:'₹1.2 Cr Scholarship',img:'testimonial_pics_ai/tathagata.png',quote:'They turned what I thought were weaknesses into the most compelling parts of my story.',qshort:'My weaknesses became my strengths.'},
+    {name:'Bhakti',short:'CMU',uni:'Carnegie Mellon University',year:"Class of '28",schol:'₹70L Scholarship',img:'testimonial_pics_ai/bhakti.png',quote:'CMU felt impossible until Blue Ocean showed me it wasn\u2019t. Now I\u2019m here.',qshort:'Blue Ocean showed me CMU was possible.'},
+    {name:'Sana',short:'NYU',uni:'New York University',year:"Class of '28",schol:'₹75L Scholarship',img:'testimonial_pics_ai/sana.png',quote:'My essays finally sounded like me. That authenticity is what got me to New York.',qshort:'That authenticity got me to New York.'},
+    {name:'Shaurya',short:'Tufts',uni:'Tufts University',year:"Class of '28",schol:'',img:'testimonial_pics_ai/shaurya.png',quote:'Thorough, personal, and transformative. There is no better way to describe this team.',qshort:'Thorough, personal, and transformative.'},
+  ];
+
+  function makeCard(s) {
+    const d = document.createElement('div');
+    d.className = 'sp-mcard';
+    d.innerHTML = '<img class="sp-mcard-avatar" src="' + s.img + '" alt="' + s.name + '" loading="lazy">'
+      + '<div class="sp-mcard-name">' + s.name + '</div>'
+      + '<div class="sp-mcard-uni">' + s.short + '</div>'
+      + (s.schol ? '<div class="sp-mcard-schol">' + s.schol + '</div>' : '')
+      + '<p class="sp-mcard-quote">\u201c' + s.qshort + '\u201d</p>'
+      + '<div class="sp-mcard-year">' + s.year + '</div>';
+    return d;
+  }
+  function makeRow(list, rev) {
+    const row = document.createElement('div'); row.className = 'sp-mrow';
+    const track = document.createElement('div'); track.className = rev ? 'sp-mtrack rev' : 'sp-mtrack';
+    [...list, ...list].forEach(s => track.appendChild(makeCard(s)));
+    row.appendChild(track); return row;
+  }
+  marqueeEl.appendChild(makeRow(students, false));
+  marqueeEl.appendChild(makeRow([...students].reverse(), true));
+
+  let cur = 0, timer = null;
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function paint(i) {
+    const s = students[i];
+    quoteEl.textContent = '\u201c' + s.quote + '\u201d';
+    avatarEl.src = s.img; avatarEl.alt = s.name;
+    nameEl.textContent = s.name; uniEl.textContent = s.uni;
+    yearEl.textContent = s.year;
+    scholEl.textContent = s.schol;
+    scholEl.style.display = s.schol ? '' : 'none';
+  }
+  function show(next) {
+    cur = next;
+    if (!reduceMotion) {
+      mockEl.classList.add('fading');
+      setTimeout(() => { paint(cur); mockEl.classList.remove('fading'); }, 180);
+    } else { paint(cur); }
+  }
+  function start() { if (reduceMotion || timer) return; timer = setInterval(() => show((cur + 1) % students.length), 4800); }
+  function stop() { clearInterval(timer); timer = null; }
+  mockEl.addEventListener('mouseenter', stop);
+  mockEl.addEventListener('mouseleave', start);
+  document.addEventListener('visibilitychange', () => (document.hidden ? stop() : start()));
+  paint(0); start();
+})();
 </script>
 
 </body>
