@@ -40,38 +40,46 @@ fbq('track', 'PageView');
 .stats-strip{background:var(--black);border-bottom:3px solid var(--yellow);padding:16px 20px;text-align:center}.stats-row{display:flex;justify-content:center;gap:28px;flex-wrap:wrap}.stats-row .stat{font-size:14px;font-weight:600;color:rgba(255,255,255,0.5)}.stats-row .stat strong{color:var(--yellow)}
 
 /* TESTIMONIAL WALL */
-.voice-section{background:var(--black);color:var(--white);padding:62px 20px 70px;position:relative;overflow:hidden}
-.voice-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 12% 8%,rgba(250,204,21,0.08),transparent 34%),radial-gradient(circle at 88% 92%,rgba(250,204,21,0.06),transparent 30%)}
-.voice-inner{max-width:1080px;margin:0 auto;position:relative}
 .voice-kicker{font-size:11px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;color:rgba(255,255,255,0.62);text-align:center;margin-bottom:10px}
 .voice-title{font-size:clamp(26px,3.2vw,40px);font-weight:800;line-height:1.15;text-align:center;margin-bottom:12px}
-.voice-title .pop{color:var(--yellow)}
 .voice-sub{font-size:15px;color:rgba(255,255,255,0.7);line-height:1.65;max-width:680px;margin:0 auto 28px;text-align:center}
-.voice-featured{background:linear-gradient(160deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03));border:1px solid rgba(250,204,21,0.4);border-radius:16px;padding:30px 26px;transition:opacity .28s ease}
-.voice-featured .stars{color:var(--yellow);font-size:15px;letter-spacing:2px;margin-bottom:12px}
-.voice-featured blockquote{font-family:'Lora',serif;font-style:italic;font-size:21px;line-height:1.72;color:rgba(255,255,255,0.96);margin-bottom:16px;min-height:7.2em}
-.voice-featured.is-fading{opacity:0.25}
-.voice-meta{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
-.voice-meta .who{font-size:15px;font-weight:700;color:var(--white)}
-.voice-meta .badge{font-size:11px;font-weight:800;letter-spacing:0.6px;background:var(--yellow);color:var(--black);padding:4px 10px;border-radius:6px}
-.voice-switcher{display:flex;justify-content:center;gap:8px;margin-top:14px}
-.voice-dot{width:8px;height:8px;border-radius:50%;border:none;background:rgba(255,255,255,0.35);padding:0;cursor:pointer;transition:all .2s}
-.voice-dot.active{width:22px;border-radius:999px;background:var(--yellow)}
-.voice-grid-title{margin:30px 0 14px;font-size:20px;font-weight:800;color:var(--white)}
-.voices-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-@media(max-width:980px){.voices-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:640px){.voices-grid{grid-template-columns:1fr}}
-.voice-card{background:linear-gradient(165deg,rgba(255,255,255,0.07),rgba(255,255,255,0.03));border:1px solid rgba(255,255,255,0.18);border-radius:14px;padding:18px 16px 16px;display:flex;flex-direction:column;justify-content:space-between;min-height:220px;transition:border-color .2s,transform .2s,box-shadow .2s}
-.voice-card:hover{border-color:rgba(250,204,21,0.55);transform:translateY(-2px);box-shadow:0 12px 24px rgba(0,0,0,0.25)}
-.voice-card .stars{color:var(--yellow);font-size:11px;letter-spacing:2px;margin-bottom:8px}
-.voice-card .body{font-family:'Lora',serif;font-style:italic;font-size:15px;line-height:1.64;color:rgba(255,255,255,0.94)}
-.voice-card .foot{margin-top:14px;display:flex;justify-content:space-between;gap:10px;align-items:flex-end}
-.voice-card .who{font-size:13px;font-weight:700;color:var(--white)}
-.voice-card .badge{font-size:10px;font-weight:800;letter-spacing:0.6px;background:rgba(250,204,21,0.18);border:1px solid rgba(250,204,21,0.4);color:var(--yellow);padding:3px 8px;border-radius:5px;white-space:nowrap}
-@media(max-width:640px){
-  .voice-featured{padding:24px 18px}
-  .voice-featured blockquote{font-size:18px;line-height:1.68;min-height:8.9em}
-}
+
+/* === STUDENT PROFILES SECTION === */
+.sp-section{background:var(--black);color:var(--white);padding:72px 20px;border-top:2px solid var(--yellow)}
+.sp-inner{max-width:1060px;margin:0 auto;text-align:center}
+.sp-split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:48px;text-align:left}
+@media(max-width:768px){.sp-split{grid-template-columns:1fr;gap:28px}}
+.sp-card-wrap{display:flex;justify-content:center}
+.sp-card-mock{width:100%;max-width:380px;background:rgba(255,255,255,0.05);border:1px solid rgba(250,204,21,0.25);border-radius:20px;padding:26px 24px;box-shadow:0 20px 56px rgba(0,0,0,0.5);transition:opacity .22s ease}
+.sp-card-mock.fading{opacity:0.08}
+.sp-mock-stars{color:var(--yellow);font-size:13px;letter-spacing:2px;margin-bottom:14px}
+.sp-mock-quote{font-family:'Lora',serif;font-style:italic;font-size:16px;line-height:1.72;color:rgba(255,255,255,0.92);margin-bottom:20px;min-height:5.8em}
+.sp-mock-person{display:flex;align-items:center;gap:14px}
+.sp-mock-avatar{width:68px;height:68px;border-radius:50%;object-fit:cover;object-position:top center;border:2.5px solid var(--yellow);flex-shrink:0}
+.sp-mock-name{font-size:16px;font-weight:800;color:var(--white)}
+.sp-mock-uni{font-size:13px;color:var(--yellow);font-weight:600;margin-top:2px}
+.sp-mock-schol-wrap{margin-top:8px}
+.sp-mock-schol{display:inline-block;background:var(--yellow);color:var(--black);font-size:12px;font-weight:900;letter-spacing:.8px;text-transform:uppercase;padding:5px 12px;border-radius:6px}
+.sp-mock-year{display:block;font-size:11px;font-weight:600;color:rgba(255,255,255,0.45);margin-top:6px}
+.sp-marquee-wrap{display:flex;flex-direction:column;gap:12px;overflow:hidden;position:relative}
+.sp-marquee-wrap::before,.sp-marquee-wrap::after{content:'';position:absolute;top:0;bottom:0;width:40px;z-index:2;pointer-events:none}
+.sp-marquee-wrap::before{left:0;background:linear-gradient(90deg,var(--black),transparent)}
+.sp-marquee-wrap::after{right:0;background:linear-gradient(-90deg,var(--black),transparent)}
+.sp-mrow{overflow:hidden}
+.sp-mtrack{display:flex;gap:12px;width:max-content;animation:sp-scroll 44s linear infinite}
+.sp-mtrack.rev{animation-direction:reverse;animation-duration:52s}
+.sp-marquee-wrap:hover .sp-mtrack{animation-play-state:paused}
+@keyframes sp-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.sp-mcard{flex:0 0 210px;background:rgba(255,255,255,0.04);border:1.5px solid rgba(255,255,255,0.09);border-radius:16px;padding:18px 16px;display:flex;flex-direction:column;align-items:center;text-align:center;transition:border-color .2s,transform .2s,box-shadow .2s}
+.sp-mcard:hover{border-color:rgba(250,204,21,0.55);transform:translateY(-3px);box-shadow:0 8px 24px rgba(250,204,21,0.1)}
+.sp-mcard-avatar{width:84px;height:84px;border-radius:50%;object-fit:cover;object-position:top center;border:2.5px solid rgba(250,204,21,0.5);margin-bottom:12px;flex-shrink:0}
+.sp-mcard-name{font-size:14px;font-weight:800;color:var(--white)}
+.sp-mcard-uni{font-size:13px;color:var(--yellow);font-weight:700;margin-top:3px}
+.sp-mcard-quote{font-family:'Lora',serif;font-style:italic;font-size:11.5px;color:rgba(255,255,255,0.6);line-height:1.55;margin:8px 0 8px}
+.sp-mcard-schol{background:var(--yellow);color:var(--black);font-size:11px;font-weight:900;letter-spacing:.8px;text-transform:uppercase;padding:5px 11px;border-radius:6px;margin:6px 0 2px}
+.sp-mcard-year{font-size:10px;font-weight:600;color:rgba(255,255,255,0.4);margin-top:6px}
+@media(max-width:768px){.sp-mcard{flex-basis:72vw}}
+@media(prefers-reduced-motion:reduce){.sp-mtrack{animation:none}.sp-mrow{overflow-x:auto}.sp-marquee-wrap::before,.sp-marquee-wrap::after{display:none}}
 
 /* CASE STUDY SHOWCASE */
 .case-showcase{background:#FFFFFF;padding:56px 20px;border-top:2px solid #FACC15;border-bottom:1px solid #D1D5DB}
@@ -85,6 +93,9 @@ fbq('track', 'PageView');
 .case-card{background:#fff;border:1px solid #CBD5E1;border-radius:14px;padding:18px 16px 16px;box-shadow:0 6px 16px rgba(15,23,42,0.06);transition:border-color .2s,box-shadow .2s}
 .case-card:hover{border-color:#94A3B8;box-shadow:0 10px 20px rgba(15,23,42,0.09)}
 .case-card .tag{display:inline-block;background:#111827;color:#FACC15;border-radius:999px;padding:3px 9px;font-size:10px;font-weight:800;letter-spacing:0.8px;text-transform:uppercase;margin-bottom:10px}
+.case-card-student{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.case-card-avatar{width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:top center;border:2px solid #FACC15;flex-shrink:0}
+.case-card-sname{font-size:13px;font-weight:800;color:#111827}
 .case-card h3{font-size:18px;font-weight:800;line-height:1.3;color:#111827;margin-bottom:8px}
 .case-card p{font-size:15px;color:#111827;line-height:1.65}
 .case-outcome{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
@@ -94,29 +105,114 @@ fbq('track', 'PageView');
 .case-btn:hover{background:#FDE047}
 .case-cta-note{margin-top:10px;font-size:12px;color:#374151}
 
-/* STUDENT SUCCESS MARQUEE */
-.success-dark{background:var(--black);color:var(--white);padding:58px 20px;position:relative;overflow:hidden;border-top:1px solid rgba(255,255,255,0.06);border-bottom:1px solid rgba(255,255,255,0.06)}
-.success-dark::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 18%,rgba(250,204,21,0.09),transparent 30%),radial-gradient(circle at 20% 88%,rgba(250,204,21,0.06),transparent 28%)}
-.success-inner{max-width:1080px;margin:0 auto;position:relative}
-.success-dark h2{font-size:clamp(24px,3vw,32px);font-weight:800;text-align:center;margin-bottom:26px}
-.success-marquee{overflow:hidden;position:relative}
-.success-marquee::before,.success-marquee::after{content:'';position:absolute;top:0;bottom:0;width:80px;z-index:2;pointer-events:none}
-.success-marquee::before{left:0;background:linear-gradient(90deg,var(--black),transparent)}
-.success-marquee::after{right:0;background:linear-gradient(-90deg,var(--black),transparent)}
-.success-track{display:flex;gap:14px;width:max-content;animation:success-scroll 58s linear infinite}
-.success-marquee:hover .success-track{animation-play-state:paused}
-@keyframes success-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-.scard{width:176px;flex-shrink:0;background:linear-gradient(165deg,rgba(255,255,255,0.07),rgba(255,255,255,0.03));border:1px solid rgba(255,255,255,0.2);border-radius:13px;overflow:hidden;transition:border-color .2s,transform .2s,box-shadow .2s}
-.scard:hover{border-color:rgba(250,204,21,0.5);transform:translateY(-2px);box-shadow:0 12px 24px rgba(0,0,0,0.28)}
-.scard .img{width:100%;aspect-ratio:1;background:linear-gradient(160deg,#1f2937,#111827);display:flex;align-items:center;justify-content:center;font-size:38px;color:rgba(250,204,21,0.75)}
-.scard .info{padding:11px;text-align:center}
-.scard .sn{font-size:14px;font-weight:700;color:var(--white)}
-.scard .ss{font-size:12px;color:var(--yellow)}
-@media(max-width:700px){.scard{width:152px}.success-track{animation-duration:48s}}
-@media(prefers-reduced-motion:reduce){.success-track{animation:none}.success-marquee{overflow-x:auto}.success-marquee::before,.success-marquee::after{display:none}}
-
 .final-cta{background:var(--black);color:var(--white);padding:64px 20px;text-align:center;position:relative}.final-cta::before{content:'';position:absolute;inset:0;background:repeating-conic-gradient(rgba(250,204,21,0.03) 0% 25%,transparent 25% 50%) 0 0/60px 60px}.final-cta-inner{position:relative;max-width:520px;margin:0 auto}.final-cta h2{font-size:clamp(24px,3.5vw,34px);font-weight:800;margin-bottom:12px}.final-cta h2 .pop{color:var(--yellow)}.final-cta .sub{font-family:'Lora',serif;font-style:italic;color:rgba(255,255,255,0.5);font-size:15px;margin-bottom:28px;line-height:1.6}.final-cta .btn{display:inline-block;padding:16px 40px;background:var(--yellow);color:var(--black);font-family:'Bricolage Grotesque',sans-serif;font-size:18px;font-weight:800;border:none;border-radius:10px;box-shadow:0 4px 0 #D4A90F;cursor:pointer;transition:all .2s}.final-cta .btn:hover{transform:translateY(-2px);box-shadow:0 6px 0 #D4A90F}.final-cta .price{margin-top:12px;font-size:13px;color:rgba(255,255,255,0.3)}.final-cta .price s{color:rgba(255,255,255,0.2)}
 .footer{background:var(--black);border-top:1px solid rgba(255,255,255,0.06);padding:32px 20px 24px;color:rgba(255,255,255,0.4);text-align:center;font-size:12px}
+
+/* === SCREENSHOT TESTIMONIALS === */
+.ss-section{background:var(--black);color:var(--white);padding:72px 20px;border-top:1px solid rgba(255,255,255,0.06);border-bottom:1px solid rgba(255,255,255,0.06)}
+.ss-section-inner{max-width:1000px;margin:0 auto;text-align:center}
+.ss-split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:48px;text-align:left}
+@media(max-width:768px){.ss-split{grid-template-columns:1fr;gap:28px}}
+.ss-chat-wrap{display:flex;justify-content:center}
+.ss-phone{width:100%;max-width:380px;background:#0B1418;border-radius:22px;overflow:hidden;border:1.5px solid rgba(255,255,255,0.1);box-shadow:0 20px 56px rgba(0,0,0,0.6)}
+.ss-phone-hdr{background:#1F2C34;padding:14px 18px;display:flex;align-items:center;gap:12px}
+.ss-avatar{width:42px;height:42px;border-radius:50%;background:var(--yellow);color:#111;font-size:16px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ss-cname{font-size:15px;font-weight:700;color:#fff}
+.ss-cstatus{font-size:12px;color:#4ade80;margin-top:2px}
+.ss-chat-body{padding:22px 16px 28px;display:flex;flex-direction:column;gap:12px}
+.ss-bubble{max-width:85%;padding:13px 16px;font-size:18px;line-height:1.55;color:#fff;word-break:break-word}
+.ss-in{background:#1F2C34;align-self:flex-start;border-radius:0 14px 14px 14px}
+.ss-out{background:#005C4B;align-self:flex-end;border-radius:14px 14px 0 14px}
+.ss-uni{color:var(--yellow);font-weight:800}
+.ss-caret{display:inline-block;width:2px;height:.85em;background:var(--yellow);margin-left:2px;vertical-align:text-bottom;animation:ss-blink .85s step-end infinite}
+@keyframes ss-blink{50%{opacity:0}}
+.ss-marquee-wrap{display:flex;flex-direction:column;gap:12px;overflow:hidden;position:relative}
+.ss-marquee-wrap::before,.ss-marquee-wrap::after{content:'';position:absolute;top:0;bottom:0;width:40px;z-index:2;pointer-events:none}
+.ss-marquee-wrap::before{left:0;background:linear-gradient(90deg,var(--black),transparent)}
+.ss-marquee-wrap::after{right:0;background:linear-gradient(-90deg,var(--black),transparent)}
+.ss-mrow{overflow:hidden}
+.ss-mtrack{display:flex;gap:12px;width:max-content;animation:ss-scroll 30s linear infinite}
+.ss-mtrack.rev{animation-direction:reverse;animation-duration:36s}
+.ss-marquee-wrap:hover .ss-mtrack{animation-play-state:paused}
+@keyframes ss-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.ss-mcard{flex:0 0 220px;border-radius:12px;overflow:hidden;border:1.5px solid rgba(255,255,255,0.1);background:#0a0a0a;box-shadow:0 6px 20px rgba(0,0,0,0.4);transition:transform .2s,border-color .2s}
+.ss-mcard:hover{transform:translateY(-3px) scale(1.02);border-color:rgba(250,204,21,0.4)}
+.ss-mcard img{width:100%;display:block}
+@media(max-width:768px){.ss-mcard{flex-basis:68vw}}
+@media(prefers-reduced-motion:reduce){.ss-mtrack{animation:none}.ss-mrow{overflow-x:auto}.ss-marquee-wrap::before,.ss-marquee-wrap::after{display:none}}
+
+/* === OFFER LETTER SECTION === */
+.ol-section{background:var(--light);padding:72px 20px;border-top:2px solid var(--yellow);border-bottom:1px solid var(--border)}
+.ol-section-inner{max-width:1000px;margin:0 auto;text-align:center}
+.ol-split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:48px;text-align:left}
+@media(max-width:768px){.ol-split{grid-template-columns:1fr;gap:28px}}
+.ol-letter-wrap{display:flex;justify-content:center}
+.ol-letter{width:100%;max-width:440px;background:#fff;border-radius:6px;box-shadow:0 4px 6px rgba(0,0,0,0.05),0 10px 32px rgba(0,0,0,0.1);overflow:hidden}
+.ol-letter-hdr{background:var(--black);padding:15px 20px;display:flex;align-items:center;justify-content:space-between}
+.ol-letter-logo{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.55)}
+.ol-admit-badge{background:var(--yellow);color:var(--black);font-size:10px;font-weight:900;letter-spacing:1px;text-transform:uppercase;padding:5px 10px;border-radius:4px}
+.ol-letter-body{padding:28px 26px 32px}
+.ol-office{font-size:10px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#9CA3AF;margin-bottom:20px}
+.ol-salutation{font-size:28px;font-weight:800;color:var(--black);min-height:1.3em;margin-bottom:20px;line-height:1.25}
+.ol-dear-word{font-weight:400;color:#6B7280}
+.ol-name-caret{display:inline-block;width:3px;height:.75em;background:var(--black);margin-left:2px;vertical-align:text-bottom;animation:ol-blink .85s step-end infinite}
+@keyframes ol-blink{50%{opacity:0}}
+.ol-body-text{font-size:13px;color:#374151;line-height:1.75}
+.ol-uni{font-weight:800;color:var(--black);transition:opacity .25s ease}
+.ol-divider{border:none;border-top:1px solid #F3F4F6;margin:20px 0 16px}
+.ol-seal{display:flex;align-items:center;gap:10px}
+.ol-seal-icon{width:30px;height:30px;border-radius:50%;background:var(--yellow);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
+.ol-seal-text{font-size:11px;font-weight:700;color:#6B7280;text-transform:uppercase;letter-spacing:.8px;line-height:1.4}
+.ol-marquee-wrap{display:flex;flex-direction:column;gap:12px;overflow:hidden;position:relative}
+.ol-marquee-wrap::before,.ol-marquee-wrap::after{content:'';position:absolute;top:0;bottom:0;width:40px;z-index:2;pointer-events:none}
+.ol-marquee-wrap::before{left:0;background:linear-gradient(90deg,var(--light),transparent)}
+.ol-marquee-wrap::after{right:0;background:linear-gradient(-90deg,var(--light),transparent)}
+.ol-mrow{overflow:hidden}
+.ol-mtrack{display:flex;gap:12px;width:max-content;animation:ol-scroll 35s linear infinite}
+.ol-mtrack.rev{animation-direction:reverse;animation-duration:42s}
+.ol-marquee-wrap:hover .ol-mtrack{animation-play-state:paused}
+@keyframes ol-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.ol-mcard{flex:0 0 200px;border-radius:10px;overflow:hidden;border:1px solid #E5E7EB;background:#fff;box-shadow:0 4px 16px rgba(0,0,0,0.08);transition:transform .2s,box-shadow .2s,border-color .2s}
+.ol-mcard:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 10px 28px rgba(0,0,0,0.14);border-color:var(--yellow)}
+.ol-mcard img{width:100%;display:block}
+@media(max-width:768px){.ol-mcard{flex-basis:64vw}}
+@media(prefers-reduced-motion:reduce){.ol-mtrack{animation:none}.ol-mrow{overflow-x:auto}.ol-marquee-wrap::before,.ol-marquee-wrap::after{display:none}}
+
+/* === STUDENT PROFILES SECTION === */
+/* === PARENT TESTIMONIALS SECTION === */
+.pt-section{background:var(--white);color:var(--black);padding:88px 20px;border-top:3px solid var(--yellow)}
+.pt-inner{max-width:800px;margin:0 auto;text-align:center}
+.pt-feature{padding:44px 0 8px;transition:opacity .5s ease;display:flex;align-items:center;gap:16px}
+.pt-feature-content{flex:1;min-width:0}
+.pt-feature.fading{opacity:0}
+.pt-big-q{font-family:'Lora',serif;font-size:72px;line-height:0.7;color:var(--yellow);display:block;margin-bottom:22px;user-select:none}
+.pt-text{font-family:'Lora',serif;font-style:italic;font-size:clamp(18px,2.3vw,24px);line-height:1.75;color:#111;max-width:680px;margin:0 auto 28px}
+.pt-who-row{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap}
+.pt-who-name{font-size:14px;font-weight:800;color:var(--black);letter-spacing:.2px}
+.pt-who-badge{background:var(--yellow);color:var(--black);font-size:10px;font-weight:900;letter-spacing:1px;text-transform:uppercase;padding:5px 14px;border-radius:6px}
+.pt-progress{width:220px;height:3px;background:#E5E7EB;border-radius:999px;margin:32px auto 40px;overflow:hidden}
+.pt-bar{height:100%;background:var(--yellow);border-radius:999px;width:0%}
+.pt-nav-btn{width:44px;height:44px;border-radius:50%;border:2px solid var(--border);background:transparent;color:var(--black);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:border-color .18s,background .18s;font-family:inherit;line-height:1;flex-shrink:0}
+.pt-nav-btn:hover{border-color:var(--yellow);background:#FEFCE8}
+@media(max-width:600px){.pt-text{font-size:17px}.pt-big-q{font-size:56px}}
+@media(prefers-reduced-motion:reduce){.pt-feature{transition:none}}
+.pt-marquee-wrap{display:flex;flex-direction:column;gap:12px;overflow:hidden;position:relative;margin-top:40px}
+.pt-marquee-wrap::before,.pt-marquee-wrap::after{content:'';position:absolute;top:0;bottom:0;width:60px;z-index:2;pointer-events:none}
+.pt-marquee-wrap::before{left:0;background:linear-gradient(90deg,var(--white),transparent)}
+.pt-marquee-wrap::after{right:0;background:linear-gradient(-90deg,var(--white),transparent)}
+.pt-mrow{overflow:hidden}
+.pt-mtrack{display:flex;gap:14px;width:max-content;animation:pt-scroll 52s linear infinite}
+.pt-mtrack.rev{animation-direction:reverse;animation-duration:64s}
+.pt-marquee-wrap:hover .pt-mtrack{animation-play-state:paused}
+@keyframes pt-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.pt-mcard{flex:0 0 240px;background:var(--light);border:1.5px solid var(--border);border-radius:16px;padding:20px 18px;display:flex;flex-direction:column;transition:border-color .2s,transform .2s,box-shadow .2s;text-align:left;cursor:default}
+.pt-mcard:hover{border-color:var(--yellow);transform:translateY(-3px);box-shadow:0 8px 24px rgba(250,204,21,0.15)}
+.pt-mcard-qmark{font-family:'Lora',serif;font-size:28px;line-height:1;color:var(--yellow);margin-bottom:8px}
+.pt-mcard-quote{font-family:'Lora',serif;font-style:italic;font-size:12px;color:#374151;line-height:1.65;flex:1;margin-bottom:14px}
+.pt-mcard-who{font-size:12px;font-weight:800;color:var(--black);margin-bottom:6px}
+.pt-mcard-badge{display:inline-block;background:var(--yellow);color:var(--black);font-size:9px;font-weight:900;letter-spacing:.8px;text-transform:uppercase;padding:4px 9px;border-radius:4px}
+@media(max-width:768px){.pt-mcard{flex-basis:75vw}}
+@media(prefers-reduced-motion:reduce){.pt-mtrack{animation:none}.pt-mrow{overflow-x:auto}.pt-marquee-wrap::before,.pt-marquee-wrap::after{display:none}}
 
 /* Mobile Fullscreen Nav */
 .nav-toggle{display:none;align-items:center;justify-content:center;width:42px;height:42px;border:1px solid rgba(255,255,255,0.14);border-radius:10px;background:rgba(255,255,255,0.06);color:#fff;cursor:pointer;gap:6px}
@@ -157,36 +253,181 @@ body.nav-open{overflow:hidden}
 <div class="page-hero"><h1>Real Parents. Real Results. <span class="pop">Real Gratitude.</span></h1><p>★ 4.95/5 rating from 500+ families</p></div>
 <div class="stats-strip"><div class="stats-row"><span class="stat"><strong>500+</strong> students guided</span><span class="stat"><strong>95%</strong> acceptance rate</span><span class="stat"><strong>₹1Cr+</strong> avg scholarship</span></div></div>
 
-<section class="voice-section">
-  <div class="voice-inner">
-    <p class="voice-kicker">Testimonials</p>
-    <h2 class="voice-title">What Families Felt <span class="pop">On Result Day</span></h2>
-    <p class="voice-sub">These are not polished scripts. These are real parent voices after months of pressure, uncertainty, and finally the offer letter.</p>
+<!-- OFFER LETTER SECTION -->
+<section class="ol-section">
+  <div class="ol-section-inner">
+    <p class="process-label">OFFER LETTERS</p>
+    <h2 style="font-size:clamp(30px,3.8vw,48px);font-weight:800;text-align:center;margin-bottom:12px;color:var(--black)">Accepted. <span style="color:var(--yellow)">Officially.</span></h2>
+    <p class="process-sub">Real admission letters from top universities across the US, UK, and Europe — our students got in.</p>
+    <div class="ol-split">
+      <!-- LEFT: animated letter mockup -->
+      <div class="ol-letter-wrap">
+        <div class="ol-letter">
+          <div class="ol-letter-hdr">
+            <div class="ol-letter-logo">Office of Admissions</div>
+            <div class="ol-admit-badge">ADMITTED ✓</div>
+          </div>
+          <div class="ol-letter-body">
+            <div class="ol-office">Undergraduate Admissions · Class of 2029</div>
+            <div class="ol-salutation"><span class="ol-dear-word">Dear </span><span id="ol-name">Manya</span><span class="ol-name-caret"></span>,</div>
+            <p class="ol-body-text">Congratulations! We are delighted to offer you admission to <span id="ol-uni" class="ol-uni">Brown University</span>. Your application stood out among thousands of talented students worldwide.</p>
+            <hr class="ol-divider">
+            <div class="ol-seal">
+              <div class="ol-seal-icon">🎓</div>
+              <div class="ol-seal-text">Official Offer of Admission<br>Blue Ocean Education</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- RIGHT: scrolling offer letter marquee -->
+      <div class="ol-marquee-wrap">
+        <div class="ol-mrow">
+          <div class="ol-mtrack">
+            <div class="ol-mcard"><img src="offer_letter_ss/ol01.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol02.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol03.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol04.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol05.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol06.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol07.png" alt="University offer letter" loading="lazy"></div>
+            <!-- duplicate for seamless loop -->
+            <div class="ol-mcard"><img src="offer_letter_ss/ol01.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol02.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol03.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol04.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol05.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol06.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol07.png" alt="University offer letter" loading="lazy"></div>
+          </div>
+        </div>
+        <div class="ol-mrow">
+          <div class="ol-mtrack rev">
+            <div class="ol-mcard"><img src="offer_letter_ss/ol08.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol09.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol10.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol11.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol12.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol13.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol14.png" alt="University offer letter" loading="lazy"></div>
+            <!-- duplicate for seamless loop -->
+            <div class="ol-mcard"><img src="offer_letter_ss/ol08.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol09.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol10.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol11.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol12.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol13.png" alt="University offer letter" loading="lazy"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol14.png" alt="University offer letter" loading="lazy"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <article class="voice-featured" id="featured-voice" aria-live="polite">
-      <div class="stars">★★★★★</div>
-      <blockquote id="featured-quote">"I still cannot believe our Prateek is headed to Harvard. Dr. Sanjay and the Blue Ocean team held his hand through every essay rewrite and every mock interview. We are deeply grateful."</blockquote>
-      <div class="voice-meta"><span class="who" id="featured-who">Prateek's Father</span><span class="badge" id="featured-badge">HARVARD '28</span></div>
-      <div class="voice-switcher" id="voice-switcher" aria-label="Featured testimonials"></div>
-    </article>
+<!-- STUDENT PROFILES SECTION -->
+<section class="sp-section">
+  <div class="sp-inner">
+    <p class="voice-kicker">OUR STUDENTS</p>
+    <h2 style="font-size:clamp(28px,3.8vw,46px);font-weight:800;line-height:1.15;margin-bottom:12px"><span style="color:var(--yellow)">Faces</span> Behind The Results.</h2>
+    <p class="voice-sub">Real students. Real schools. Their stories, in their own words.</p>
+    <div class="sp-split">
+      <div class="sp-card-wrap">
+        <div class="sp-card-mock" id="sp-mock">
+          <div class="sp-mock-stars">★★★★★</div>
+          <p class="sp-mock-quote" id="sp-mock-quote">"I walked into Harvard's interview knowing I belonged there. Blue Ocean made sure of that."</p>
+          <div class="sp-mock-person">
+            <img class="sp-mock-avatar" id="sp-mock-avatar" src="testimonial_pics_ai/prateek.png" alt="Prateek">
+            <div>
+              <div class="sp-mock-name" id="sp-mock-name">Prateek</div>
+              <div class="sp-mock-uni" id="sp-mock-uni">Harvard University</div>
+              <div class="sp-mock-schol-wrap">
+                <span class="sp-mock-schol" id="sp-mock-schol">₹95L Scholarship</span>
+                <span class="sp-mock-year" id="sp-mock-year">Class of '28</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sp-marquee-wrap" id="sp-marquee"></div>
+    </div>
+  </div>
+</section>
 
-    <h3 class="voice-grid-title">More From Our Families</h3>
-    <div class="voices-grid">
-      <article class="voice-card"><div><div class="stars">★★★★★</div><p class="body">"Harvard felt out of reach in the beginning. Blue Ocean gave us a clear roadmap and practical steps. Adya walked into submission season with confidence."</p></div><div class="foot"><span class="who">Adya's Parents</span><span class="badge">HARVARD</span></div></article>
-      <article class="voice-card"><div><div class="stars">★★★★★</div><p class="body">"The team took our midnight calls with patience. Rohan stayed focused, and when MIT came through, our whole family cried."</p></div><div class="foot"><span class="who">Rohan's Parents</span><span class="badge">MIT</span></div></article>
-      <article class="voice-card"><div><div class="stars">★★★★★</div><p class="body">"Their support stayed strong from day one to final submission. We never felt alone in the process, and that mattered a lot."</p></div><div class="foot"><span class="who">Vikas's Mother</span><span class="badge">UPENN</span></div></article>
-      <article class="voice-card"><div><div class="stars">★★★★★</div><p class="body">"We were aiming at highly competitive schools and felt anxious throughout. Blue Ocean kept us calm and prepared, and ESSEC became real."</p></div><div class="foot"><span class="who">Randitya's Mother</span><span class="badge">ESSEC</span></div></article>
-      <article class="voice-card"><div><div class="stars">★★★★★</div><p class="body">"They took Manya's raw ideas and turned them into essays that felt true to her voice. Brown was a very emotional moment for us."</p></div><div class="foot"><span class="who">Manya's Father</span><span class="badge">BROWN</span></div></article>
-      <article class="voice-card"><div><div class="stars">★★★★★</div><p class="body">"The feedback on every draft was honest and specific. Her writing grew so much, and the Cambridge offer felt like a dream come true."</p></div><div class="foot"><span class="who">Riya's Mother</span><span class="badge">CAMBRIDGE</span></div></article>
-      <article class="voice-card"><div><div class="stars">★★★★★</div><p class="body">"Many people told us our chances were tiny. Dr. Sanjay and team still believed in our son, and that belief carried us to Northeastern."</p></div><div class="foot"><span class="who">Shreejeet's Parents</span><span class="badge">NORTHEASTERN</span></div></article>
-      <article class="voice-card"><div><div class="stars">★★★★★</div><p class="body">"Their team opened doors to workshops and focused opportunities that matched her goals exactly. Warwick became possible because of that planning."</p></div><div class="foot"><span class="who">Ananya's Mother</span><span class="badge">WARWICK</span></div></article>
-      <article class="voice-card"><div><div class="stars">★★★★★</div><p class="body">"They mapped out a sharp Imperial path for Arjun and positioned his best achievements clearly. The final application looked world class."</p></div><div class="foot"><span class="who">Arjun's Parents</span><span class="badge">IMPERIAL</span></div></article>
-      <article class="voice-card"><div><div class="stars">★★★★★</div><p class="body">"Kavya's UCL profile became stronger week by week. Essays were refined, academics were highlighted properly, and interview prep was excellent."</p></div><div class="foot"><span class="who">Kavya's Parents</span><span class="badge">UCL</span></div></article>
-      <article class="voice-card"><div><div class="stars">★★★★★</div><p class="body">"Their NYU early strategy was thoughtful and realistic. Sana's story finally sounded authentic, and that made all the difference."</p></div><div class="foot"><span class="who">Sana's Mother</span><span class="badge">NYU</span></div></article>
-      <article class="voice-card"><div><div class="stars">★★★★★</div><p class="body">"From TSA preparation to interview workshops, every session was focused and practical. Oxford stopped feeling distant for Akash."</p></div><div class="foot"><span class="who">Akash's Mother</span><span class="badge">OXFORD</span></div></article>
-      <article class="voice-card"><div><div class="stars">★★★★★</div><p class="body">"They pushed multiple revisions on his Princeton essays until every line had purpose. The mock panels gave him real confidence."</p></div><div class="foot"><span class="who">Arjun's Parents</span><span class="badge">PRINCETON</span></div></article>
-      <article class="voice-card"><div><div class="stars">★★★★★</div><p class="body">"UChicago prompts felt tricky at first. Dr. Sanjay's insight helped Sara unlock each one and write with clarity and courage."</p></div><div class="foot"><span class="who">Sara's Father</span><span class="badge">UCHICAGO</span></div></article>
-      <article class="voice-card"><div><div class="stars">★★★★★</div><p class="body">"They recommended the right internship, sharpened her essays on global economic themes, and trained her to answer with precision."</p></div><div class="foot"><span class="who">Ishita's Mother</span><span class="badge">LSE</span></div></article>
+<!-- PARENT TESTIMONIALS SECTION -->
+<section class="pt-section">
+  <div class="pt-inner">
+    <p class="voice-kicker">PARENT VOICES</p>
+    <h2 style="font-size:clamp(28px,3.8vw,46px);font-weight:800;line-height:1.15;margin-bottom:8px;color:var(--black)">What Families Felt <span style="color:var(--yellow)">On Result Day.</span></h2>
+    <p style="font-size:15px;color:rgba(255,255,255,0.6);margin:0 0 0">Not polished scripts. Real parent voices, right after the offer letter arrived.</p>
+    <div class="pt-feature" id="pt-feature">
+      <button class="pt-nav-btn" id="pt-prev" aria-label="Previous">&#8592;</button>
+      <div class="pt-feature-content">
+        <span class="pt-big-q">"</span>
+        <p class="pt-text" id="pt-text">I still cannot believe our Prateek is headed to Harvard. Dr. Sanjay and the Blue Ocean team held his hand through every essay rewrite and every mock interview. We are deeply grateful.</p>
+        <div class="pt-who-row">
+          <span class="pt-who-name" id="pt-who-name">Prateek's Father</span>
+          <span class="pt-who-badge" id="pt-who-badge">HARVARD '28</span>
+        </div>
+      </div>
+      <button class="pt-nav-btn" id="pt-next" aria-label="Next">&#8594;</button>
+    </div>
+    <div class="pt-progress"><div class="pt-bar" id="pt-bar"></div></div>
+    <div class="pt-marquee-wrap" id="pt-marquee"></div>
+  </div>
+</section>
+
+<!-- SCREENSHOT TESTIMONIALS -->
+<section class="ss-section">
+  <div class="ss-section-inner">
+    <p class="voice-kicker">STUDENT TEXTS</p>
+    <h2 class="voice-title" style="color:var(--yellow)">The moment they got in.</h2>
+    <p class="voice-sub">Real messages from our students — sent the second they found out.</p>
+    <div class="ss-split">
+      <div class="ss-chat-wrap">
+        <div class="ss-phone">
+          <div class="ss-phone-hdr">
+            <div class="ss-avatar">B</div>
+            <div>
+              <div class="ss-cname">Blue Ocean</div>
+              <div class="ss-cstatus">● online</div>
+            </div>
+          </div>
+          <div class="ss-chat-body">
+            <div class="ss-bubble ss-in">Hey, I got into <span id="ss-uni" class="ss-uni">Harvard</span><span class="ss-caret"></span>! 🎉</div>
+            <div class="ss-bubble ss-out">Congrats! We knew you could do it! 🙌</div>
+          </div>
+        </div>
+      </div>
+      <div class="ss-marquee-wrap">
+        <div class="ss-mrow">
+          <div class="ss-mtrack">
+            <div class="ss-mcard"><img src="ss_testimonial_template/ss01.png" alt="Student texting they got into UIUC and Virginia Tech" loading="lazy"></div>
+            <div class="ss-mcard"><img src="ss_testimonial_template/ss02.png" alt="Student texting they got into Indiana University and UMBC" loading="lazy"></div>
+            <div class="ss-mcard"><img src="ss_testimonial_template/ss03.png" alt="Student texting they got into Durham University" loading="lazy"></div>
+            <div class="ss-mcard"><img src="ss_testimonial_template/ss04.png" alt="Student texting they got into Durham University" loading="lazy"></div>
+            <div class="ss-mcard"><img src="ss_testimonial_template/ss05.png" alt="Student texting they got into UIUC" loading="lazy"></div>
+            <div class="ss-mcard"><img src="ss_testimonial_template/ss01.png" alt="Student texting they got into UIUC and Virginia Tech" loading="lazy"></div>
+            <div class="ss-mcard"><img src="ss_testimonial_template/ss02.png" alt="Student texting they got into Indiana University and UMBC" loading="lazy"></div>
+            <div class="ss-mcard"><img src="ss_testimonial_template/ss03.png" alt="Student texting they got into Durham University" loading="lazy"></div>
+            <div class="ss-mcard"><img src="ss_testimonial_template/ss04.png" alt="Student texting they got into Durham University" loading="lazy"></div>
+            <div class="ss-mcard"><img src="ss_testimonial_template/ss05.png" alt="Student texting they got into UIUC" loading="lazy"></div>
+          </div>
+        </div>
+        <div class="ss-mrow">
+          <div class="ss-mtrack rev">
+            <div class="ss-mcard"><img src="ss_testimonial_template/ss03.png" alt="Student texting they got into Durham University" loading="lazy"></div>
+            <div class="ss-mcard"><img src="ss_testimonial_template/ss05.png" alt="Student texting they got into UIUC" loading="lazy"></div>
+            <div class="ss-mcard"><img src="ss_testimonial_template/ss01.png" alt="Student texting they got into UIUC and Virginia Tech" loading="lazy"></div>
+            <div class="ss-mcard"><img src="ss_testimonial_template/ss04.png" alt="Student texting they got into Durham University" loading="lazy"></div>
+            <div class="ss-mcard"><img src="ss_testimonial_template/ss02.png" alt="Student texting they got into Indiana University and UMBC" loading="lazy"></div>
+            <div class="ss-mcard"><img src="ss_testimonial_template/ss03.png" alt="Student texting they got into Durham University" loading="lazy"></div>
+            <div class="ss-mcard"><img src="ss_testimonial_template/ss05.png" alt="Student texting they got into UIUC" loading="lazy"></div>
+            <div class="ss-mcard"><img src="ss_testimonial_template/ss01.png" alt="Student texting they got into UIUC and Virginia Tech" loading="lazy"></div>
+            <div class="ss-mcard"><img src="ss_testimonial_template/ss04.png" alt="Student texting they got into Durham University" loading="lazy"></div>
+            <div class="ss-mcard"><img src="ss_testimonial_template/ss02.png" alt="Student texting they got into Indiana University and UMBC" loading="lazy"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -200,18 +441,30 @@ body.nav-open{overflow:hidden}
     <div class="case-grid">
       <article class="case-card">
         <span class="tag">Against the Odds</span>
+        <div class="case-card-student">
+          <img class="case-card-avatar" src="testimonial_pics_ai/tathagata.png" alt="Tathagata">
+          <span class="case-card-sname">Tathagata</span>
+        </div>
         <h3>Below Avg GPA to Ivy Scholarships</h3>
         <p>Tathagata transformed below-average academics into a focused fintech narrative and earned major admits with scholarship outcomes.</p>
         <div class="case-outcome"><span class="case-pill">Cornell '28</span><span class="case-pill">Johns Hopkins</span></div>
       </article>
       <article class="case-card">
         <span class="tag">Rapid Turnaround</span>
+        <div class="case-card-student">
+          <img class="case-card-avatar" src="testimonial_pics_ai/randitya.png" alt="Randitya">
+          <span class="case-card-sname">Randitya</span>
+        </div>
         <h3>Dream University in Under 6 Months</h3>
         <p>Randitya turned empathy, real-world internship insights, and consistent rigor into a compelling application for a highly selective business school.</p>
         <div class="case-outcome"><span class="case-pill">ESSEC '28</span><span class="case-pill">&lt;5% Selectivity</span></div>
       </article>
       <article class="case-card">
         <span class="tag">Small Town to Global</span>
+        <div class="case-card-student">
+          <img class="case-card-avatar" src="testimonial_pics_ai/manya.png" alt="Manya">
+          <span class="case-card-sname">Manya</span>
+        </div>
         <h3>From a Small Village to Ivy League</h3>
         <p>Manya built a mission-led profile in social impact and design tech, converting grassroots work into world-class admits.</p>
         <div class="case-outcome"><span class="case-pill">Brown '28</span><span class="case-pill">Carnegie Mellon</span></div>
@@ -225,43 +478,6 @@ body.nav-open{overflow:hidden}
   </div>
 </section>
 
-<section class="success-dark">
-  <div class="success-inner">
-    <h2>Our Students at <span style="color:var(--yellow)">Their Dream Schools</span></h2>
-    <div class="success-marquee">
-      <div class="success-track">
-        <div class="scard"><div class="img">🎓</div><div class="info"><div class="sn">Prateek</div><div class="ss">Harvard</div></div></div>
-        <div class="scard"><div class="img">🎓</div><div class="info"><div class="sn">Rohan</div><div class="ss">MIT</div></div></div>
-        <div class="scard"><div class="img">🎓</div><div class="info"><div class="sn">Manya</div><div class="ss">Brown</div></div></div>
-        <div class="scard"><div class="img">🎓</div><div class="info"><div class="sn">Tathagat</div><div class="ss">Cornell</div></div></div>
-        <div class="scard"><div class="img">🎓</div><div class="info"><div class="sn">Adya</div><div class="ss">Harvard</div></div></div>
-        <div class="scard"><div class="img">🎓</div><div class="info"><div class="sn">Arjun</div><div class="ss">Princeton</div></div></div>
-        <div class="scard"><div class="img">🎓</div><div class="info"><div class="sn">Riya</div><div class="ss">Cambridge</div></div></div>
-        <div class="scard"><div class="img">🎓</div><div class="info"><div class="sn">Vikas</div><div class="ss">UPenn</div></div></div>
-        <div class="scard"><div class="img">🎓</div><div class="info"><div class="sn">Akash</div><div class="ss">Oxford</div></div></div>
-        <div class="scard"><div class="img">🎓</div><div class="info"><div class="sn">Ishita</div><div class="ss">LSE</div></div></div>
-        <div class="scard"><div class="img">🎓</div><div class="info"><div class="sn">Sara</div><div class="ss">UChicago</div></div></div>
-        <div class="scard"><div class="img">🎓</div><div class="info"><div class="sn">Sanvi</div><div class="ss">Columbia</div></div></div>
-        <div class="scard"><div class="img">🎓</div><div class="info"><div class="sn">Sana</div><div class="ss">NYU</div></div></div>
-        <!-- duplicate set for seamless loop -->
-        <div class="scard"><div class="img">🎓</div><div class="info"><div class="sn">Prateek</div><div class="ss">Harvard</div></div></div>
-        <div class="scard"><div class="img">🎓</div><div class="info"><div class="sn">Rohan</div><div class="ss">MIT</div></div></div>
-        <div class="scard"><div class="img">🎓</div><div class="info"><div class="sn">Manya</div><div class="ss">Brown</div></div></div>
-        <div class="scard"><div class="img">🎓</div><div class="info"><div class="sn">Tathagat</div><div class="ss">Cornell</div></div></div>
-        <div class="scard"><div class="img">🎓</div><div class="info"><div class="sn">Adya</div><div class="ss">Harvard</div></div></div>
-        <div class="scard"><div class="img">🎓</div><div class="info"><div class="sn">Arjun</div><div class="ss">Princeton</div></div></div>
-        <div class="scard"><div class="img">🎓</div><div class="info"><div class="sn">Riya</div><div class="ss">Cambridge</div></div></div>
-        <div class="scard"><div class="img">🎓</div><div class="info"><div class="sn">Vikas</div><div class="ss">UPenn</div></div></div>
-        <div class="scard"><div class="img">🎓</div><div class="info"><div class="sn">Akash</div><div class="ss">Oxford</div></div></div>
-        <div class="scard"><div class="img">🎓</div><div class="info"><div class="sn">Ishita</div><div class="ss">LSE</div></div></div>
-        <div class="scard"><div class="img">🎓</div><div class="info"><div class="sn">Sara</div><div class="ss">UChicago</div></div></div>
-        <div class="scard"><div class="img">🎓</div><div class="info"><div class="sn">Sanvi</div><div class="ss">Columbia</div></div></div>
-        <div class="scard"><div class="img">🎓</div><div class="info"><div class="sn">Sana</div><div class="ss">NYU</div></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="final-cta"><div class="final-cta-inner">
   <h2>Your Story <span class="pop">Starts Here.</span></h2>
   <p class="sub">Join 500+ families who trusted Blue Ocean. Get your profile evaluated by Ex-Harvard Dr. Sanjay Kumar in 48 hours.</p>
@@ -270,111 +486,6 @@ body.nav-open{overflow:hidden}
 </div></section>
 
 <script>
-(() => {
-  const featured = document.getElementById('featured-voice');
-  const quoteEl = document.getElementById('featured-quote');
-  const whoEl = document.getElementById('featured-who');
-  const badgeEl = document.getElementById('featured-badge');
-  const switcher = document.getElementById('voice-switcher');
-  if (!featured || !quoteEl || !whoEl || !badgeEl || !switcher) return;
-
-  const stories = [
-    {
-      quote: "I still cannot believe our Prateek is headed to Harvard. Dr. Sanjay and the Blue Ocean team held his hand through every essay rewrite and every mock interview. We are deeply grateful.",
-      who: "Prateek's Father",
-      badge: "HARVARD '28"
-    },
-    {
-      quote: "Harvard felt out of reach in the beginning. Blue Ocean gave us a clear roadmap and practical steps. Adya walked into submission season with confidence.",
-      who: "Adya's Parents",
-      badge: "HARVARD"
-    },
-    {
-      quote: "The team took our midnight calls with patience. Rohan stayed focused, and when MIT came through, our whole family cried.",
-      who: "Rohan's Parents",
-      badge: "MIT"
-    },
-    {
-      quote: "The feedback on every draft was honest and specific. Her writing grew so much, and the Cambridge offer felt like a dream come true.",
-      who: "Riya's Mother",
-      badge: "CAMBRIDGE"
-    },
-    {
-      quote: "Many people told us our chances were tiny. Dr. Sanjay and team still believed in our son, and that belief carried us to Northeastern.",
-      who: "Shreejeet's Parents",
-      badge: "NORTHEASTERN"
-    },
-    {
-      quote: "UChicago prompts felt tricky at first. Dr. Sanjay's insight helped Sara unlock each one and write with clarity and courage.",
-      who: "Sara's Father",
-      badge: "UCHICAGO"
-    }
-  ];
-
-  let index = 0;
-  let timer = null;
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const intervalMs = 5200;
-
-  const dots = stories.map((story, i) => {
-    const btn = document.createElement('button');
-    btn.className = i === 0 ? 'voice-dot active' : 'voice-dot';
-    btn.type = 'button';
-    btn.setAttribute('aria-label', 'Show testimonial ' + (i + 1));
-    btn.addEventListener('click', () => {
-      show(i, false);
-      restart();
-    });
-    switcher.appendChild(btn);
-    return btn;
-  });
-
-  function paint(i) {
-    quoteEl.textContent = '"' + stories[i].quote + '"';
-    whoEl.textContent = stories[i].who;
-    badgeEl.textContent = stories[i].badge;
-    dots.forEach((d, idx) => d.classList.toggle('active', idx === i));
-  }
-
-  function show(next, animate = true) {
-    index = next;
-    if (animate) {
-      featured.classList.add('is-fading');
-      setTimeout(() => {
-        paint(index);
-        featured.classList.remove('is-fading');
-      }, 180);
-      return;
-    }
-    paint(index);
-  }
-
-  function start() {
-    if (reduceMotion) return;
-    if (timer) return;
-    timer = setInterval(() => show((index + 1) % stories.length), intervalMs);
-  }
-
-  function stop() {
-    if (!timer) return;
-    clearInterval(timer);
-    timer = null;
-  }
-
-  function restart() {
-    stop();
-    start();
-  }
-
-  featured.addEventListener('mouseenter', stop);
-  featured.addEventListener('mouseleave', start);
-  featured.addEventListener('focusin', stop);
-  featured.addEventListener('focusout', start);
-  document.addEventListener('visibilitychange', () => (document.hidden ? stop() : start()));
-
-  paint(index);
-  start();
-})();
 
 (() => {
   const toggle = document.querySelector('.nav-toggle');
@@ -403,6 +514,251 @@ body.nav-open{overflow:hidden}
   links.querySelectorAll('a').forEach((a) => a.addEventListener('click', closeMenu));
   window.addEventListener('resize', () => { if (window.innerWidth > 768) closeMenu(); });
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenu(); });
+})();
+
+// Offer letter — typewriter name + fading university
+(() => {
+  const nameEl = document.getElementById('ol-name');
+  const uniEl = document.getElementById('ol-uni');
+  if (!nameEl || !uniEl) return;
+  const admits = [
+    { name: 'Manya',      uni: 'Brown University' },
+    { name: 'Prateek',    uni: 'Harvard University' },
+    { name: 'Adya',       uni: 'Harvard University' },
+    { name: 'Anushka',    uni: 'Columbia University' },
+    { name: 'Palakshi',   uni: 'Harvard University' },
+    { name: 'Shreejeet',  uni: 'Northeastern University' },
+    { name: 'Purusharth', uni: 'University of Pennsylvania' },
+    { name: 'Randitya',   uni: 'ESSEC Business School' },
+    { name: 'Ananya',     uni: 'University of Warwick' },
+    { name: 'Tathagata',  uni: 'Cornell University' },
+    { name: 'Bhakti',     uni: 'Carnegie Mellon University' },
+    { name: 'Sana',       uni: 'New York University' },
+    { name: 'Shaurya',    uni: 'Tufts University' },
+  ];
+  let ai = 0, ci = admits[0].name.length, deleting = true;
+  uniEl.textContent = admits[0].uni; // "Brown University" matches HTML initial state
+  const tick = () => {
+    const cur = admits[ai].name;
+    if (!deleting) {
+      ci++;
+      nameEl.textContent = cur.slice(0, ci);
+      if (ci === cur.length) { deleting = true; setTimeout(tick, 2000); return; }
+      setTimeout(tick, 90);
+    } else {
+      ci--;
+      nameEl.textContent = cur.slice(0, ci);
+      if (ci === 0) {
+        deleting = false;
+        ai = (ai + 1) % admits.length;
+        uniEl.style.opacity = '0';
+        setTimeout(() => { uniEl.textContent = admits[ai].uni; uniEl.style.opacity = '1'; }, 220);
+        setTimeout(tick, 380);
+        return;
+      }
+      setTimeout(tick, 55);
+    }
+  };
+  setTimeout(tick, 2000);
+})();
+
+// Screenshot testimonials — typewriter
+(() => {
+  const uniEl = document.getElementById('ss-uni');
+  if (!uniEl) return;
+  const unis = ['Harvard','Cambridge','MIT','Oxford','Brown','Princeton','Cornell','Columbia','UIUC','Durham'];
+  let ui = 0, ci = unis[0].length, deleting = true; // start by deleting the initial "Harvard"
+  const tick = () => {
+    const cur = unis[ui];
+    if (!deleting) {
+      ci++;
+      uniEl.textContent = cur.slice(0, ci);
+      if (ci === cur.length) { deleting = true; setTimeout(tick, 1600); return; }
+      setTimeout(tick, 90);
+    } else {
+      ci--;
+      uniEl.textContent = cur.slice(0, ci);
+      if (ci === 0) { deleting = false; ui = (ui + 1) % unis.length; setTimeout(tick, 300); return; }
+      setTimeout(tick, 55);
+    }
+  };
+  setTimeout(tick, 1600); // hold "Harvard" for 1.6s then start cycling
+})();
+
+// Student profiles — animated card + scrolling marquee
+(() => {
+  const mockEl = document.getElementById('sp-mock');
+  const quoteEl = document.getElementById('sp-mock-quote');
+  const avatarEl = document.getElementById('sp-mock-avatar');
+  const nameEl = document.getElementById('sp-mock-name');
+  const uniEl = document.getElementById('sp-mock-uni');
+  const yearEl = document.getElementById('sp-mock-year');
+  const scholEl = document.getElementById('sp-mock-schol');
+  const marqueeEl = document.getElementById('sp-marquee');
+  if (!mockEl || !marqueeEl) return;
+
+  const students = [
+    {name:'Prateek',short:'Harvard',uni:'Harvard University',year:"Class of '28",schol:'₹95L Scholarship',img:'testimonial_pics_ai/prateek.png',quote:'I walked into Harvard\u2019s interview knowing I belonged there. Blue Ocean made sure of that.',qshort:'Blue Ocean made sure I belonged there.'},
+    {name:'Manya',short:'Brown',uni:'Brown University',year:"Class of '28",schol:'₹1.5 Cr Scholarship',img:'testimonial_pics_ai/manya.png',quote:'From a small town in India to Brown University. My story had the ending I\u2019d always dreamed of.',qshort:'My story had the ending I\u2019d always dreamed of.'},
+    {name:'Adya',short:'Harvard',uni:'Harvard University',year:"Class of '28",schol:'₹1.05 Cr Scholarship',img:'testimonial_pics_ai/adya.png',quote:'They helped me find my voice when I thought I had nothing worth saying.',qshort:'They helped me find my voice.'},
+    {name:'Anushka',short:'Columbia',uni:'Columbia University',year:"Class of '28",schol:'₹88L Scholarship',img:'testimonial_pics_ai/anushka.png',quote:'Every essay rewrite made me stronger. By the end, I truly owned my story.',qshort:'By the end, I truly owned my story.'},
+    {name:'Palakshi',short:'Harvard',uni:'Harvard University',year:"Class of '28",schol:'₹70L Scholarship',img:'testimonial_pics_ai/palakshi.png',quote:'They saw my potential before I did. Every session built my confidence.',qshort:'They saw my potential before I did.'},
+    {name:'Shreejeet',short:'Northeastern',uni:'Northeastern University',year:"Class of '28",schol:'₹1.3 Cr Scholarship',img:'testimonial_pics_ai/shreejeet.png',quote:'I doubted myself at every turn. Blue Ocean never did. That made all the difference.',qshort:'Blue Ocean never doubted me.'},
+    {name:'Purusharth',short:'UPenn',uni:'University of Pennsylvania',year:"Class of '28",schol:'',img:'testimonial_pics_ai/puru.png',quote:'World-class strategy, personal attention. The best investment I ever made.',qshort:'The best investment I ever made.'},
+    {name:'Randitya',short:'ESSEC',uni:'ESSEC Business School',year:"Class of '28",schol:'₹1.2 Cr Scholarship',img:'testimonial_pics_ai/randitya.png',quote:'In under six months, I went from confused to confirmed. ESSEC is my reality now.',qshort:'From confused to confirmed in 6 months.'},
+    {name:'Ananya',short:'Warwick',uni:'University of Warwick',year:"Class of '28",schol:'',img:'testimonial_pics_ai/ananya.png',quote:'Every session was purposeful. I always knew exactly what to work on next.',qshort:'I always knew what to work on next.'},
+    {name:'Tathagata',short:'Cornell',uni:'Cornell University',year:"Class of '28",schol:'₹1.2 Cr Scholarship',img:'testimonial_pics_ai/tathagata.png',quote:'They turned what I thought were weaknesses into the most compelling parts of my story.',qshort:'My weaknesses became my strengths.'},
+    {name:'Bhakti',short:'CMU',uni:'Carnegie Mellon University',year:"Class of '28",schol:'₹70L Scholarship',img:'testimonial_pics_ai/bhakti.png',quote:'CMU felt impossible until Blue Ocean showed me it wasn\u2019t. Now I\u2019m here.',qshort:'Blue Ocean showed me CMU was possible.'},
+    {name:'Sana',short:'NYU',uni:'New York University',year:"Class of '28",schol:'₹75L Scholarship',img:'testimonial_pics_ai/sana.png',quote:'My essays finally sounded like me. That authenticity is what got me to New York.',qshort:'That authenticity got me to New York.'},
+    {name:'Shaurya',short:'Tufts',uni:'Tufts University',year:"Class of '28",schol:'',img:'testimonial_pics_ai/shaurya.png',quote:'Thorough, personal, and transformative. There is no better way to describe this team.',qshort:'Thorough, personal, and transformative.'},
+  ];
+
+  function makeCard(s) {
+    const d = document.createElement('div');
+    d.className = 'sp-mcard';
+    d.innerHTML = '<img class="sp-mcard-avatar" src="' + s.img + '" alt="' + s.name + '" loading="lazy">'
+      + '<div class="sp-mcard-name">' + s.name + '</div>'
+      + '<div class="sp-mcard-uni">' + s.short + '</div>'
+      + (s.schol ? '<div class="sp-mcard-schol">' + s.schol + '</div>' : '')
+      + '<p class="sp-mcard-quote">\u201c' + s.qshort + '\u201d</p>'
+      + '<div class="sp-mcard-year">' + s.year + '</div>';
+    return d;
+  }
+  function makeRow(list, rev) {
+    const row = document.createElement('div'); row.className = 'sp-mrow';
+    const track = document.createElement('div'); track.className = rev ? 'sp-mtrack rev' : 'sp-mtrack';
+    [...list, ...list].forEach(s => track.appendChild(makeCard(s)));
+    row.appendChild(track); return row;
+  }
+  marqueeEl.appendChild(makeRow(students, false));
+  marqueeEl.appendChild(makeRow([...students].reverse(), true));
+
+  let cur = 0, timer = null;
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function paint(i) {
+    const s = students[i];
+    quoteEl.textContent = '\u201c' + s.quote + '\u201d';
+    avatarEl.src = s.img; avatarEl.alt = s.name;
+    nameEl.textContent = s.name; uniEl.textContent = s.uni;
+    yearEl.textContent = s.year;
+    scholEl.textContent = s.schol;
+    scholEl.style.display = s.schol ? '' : 'none';
+  }
+  function show(next) {
+    cur = next;
+    if (!reduceMotion) {
+      mockEl.classList.add('fading');
+      setTimeout(() => { paint(cur); mockEl.classList.remove('fading'); }, 180);
+    } else { paint(cur); }
+  }
+  function start() { if (reduceMotion || timer) return; timer = setInterval(() => show((cur + 1) % students.length), 4800); }
+  function stop() { clearInterval(timer); timer = null; }
+  mockEl.addEventListener('mouseenter', stop);
+  mockEl.addEventListener('mouseleave', start);
+  document.addEventListener('visibilitychange', () => (document.hidden ? stop() : start()));
+  paint(0); start();
+})();
+
+// Parent testimonials — centered fade carousel with prev/next
+(() => {
+  const featureEl = document.getElementById('pt-feature');
+  const textEl = document.getElementById('pt-text');
+  const whoEl = document.getElementById('pt-who-name');
+  const badgeEl = document.getElementById('pt-who-badge');
+  const barEl = document.getElementById('pt-bar');
+  const prevBtn = document.getElementById('pt-prev');
+  const nextBtn = document.getElementById('pt-next');
+  if (!featureEl) return;
+
+  const parents = [
+    {who:"Prateek's Father",badge:"HARVARD '28",quote:"I still cannot believe our Prateek is headed to Harvard. Dr. Sanjay and the Blue Ocean team held his hand through every essay rewrite and every mock interview. We are deeply grateful."},
+    {who:"Manya's Father",badge:"BROWN",quote:"They took Manya's raw ideas and turned them into essays that felt true to her voice. Brown University was a very emotional moment for our entire family."},
+    {who:"Adya's Parents",badge:"HARVARD",quote:"Harvard felt out of reach in the beginning. Blue Ocean gave us a clear roadmap and practical steps. Adya walked into submission season with real confidence."},
+    {who:"Anushka's Parents",badge:"COLUMBIA",quote:"Columbia and Cambridge both said yes in the same week. Anushka's law firm experience was unique and Dr. Sanjay knew exactly how to position it. We are so proud."},
+    {who:"Palakshi's Parents",badge:"HARVARD",quote:"We are from Pune and Harvard felt like a dream that belonged to someone else. Blue Ocean made it feel achievable step by step. Palakshi's policymaking work truly came alive in her essays."},
+    {who:"Shreejeet's Parents",badge:"NORTHEASTERN",quote:"Many people told us our chances were tiny. Dr. Sanjay and team still believed in our son, and that belief carried us all the way to Northeastern."},
+    {who:"Purusharth's Father",badge:"UPENN",quote:"Purusharth's aerospace wins were impressive but we were not sure how to present them. Blue Ocean matched his profile to Penn's values and the result was beyond our expectations."},
+    {who:"Randitya's Mother",badge:"ESSEC",quote:"Randitya started with under three months to go. Blue Ocean built a plan from scratch and helped him tell his story with real emotion. ESSEC's admission still feels surreal."},
+    {who:"Ananya's Mother",badge:"WARWICK",quote:"Their team opened doors to workshops and focused opportunities that matched Ananya's goals exactly. Warwick became possible because of that careful planning."},
+    {who:"Tathagata's Parents",badge:"CORNELL",quote:"Tathagata had the fintech background Cornell was looking for but turning it into a compelling application was hard. Dr. Sanjay helped him find the right narrative, and Cornell said yes."},
+    {who:"Bhakti's Parents",badge:"CMU MBA",quote:"Bhakti's mountaineering was not what we expected would help an MBA application. Blue Ocean showed us that is exactly what sets a candidate apart. CMU saw it too."},
+    {who:"Sana's Mother",badge:"NYU",quote:"Their NYU strategy was thoughtful and realistic. Sana's story finally sounded authentic, and that made all the difference on result day."},
+    {who:"Shaurya's Parents",badge:"TUFTS MBA",quote:"Shaurya had orchestrated a major merger but kept downplaying it. Blue Ocean helped him own that achievement with confidence. Tufts recognised it immediately."},
+  ];
+
+  // Build marquee
+  const marqueeEl = document.getElementById('pt-marquee');
+  function makeCard(p) {
+    const d = document.createElement('div');
+    d.className = 'pt-mcard';
+    d.innerHTML = '<div class="pt-mcard-qmark">\u201c</div>'
+      + '<p class="pt-mcard-quote">' + p.quote.substring(0, 90) + '\u2026</p>'
+      + '<div class="pt-mcard-who">' + p.who + '</div>'
+      + '<span class="pt-mcard-badge">' + p.badge + '</span>';
+    return d;
+  }
+  function makeRow(list, rev) {
+    const row = document.createElement('div'); row.className = 'pt-mrow';
+    const track = document.createElement('div'); track.className = rev ? 'pt-mtrack rev' : 'pt-mtrack';
+    [...list, ...list].forEach(p => track.appendChild(makeCard(p)));
+    row.appendChild(track); return row;
+  }
+  if (marqueeEl) {
+    marqueeEl.appendChild(makeRow(parents, false));
+    marqueeEl.appendChild(makeRow([...parents].reverse(), true));
+  }
+
+  const INTERVAL = 9000;
+  let cur = 0, timer = null;
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Prev / next buttons
+  prevBtn.addEventListener('click', () => { stop(); show((cur - 1 + parents.length) % parents.length); start(); });
+  nextBtn.addEventListener('click', () => { stop(); show((cur + 1) % parents.length); start(); });
+
+  function resetBar() {
+    barEl.style.transition = 'none';
+    barEl.style.width = '0%';
+    void barEl.offsetWidth;
+  }
+
+  function animateBar() {
+    if (reduceMotion) return;
+    resetBar();
+    requestAnimationFrame(() => {
+      barEl.style.transition = 'width ' + INTERVAL + 'ms linear';
+      barEl.style.width = '100%';
+    });
+  }
+
+  function paint(i) {
+    const p = parents[i];
+    textEl.textContent = p.quote;
+    whoEl.textContent = p.who;
+    badgeEl.textContent = p.badge;
+  }
+
+  function show(next) {
+    cur = next;
+    if (!reduceMotion) {
+      featureEl.classList.add('fading');
+      setTimeout(() => { paint(cur); featureEl.classList.remove('fading'); }, 500);
+    } else { paint(cur); }
+  }
+
+  function start() {
+    if (reduceMotion || timer) return;
+    animateBar();
+    timer = setInterval(() => { show((cur + 1) % parents.length); animateBar(); }, INTERVAL);
+  }
+
+  function stop() { clearInterval(timer); timer = null; resetBar(); }
+
+  featureEl.addEventListener('mouseenter', stop);
+  featureEl.addEventListener('mouseleave', start);
+  document.addEventListener('visibilitychange', () => (document.hidden ? stop() : start()));
+  paint(0); start();
 })();
 </script>
 
