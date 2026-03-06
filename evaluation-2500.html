@@ -365,6 +365,8 @@ fbq('track', 'PageView');
   .guarantee-box h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
   .guarantee-box p { font-size: 14px; opacity: 0.9; line-height: 1.5; }
 
+  .dr-link{color:#111;text-decoration:none;border-bottom:1.5px dashed rgba(17,17,17,0.3);display:inline-flex;align-items:center;gap:3px;transition:color .15s,border-color .15s,border-bottom-style .15s}
+  .dr-link:hover{color:#7C5E00;border-bottom-color:#7C5E00;border-bottom-style:solid}
   /* ===== FAQ ===== */
   .faq-section {
     width: min(760px, calc(100% - 32px));
@@ -454,7 +456,7 @@ body.nav-open{overflow:hidden}
             <p class="vid-label"><strong>Watch Dr. Sanjay</strong> — 3 min</p>
           </div>
         </div>
-        <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-top:12px;padding-bottom:2px;"><img src="logos/harvard-kennedy-school.png" alt="Harvard" style="height:20px;width:auto;object-fit:contain;" onerror="this.style.display='none'"><span style="font-size:13px;font-weight:700;color:#111;">Dr. Sanjay Kumar, PhD</span><span style="font-size:12px;color:#6B7280;">· Harvard Graduate</span></div>
+        <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-top:12px;padding-bottom:2px;"><img src="logos/harvard-kennedy-school.png" alt="Harvard" style="height:20px;width:auto;object-fit:contain;" onerror="this.style.display='none'"><a class="dr-link" href="dr-sanjay-kumar.html" style="font-size:13px;font-weight:700;">Dr. Sanjay Kumar, PhD<svg width="9" height="9" viewBox="0 0 10 10" fill="none" style="opacity:0.45;flex-shrink:0"><path d="M1.5 8.5L8.5 1.5M8.5 1.5H3.5M8.5 1.5V6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><span style="font-size:12px;color:#6B7280;">· Harvard Graduate</span></div>
       </div>
     </div>
   </div>
