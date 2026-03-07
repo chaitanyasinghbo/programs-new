@@ -251,10 +251,8 @@ a{color:inherit;text-decoration:none}
 .sp-marquee-wrap::before{left:0;background:linear-gradient(90deg,var(--black),transparent)}
 .sp-marquee-wrap::after{right:0;background:linear-gradient(-90deg,var(--black),transparent)}
 .sp-mrow{overflow:hidden}
-.sp-mtrack{display:flex;gap:12px;width:max-content;animation:sp-scroll 44s linear infinite}
-.sp-mtrack.rev{animation-direction:reverse;animation-duration:52s}
-.sp-marquee-wrap:hover .sp-mtrack{animation-play-state:paused}
-@keyframes sp-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.sp-mtrack{display:flex;gap:12px;width:max-content;animation:sp-scroll 100s linear infinite;will-change:transform}
+@keyframes sp-scroll{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
 .sp-mcard{flex:0 0 210px;background:rgba(255,255,255,0.04);border:1.5px solid rgba(255,255,255,0.09);border-radius:16px;padding:18px 16px;display:flex;flex-direction:column;align-items:center;text-align:center;transition:border-color .2s,transform .2s,box-shadow .2s}
 .sp-mcard:hover{border-color:rgba(250,204,21,0.55);transform:translateY(-3px);box-shadow:0 8px 24px rgba(250,204,21,0.1)}
 .sp-mcard-avatar{width:84px;height:84px;border-radius:50%;object-fit:cover;object-position:top center;border:2.5px solid rgba(250,204,21,0.5);margin-bottom:12px;flex-shrink:0}
@@ -939,7 +937,6 @@ document.getElementById('hero-video-placeholder').addEventListener('click', func
     row.appendChild(track); return row;
   }
   marqueeEl.appendChild(makeRow(students, false));
-  marqueeEl.appendChild(makeRow([...students].reverse(), true));
 
   let cur = 0, timer = null;
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
