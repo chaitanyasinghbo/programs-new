@@ -164,9 +164,8 @@ a{color:inherit;text-decoration:none}
 .test-marquee::before,.test-marquee::after{content:'';position:absolute;top:0;bottom:0;width:70px;z-index:2;pointer-events:none}
 .test-marquee::before{left:0;background:linear-gradient(90deg,var(--black),transparent)}
 .test-marquee::after{right:0;background:linear-gradient(-90deg,var(--black),transparent)}
-.test-track{display:flex;gap:14px;width:max-content;animation:test-scroll 72s linear infinite}
-.test-marquee:hover .test-track{animation-play-state:paused}
-@keyframes test-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.test-track{display:flex;gap:14px;width:max-content;animation:test-scroll 100s linear infinite;will-change:transform}
+@keyframes test-scroll{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
 .test-card{flex:0 0 340px;min-height:190px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.18);border-radius:14px;padding:20px 18px;display:flex;flex-direction:column;justify-content:space-between}
 .test-card .stars{font-size:12px;letter-spacing:2px;color:var(--yellow);margin-bottom:10px}
 .test-card .q{font-family:'Lora',serif;font-size:15px;line-height:1.65;color:rgba(255,255,255,0.94);font-style:italic}
@@ -430,25 +429,6 @@ body.nav-open{overflow:hidden}
             <div class="ol-mcard"><img src="offer_letter_ss/ol05.png" alt="University offer letter" loading="eager"></div>
             <div class="ol-mcard"><img src="offer_letter_ss/ol06.png" alt="University offer letter" loading="eager"></div>
             <div class="ol-mcard"><img src="offer_letter_ss/ol07.png" alt="University offer letter" loading="eager"></div>
-          </div>
-        </div>
-        <div class="ol-mrow">
-          <div class="ol-mtrack rev">
-            <div class="ol-mcard"><img src="offer_letter_ss/ol08.png" alt="University offer letter" loading="eager"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol09.png" alt="University offer letter" loading="eager"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol10.png" alt="University offer letter" loading="eager"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol11.png" alt="University offer letter" loading="eager"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol12.png" alt="University offer letter" loading="eager"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol13.png" alt="University offer letter" loading="eager"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol14.png" alt="University offer letter" loading="eager"></div>
-            <!-- duplicate for seamless loop -->
-            <div class="ol-mcard"><img src="offer_letter_ss/ol08.png" alt="University offer letter" loading="eager"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol09.png" alt="University offer letter" loading="eager"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol10.png" alt="University offer letter" loading="eager"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol11.png" alt="University offer letter" loading="eager"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol12.png" alt="University offer letter" loading="eager"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol13.png" alt="University offer letter" loading="eager"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol14.png" alt="University offer letter" loading="eager"></div>
           </div>
         </div>
       </div>
