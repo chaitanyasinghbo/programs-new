@@ -34,7 +34,11 @@ fbq('track', 'PageView');
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"EducationalOrganization","@id":"https://bluocean.education/#organization","name":"Blue Ocean Education","url":"https://bluocean.education","description":"Elite admissions consulting by Ex Ivy-League counsellors. 500+ students guided to their dream universities.","telephone":"+91-9811306780","email":"info@bluocean.education"},{"@type":"WebSite","@id":"https://bluocean.education/#website","url":"https://bluocean.education","name":"Blue Ocean Education","publisher":{"@id":"https://bluocean.education/#organization"}}]}
 </script>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet"></noscript>
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{--black:#111;--yellow:#FACC15;--yellow-bg:#FEFCE8;--green:#16A34A;--red:#DC2626;--gray:#6B7280;--light:#F9FAFB;--border:#E5E7EB;--white:#fff}
@@ -352,7 +356,7 @@ body.nav-open{overflow:hidden}
           <p class="vid-label"><strong>Watch Dr. Sanjay</strong> — 3 min</p>
         </div>
       </div>
-      <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-top:12px;padding-bottom:2px;"><img src="logos/harvard-kennedy-school.png" alt="Harvard" style="height:20px;width:auto;object-fit:contain;" onerror="this.style.display='none'"><a class="dr-link" href="dr-sanjay-kumar.html" style="font-size:13px;font-weight:700;">Dr. Sanjay Kumar, PhD<svg width="9" height="9" viewBox="0 0 10 10" fill="none" style="opacity:0.45;flex-shrink:0"><path d="M1.5 8.5L8.5 1.5M8.5 1.5H3.5M8.5 1.5V6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><span style="font-size:12px;color:#6B7280;">· Harvard Graduate</span></div>
+      <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-top:12px;padding-bottom:2px;"><img src="logos/harvard-kennedy-school.png" alt="Harvard" style="height:20px;width:auto;object-fit:contain;" fetchpriority="high" decoding="async" onerror="this.style.display='none'"><a class="dr-link" href="dr-sanjay-kumar.html" style="font-size:13px;font-weight:700;">Dr. Sanjay Kumar, PhD<svg width="9" height="9" viewBox="0 0 10 10" fill="none" style="opacity:0.45;flex-shrink:0"><path d="M1.5 8.5L8.5 1.5M8.5 1.5H3.5M8.5 1.5V6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><span style="font-size:12px;color:#6B7280;">· Harvard Graduate</span></div>
     </div>
   </div>
 </div></section>
@@ -412,21 +416,21 @@ body.nav-open{overflow:hidden}
       <div class="ol-marquee-wrap">
         <div class="ol-mrow">
           <div class="ol-mtrack">
-            <div class="ol-mcard"><img src="offer_letter_ss/ol01.png" alt="University offer letter" loading="eager"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol02.png" alt="University offer letter" loading="eager"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol03.png" alt="University offer letter" loading="eager"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol04.png" alt="University offer letter" loading="eager"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol05.png" alt="University offer letter" loading="eager"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol06.png" alt="University offer letter" loading="eager"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol07.png" alt="University offer letter" loading="eager"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol01.png" alt="University offer letter" loading="eager" decoding="async"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol02.png" alt="University offer letter" loading="eager" decoding="async"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol03.png" alt="University offer letter" loading="eager" decoding="async"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol04.png" alt="University offer letter" loading="eager" decoding="async"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol05.png" alt="University offer letter" loading="eager" decoding="async"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol06.png" alt="University offer letter" loading="eager" decoding="async"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol07.png" alt="University offer letter" loading="eager" decoding="async"></div>
             <!-- duplicate for seamless loop -->
-            <div class="ol-mcard"><img src="offer_letter_ss/ol01.png" alt="University offer letter" loading="eager"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol02.png" alt="University offer letter" loading="eager"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol03.png" alt="University offer letter" loading="eager"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol04.png" alt="University offer letter" loading="eager"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol05.png" alt="University offer letter" loading="eager"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol06.png" alt="University offer letter" loading="eager"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol07.png" alt="University offer letter" loading="eager"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol01.png" alt="University offer letter" loading="eager" decoding="async"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol02.png" alt="University offer letter" loading="eager" decoding="async"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol03.png" alt="University offer letter" loading="eager" decoding="async"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol04.png" alt="University offer letter" loading="eager" decoding="async"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol05.png" alt="University offer letter" loading="eager" decoding="async"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol06.png" alt="University offer letter" loading="eager" decoding="async"></div>
+            <div class="ol-mcard"><img src="offer_letter_ss/ol07.png" alt="University offer letter" loading="eager" decoding="async"></div>
           </div>
         </div>
       </div>
@@ -446,7 +450,7 @@ body.nav-open{overflow:hidden}
           <div class="sp-mock-stars">★★★★★</div>
           <p class="sp-mock-quote" id="sp-mock-quote">"I walked into Harvard's interview knowing I belonged there. Blue Ocean made sure of that."</p>
           <div class="sp-mock-person">
-            <img class="sp-mock-avatar" id="sp-mock-avatar" src="testimonial_pics_ai/prateek.png" alt="Prateek">
+            <img class="sp-mock-avatar" id="sp-mock-avatar" src="testimonial_pics_ai/prateek.png" alt="Prateek" decoding="async" loading="lazy">
             <div>
               <div class="sp-mock-name" id="sp-mock-name">Prateek</div>
               <div class="sp-mock-uni" id="sp-mock-uni">Harvard University</div>
@@ -834,15 +838,16 @@ document.getElementById('hero-video-placeholder').addEventListener('click', func
 (() => {
   const wrap = document.querySelector('.ol-marquee-wrap');
   if (!wrap) return;
-  const imgs = Array.from(wrap.querySelectorAll('img'));
+  // Only wait for first 4 images (visible on load) — rest load in background
+  const imgs = Array.from(wrap.querySelectorAll('img')).slice(0, 4);
   let loaded = 0;
   const reveal = () => { if (++loaded >= imgs.length) wrap.classList.add('ready'); };
   imgs.forEach(img => {
     if (img.complete) reveal();
     else { img.addEventListener('load', reveal); img.addEventListener('error', reveal); }
   });
-  // Fallback: reveal after 3s regardless
-  setTimeout(() => wrap.classList.add('ready'), 3000);
+  // Fallback: reveal after 1.5s regardless
+  setTimeout(() => wrap.classList.add('ready'), 1500);
 })();
 
 // Offer letter — typewriter name + fading university
