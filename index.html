@@ -217,12 +217,12 @@ a{color:inherit;text-decoration:none}
 .ol-marquee-wrap::before,.ol-marquee-wrap::after{content:'';position:absolute;top:0;bottom:0;width:40px;z-index:2;pointer-events:none}
 .ol-marquee-wrap::before{left:0;background:linear-gradient(90deg,var(--light),transparent)}
 .ol-marquee-wrap::after{right:0;background:linear-gradient(-90deg,var(--light),transparent)}
-.ol-mrow{overflow:hidden}
 .ol-mrow{overflow:hidden;-webkit-transform:translateZ(0);transform:translateZ(0)}
-.ol-mtrack{display:flex;gap:12px;width:max-content;animation:ol-scroll 35s linear infinite;will-change:transform;-webkit-transform:translateZ(0);transform:translateZ(0)}
+.ol-mtrack{display:flex;gap:12px;width:max-content;animation:ol-scroll 35s linear infinite;will-change:transform}
 .ol-mtrack.rev{animation-direction:reverse;animation-duration:42s}
 .ol-marquee-wrap:hover .ol-mtrack{animation-play-state:paused}
-@keyframes ol-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@keyframes ol-scroll{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
+@media(max-width:768px){.ol-letter-wrap{order:2}.ol-marquee-wrap{order:1}}
 .ol-mcard{flex:0 0 200px;border-radius:10px;overflow:hidden;border:1px solid #E5E7EB;background:#fff;box-shadow:0 4px 16px rgba(0,0,0,0.08);transition:transform .2s,box-shadow .2s,border-color .2s}
 .ol-mcard:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 10px 28px rgba(0,0,0,0.14);border-color:var(--yellow)}
 .ol-mcard img{width:100%;display:block}
