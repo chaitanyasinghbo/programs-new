@@ -218,11 +218,13 @@ a{color:inherit;text-decoration:none}
 .ol-marquee-wrap::before{left:0;background:linear-gradient(90deg,var(--light),transparent)}
 .ol-marquee-wrap::after{right:0;background:linear-gradient(-90deg,var(--light),transparent)}
 .ol-mrow{overflow:hidden;-webkit-transform:translateZ(0);transform:translateZ(0)}
-.ol-mtrack{display:flex;gap:12px;width:max-content;animation:ol-scroll 35s linear infinite;will-change:transform}
-.ol-mtrack.rev{animation-direction:reverse;animation-duration:42s}
+.ol-mtrack{display:flex;gap:12px;width:max-content;animation:ol-scroll 55s linear infinite;will-change:transform;animation-play-state:paused}
+.ol-mtrack.rev{animation-direction:reverse;animation-duration:68s}
+.ol-marquee-wrap{opacity:0;transition:opacity .6s ease}
+.ol-marquee-wrap.ready{opacity:1}
+.ol-marquee-wrap.ready .ol-mtrack{animation-play-state:running}
 .ol-marquee-wrap:hover .ol-mtrack{animation-play-state:paused}
 @keyframes ol-scroll{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
-@media(max-width:768px){.ol-letter-wrap{order:2}.ol-marquee-wrap{order:1}}
 .ol-mcard{flex:0 0 200px;border-radius:10px;overflow:hidden;border:1px solid #E5E7EB;background:#fff;box-shadow:0 4px 16px rgba(0,0,0,0.08);transition:transform .2s,box-shadow .2s,border-color .2s}
 .ol-mcard:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 10px 28px rgba(0,0,0,0.14);border-color:var(--yellow)}
 .ol-mcard img{width:100%;display:block}
@@ -849,6 +851,21 @@ document.getElementById('hero-video-placeholder').addEventListener('click', func
   document.getElementById('hero-video').innerHTML =
     '<iframe src="https://www.youtube.com/embed/bK1QU2CK7es?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
 });
+
+// Offer letter marquee — wait for images then reveal
+(() => {
+  const wrap = document.querySelector('.ol-marquee-wrap');
+  if (!wrap) return;
+  const imgs = Array.from(wrap.querySelectorAll('img'));
+  let loaded = 0;
+  const reveal = () => { if (++loaded >= imgs.length) wrap.classList.add('ready'); };
+  imgs.forEach(img => {
+    if (img.complete) reveal();
+    else { img.addEventListener('load', reveal); img.addEventListener('error', reveal); }
+  });
+  // Fallback: reveal after 3s regardless
+  setTimeout(() => wrap.classList.add('ready'), 3000);
+})();
 
 // Offer letter — typewriter name + fading university
 (() => {
