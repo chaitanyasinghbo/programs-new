@@ -70,7 +70,7 @@ fbq('track', 'PageView');
 .sp-marquee-wrap::before{left:0;background:linear-gradient(90deg,var(--black),transparent)}
 .sp-marquee-wrap::after{right:0;background:linear-gradient(-90deg,var(--black),transparent)}
 .sp-mrow{overflow:hidden;-webkit-transform:translateZ(0);transform:translateZ(0)}
-.sp-mtrack{display:flex;gap:12px;width:max-content;animation:sp-scroll 90s linear infinite;will-change:transform}
+.sp-mtrack{display:flex;gap:12px;width:max-content;animation:sp-scroll 120s linear infinite;will-change:transform}
 .sp-mtrack.rev{animation-direction:reverse;animation-duration:110s}
 @keyframes sp-scroll{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
 .sp-mcard{flex:0 0 210px;background:rgba(255,255,255,0.04);border:1.5px solid rgba(255,255,255,0.09);border-radius:16px;padding:18px 16px;display:flex;flex-direction:column;align-items:center;text-align:center;transition:border-color .2s,transform .2s,box-shadow .2s}
@@ -133,7 +133,7 @@ fbq('track', 'PageView');
 .ss-marquee-wrap::before{left:0;background:linear-gradient(90deg,var(--black),transparent)}
 .ss-marquee-wrap::after{right:0;background:linear-gradient(-90deg,var(--black),transparent)}
 .ss-mrow{overflow:hidden;-webkit-transform:translateZ(0);transform:translateZ(0)}
-.ss-mtrack{display:flex;gap:12px;width:max-content;animation:ss-scroll 65s linear infinite;will-change:transform}
+.ss-mtrack{display:flex;gap:12px;width:max-content;animation:ss-scroll 90s linear infinite;will-change:transform}
 .ss-mtrack.rev{animation-direction:reverse;animation-duration:80s}
 @keyframes ss-scroll{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
 .ss-mcard{flex:0 0 220px;border-radius:12px;overflow:hidden;border:1.5px solid rgba(255,255,255,0.1);background:#0a0a0a;box-shadow:0 6px 20px rgba(0,0,0,0.4);transition:transform .2s,border-color .2s}
@@ -168,7 +168,7 @@ fbq('track', 'PageView');
 .ol-marquee-wrap::before{left:0;background:linear-gradient(90deg,var(--light),transparent)}
 .ol-marquee-wrap::after{right:0;background:linear-gradient(-90deg,var(--light),transparent)}
 .ol-mrow{overflow:hidden;-webkit-transform:translateZ(0);transform:translateZ(0)}
-.ol-mtrack{display:flex;gap:12px;width:max-content;animation:ol-scroll 55s linear infinite;will-change:transform}
+.ol-mtrack{display:flex;gap:12px;width:max-content;animation:ol-scroll 80s linear infinite;will-change:transform}
 .ol-mtrack.rev{animation-direction:reverse;animation-duration:68s}
 @keyframes ol-scroll{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
 .ol-mcard{flex:0 0 200px;border-radius:10px;overflow:hidden;border:1px solid #E5E7EB;background:#fff;box-shadow:0 4px 16px rgba(0,0,0,0.08);transition:transform .2s,box-shadow .2s,border-color .2s}
@@ -199,7 +199,7 @@ fbq('track', 'PageView');
 .pt-marquee-wrap::before{left:0;background:linear-gradient(90deg,var(--white),transparent)}
 .pt-marquee-wrap::after{right:0;background:linear-gradient(-90deg,var(--white),transparent)}
 .pt-mrow{overflow:hidden;-webkit-transform:translateZ(0);transform:translateZ(0)}
-.pt-mtrack{display:flex;gap:14px;width:max-content;animation:pt-scroll 90s linear infinite;will-change:transform}
+.pt-mtrack{display:flex;gap:14px;width:max-content;animation:pt-scroll 120s linear infinite;will-change:transform}
 .pt-mtrack.rev{animation-direction:reverse;animation-duration:110s}
 @keyframes pt-scroll{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
 .pt-mcard{flex:0 0 240px;background:var(--light);border:1.5px solid var(--border);border-radius:16px;padding:20px 18px;display:flex;flex-direction:column;transition:border-color .2s,transform .2s,box-shadow .2s;text-align:left;cursor:default}
@@ -296,25 +296,6 @@ body.nav-open{overflow:hidden}
             <div class="ol-mcard"><img src="offer_letter_ss/ol07.png" alt="University offer letter" loading="eager" decoding="async"></div>
           </div>
         </div>
-        <div class="ol-mrow">
-          <div class="ol-mtrack rev">
-            <div class="ol-mcard"><img src="offer_letter_ss/ol08.png" alt="University offer letter" loading="eager" decoding="async"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol09.png" alt="University offer letter" loading="eager" decoding="async"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol10.png" alt="University offer letter" loading="eager" decoding="async"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol11.png" alt="University offer letter" loading="eager" decoding="async"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol12.png" alt="University offer letter" loading="eager" decoding="async"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol13.png" alt="University offer letter" loading="eager" decoding="async"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol14.png" alt="University offer letter" loading="eager" decoding="async"></div>
-            <!-- duplicate for seamless loop -->
-            <div class="ol-mcard"><img src="offer_letter_ss/ol08.png" alt="University offer letter" loading="eager" decoding="async"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol09.png" alt="University offer letter" loading="eager" decoding="async"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol10.png" alt="University offer letter" loading="eager" decoding="async"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol11.png" alt="University offer letter" loading="eager" decoding="async"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol12.png" alt="University offer letter" loading="eager" decoding="async"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol13.png" alt="University offer letter" loading="eager" decoding="async"></div>
-            <div class="ol-mcard"><img src="offer_letter_ss/ol14.png" alt="University offer letter" loading="eager" decoding="async"></div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -407,20 +388,6 @@ body.nav-open{overflow:hidden}
             <div class="ss-mcard"><img src="ss_testimonial_template/ss03.png" alt="Student texting they got into Durham University" loading="eager" decoding="async"></div>
             <div class="ss-mcard"><img src="ss_testimonial_template/ss04.png" alt="Student texting they got into Durham University" loading="eager" decoding="async"></div>
             <div class="ss-mcard"><img src="ss_testimonial_template/ss05.png" alt="Student texting they got into UIUC" loading="eager" decoding="async"></div>
-          </div>
-        </div>
-        <div class="ss-mrow">
-          <div class="ss-mtrack rev">
-            <div class="ss-mcard"><img src="ss_testimonial_template/ss03.png" alt="Student texting they got into Durham University" loading="eager" decoding="async"></div>
-            <div class="ss-mcard"><img src="ss_testimonial_template/ss05.png" alt="Student texting they got into UIUC" loading="eager" decoding="async"></div>
-            <div class="ss-mcard"><img src="ss_testimonial_template/ss01.png" alt="Student texting they got into UIUC and Virginia Tech" loading="eager" decoding="async"></div>
-            <div class="ss-mcard"><img src="ss_testimonial_template/ss04.png" alt="Student texting they got into Durham University" loading="eager" decoding="async"></div>
-            <div class="ss-mcard"><img src="ss_testimonial_template/ss02.png" alt="Student texting they got into Indiana University and UMBC" loading="eager" decoding="async"></div>
-            <div class="ss-mcard"><img src="ss_testimonial_template/ss03.png" alt="Student texting they got into Durham University" loading="eager" decoding="async"></div>
-            <div class="ss-mcard"><img src="ss_testimonial_template/ss05.png" alt="Student texting they got into UIUC" loading="eager" decoding="async"></div>
-            <div class="ss-mcard"><img src="ss_testimonial_template/ss01.png" alt="Student texting they got into UIUC and Virginia Tech" loading="eager" decoding="async"></div>
-            <div class="ss-mcard"><img src="ss_testimonial_template/ss04.png" alt="Student texting they got into Durham University" loading="eager" decoding="async"></div>
-            <div class="ss-mcard"><img src="ss_testimonial_template/ss02.png" alt="Student texting they got into Indiana University and UMBC" loading="eager" decoding="async"></div>
           </div>
         </div>
       </div>
@@ -701,7 +668,6 @@ body.nav-open{overflow:hidden}
   }
   if (marqueeEl) {
     marqueeEl.appendChild(makeRow(parents, false));
-    marqueeEl.appendChild(makeRow([...parents].reverse(), true));
   }
 
   const INTERVAL = 9000;
